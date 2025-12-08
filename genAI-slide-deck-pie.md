@@ -229,7 +229,7 @@ presentation_id = presentation["presentationId"]
 # (Full code omitted for brevity – see Google Slides API “Create a slide” example)
 ```
 
-### 3️⃣7 Orchestration (GitHub Actions Example)
+### 3.7 Orchestration (GitHub Actions Example)
 
 ```yaml
 name: Build Slide Deck
