@@ -1,7 +1,9 @@
-**prompt**
+**Mills** - I ran the following prompt in my text editor of choice (Zed) which is connected to an Ollama server running locally on my laptop. The output was in markdown. I then created a repo in Github, opened it in Zed and uploaded. I haven't actually read the result yet but will do so later. This all took about 10 minutes while on on the train to NYC.
+
+# prompt
 I want to build a pipeline that starts with a plain-english research report, then converts it into correctly formatted and styled slide deck. Which tools should I use?
 
-**from gpt-oss:120b:**
+# from gpt-oss:120b:
 
 Below is a **complete, end‑to‑end pipeline** that turns a plain‑English research report into a polished, fully‑styled slide deck.  
 It is broken into logical stages, the best‑of‑breed tools for each stage, and a few ready‑to‑run code snippets so you can start prototyping right away.
