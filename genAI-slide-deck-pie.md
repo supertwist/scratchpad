@@ -1,4 +1,7 @@
+**prompt**
 I want to build a pipeline that starts with a plain-english research report, then converts it into correctly formatted and styled slide deck. Which tools should I use?
+
+**from gpt-oss:120b:**
 
 Below is a **complete, end‑to‑end pipeline** that turns a plain‑English research report into a polished, fully‑styled slide deck.  
 It is broken into logical stages, the best‑of‑breed tools for each stage, and a few ready‑to‑run code snippets so you can start prototyping right away.
