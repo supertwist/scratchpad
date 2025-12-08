@@ -1,4 +1,10 @@
-**Mills** - I ran the following prompt in my text editor of choice (Zed) which is connected to an Ollama server running locally on my laptop. The output was in markdown. I then created a repo in Github, opened it in Zed and uploaded. I haven't actually read the result yet but will do so later. This all took about 10 minutes while on on the train to NYC.
+**Mills** - I ran the following prompt in my text editor of choice (Zed) which is connected to an Ollama server running locally on my laptop. The output was in markdown. I then created a repo in Github, opened it in Zed and uploaded. I haven't actually read the result yet but will do so later. This all took about 10 minutes while on on the train to NYC. 
+
+**Next steps** 
++ create a sample, plain text report that can be used for testing
++ model for begininng of the pipeline? Claude, maybe, thought I'd prefer something we could run locally (I'm not keen on sending data back to big companies, but maybe I'm paranoid?) We should budget time to test multiple models, compare.
++ I'm interested in testing that output as JSON to go to Nano Bananna Pro or open source alternative...
++ In general, I'd prefer to run this all on a local server.
 
 # prompt
 I want to build a pipeline that starts with a plain-english research report, then converts it into correctly formatted and styled slide deck. Which tools should I use?
