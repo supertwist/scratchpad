@@ -1,4 +1,4 @@
-# Linkroll, in little particular order
+# Linkroll, in little particular order...
 - Code: [VENV primer.](https://realpython.com/python-virtual-environments-a-primer/#how-can-you-work-with-a-python-virtual-environment)
 - Code: [**ComfyUI** reddit.](https://www.reddit.com/r/comfyui/) 
 - Code: [**Machines of Loving Grace** essay from Anthropic.](https://darioamodei.com/machines-of-loving-grace)
@@ -12,7 +12,9 @@
 - Code: [**Data** Augmentation.](https://pytorch.org/vision/master/transforms.html) "Artificially boosting the range and number of training examples by transforming existing examples to create additional examples. For example, suppose images are one of your features, but your dataset doesn't contain enough image examples for the model to learn useful associations. Ideally, you'd add enough labeled images to your dataset to enable your model to train properly. If that's not possible, data augmentation can rotate, stretch, and reflect each image to produce many variants of the original picture, possibly yielding enough labeled data to enable excellent training."
 - Code: [If the metaverse ever comes back, this might be relevant.](https://theconversation.com/how-we-describe-the-metaverse-makes-a-difference-todays-words-could-shape-tomorrows-reality-and-who-benefits-from-it-182819) But for the moment, I think it's gone the way of 3D movies and Smell-O-Vision.
 - Code: [Design framework for **chatbots.**](https://chatbotsmagazine.com/design-framework-for-chatbots-aa27060c4ea3#.yuv07nqwy) Worth revisiting if considering building custom LLMs.
+- Code: [**Chatbot** design for marketing.](https://sproutsocial.com/insights/chatbot-marketing/)
 - Code: [CLIP interrogator.](https://huggingface.co/spaces/pharma/CLIP-Interrogator)*"Want to figure out what a good prompt might be to create new images like an existing one?"*
+- Code: [**Artists vs diffusion** models.](https://www.nytimes.com/2023/02/13/technology/ai-art-generator-lensa-stable-diffusion.html?referringSource=articleShare)
 
 ---
 
@@ -33,6 +35,7 @@
 - Creativity: [Jerry Saltz' **33 rules.**](https://www.vulture.com/2018/11/jerry-saltz-how-to-be-an-artist.html)
 - Creativity: [Bruce Connor video for **"Mea Culpa."**](https://www.youtube.com/watch?v=KR715ql1-Fk)
 - Creativity: [**Tom Sachs** on geodesic domes.](https://www.instagram.com/p/CD4jah0HwUj/)
+- Creativity: [**James Bridle**'s presence on the interwebs.](https://jamesbridle.com/about/)
 
 ---
 
@@ -61,7 +64,11 @@
 - Make: [Food grade **silicone.**](https://www.amazon.com/Food-Grade-Platinum-Cured-Rubber-Polyurethane/dp/B06XBSNQTJ?source=ps-sl-shoppingads-lpcontext&smid=A1T8XVKXOC8UGZ&gPromoCode=sns_us_en_5_2025Q1&gQT=1)
 - Make: [Intro to **3D scanning.**](https://makezine.com/article/digital-fabrication/3d-printing-workshop/3d-scanning-is-easier-than-ever-heres-what-you-need-to-get-started/)
 - Make: [**Stencil film** at Dick Blick.](https://www.dickblick.com/products/grafix-edge-stencil-film/)
+- Make: [**Chocolate** 3D printer.](https://cocoapress.com/)
 
 ---
 
 - Rabbithole: [The Book of **Numbers,**](https://en.wikipedia.org/wiki/Book_of_Numbers)
+- Rabbithole: [The evolution of **conspiracy theories.**](https://arstechnica.com/science/2021/01/study-folklore-structure-reveals-how-conspiracy-theories-emerge-fall-apart/) **Thought experiment:** if Media Matters treated every assertion the GOP makes *as-if* it were a conspiracy theory, then network graphed it and used same type of analysis (as Tangherlini et al.), to what extent would the results be valid/supportable/authoritative?
+- Rabbithole: [**Video game simulations** and urban planning.](https://logicmag.io/play/model-metropolis/)
+- Rabbithole: [**Chlorophyl** battery.](https://www.youtube.com/watch?v=41hFxQdnYB8)
