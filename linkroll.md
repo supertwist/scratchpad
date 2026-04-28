@@ -30,6 +30,7 @@
 - Creativity: [I want this Ellsworth Kelly book...](https://www.amazon.com/Ellsworth-Kelly-1948-1973-Yve-Alain-Bois/dp/094232417X)
 - Creativity: [Angry women moving **civilization** forward.](https://rebeccatraister.com/books/good-and-mad/)
 - Creativity: [**Brian Eno** in conversation with **Hans-Ulrich Obrist.**](https://m.mixcloud.com/sonos/program-2-brian-enos-visual-art-in-conversation-with-hans-ulrich-obrist/)
+- Creativity: [Jerry Saltz' **33 rules.**](https://www.vulture.com/2018/11/jerry-saltz-how-to-be-an-artist.html)
 
 ---
 
@@ -44,6 +45,12 @@
 - Design: [**Mood** as extrapolation engine.](https://praxis.fortelabs.co/mood-as-extrapolation-engine-using-emotions-to-generate-momentum-65a2e5940aae)
 - Design: [History of **Ligatures.**](https://blazetype.eu/blog/history-of-ligatures-part-1-2/)
 - Design: [**Skeuomorphism** in coversational design.](https://uxdesign.cc/skeuomorphism-in-conversational-design-6ff9aea98829)
+- Design: [Building blocks of a **design system.**](https://medium.com/@nynsuthar/space-size-style-aba80f820716)
+- Design: [More on building a **system.**](https://medium.freecodecamp.com/how-to-construct-a-design-system-864adbf2a117#.kmssdyovl)
+- Design: [Basic **drawing** drills.](https://medium.com/personal-growth/a-quick-beginners-guide-to-drawing-58213877715e)
+- Design: [Rule of **Thirds.**](https://medium.com/@Depositphotos/winning-composition-using-the-rule-of-thirds-in-desin-41bb6d48b409)
+- Design: [10 basic **principles.**](https://blog.prototypr.io/10-basic-principles-of-visual-design-55b86b9f7241)
+- Design: [**100 questions** designers ask.](https://medium.com/ux-power-tools/100-questions-designers-always-ask-8b9f441bcd35)
 
 ---
 
