@@ -12,7 +12,7 @@
 - Code: [**Data** Augmentation.](https://pytorch.org/vision/master/transforms.html) "Artificially boosting the range and number of training examples by transforming existing examples to create additional examples. For example, suppose images are one of your features, but your dataset doesn't contain enough image examples for the model to learn useful associations. Ideally, you'd add enough labeled images to your dataset to enable your model to train properly. If that's not possible, data augmentation can rotate, stretch, and reflect each image to produce many variants of the original picture, possibly yielding enough labeled data to enable excellent training."
 - Code: [If the metaverse ever comes back, this might be relevant.](https://theconversation.com/how-we-describe-the-metaverse-makes-a-difference-todays-words-could-shape-tomorrows-reality-and-who-benefits-from-it-182819) But for the moment, I think it's gone the way of 3D movies and Smell-O-Vision.
 - Code: [Design framework for **chatbots.**](https://chatbotsmagazine.com/design-framework-for-chatbots-aa27060c4ea3#.yuv07nqwy) Worth revisiting if considering building custom LLMs.
-- Code: 
+- Code: [CLIP interrogator.](https://huggingface.co/spaces/pharma/CLIP-Interrogator)*"Want to figure out what a good prompt might be to create new images like an existing one?"*
 
 ---
 
@@ -31,6 +31,8 @@
 - Creativity: [Angry women moving **civilization** forward.](https://rebeccatraister.com/books/good-and-mad/)
 - Creativity: [**Brian Eno** in conversation with **Hans-Ulrich Obrist.**](https://m.mixcloud.com/sonos/program-2-brian-enos-visual-art-in-conversation-with-hans-ulrich-obrist/)
 - Creativity: [Jerry Saltz' **33 rules.**](https://www.vulture.com/2018/11/jerry-saltz-how-to-be-an-artist.html)
+- Creativity: [Bruce Connor video for **"Mea Culpa."**](https://www.youtube.com/watch?v=KR715ql1-Fk)
+- Creativity: [**Tom Sachs** on geodesic domes.](https://www.instagram.com/p/CD4jah0HwUj/)
 
 ---
 
@@ -51,11 +53,14 @@
 - Design: [Rule of **Thirds.**](https://medium.com/@Depositphotos/winning-composition-using-the-rule-of-thirds-in-desin-41bb6d48b409)
 - Design: [10 basic **principles.**](https://blog.prototypr.io/10-basic-principles-of-visual-design-55b86b9f7241)
 - Design: [**100 questions** designers ask.](https://medium.com/ux-power-tools/100-questions-designers-always-ask-8b9f441bcd35)
+- Design: [A **file management** strategy for designers.](https://medium.com/google-design/file-management-for-designers-3bc04216a9ec)
 
 ---
 
 - Make: [**3D Mold Maker** free web app.](https://moldmaker.vercel.app/)
 - Make: [Food grade **silicone.**](https://www.amazon.com/Food-Grade-Platinum-Cured-Rubber-Polyurethane/dp/B06XBSNQTJ?source=ps-sl-shoppingads-lpcontext&smid=A1T8XVKXOC8UGZ&gPromoCode=sns_us_en_5_2025Q1&gQT=1)
+- Make: [Intro to **3D scanning.**](https://makezine.com/article/digital-fabrication/3d-printing-workshop/3d-scanning-is-easier-than-ever-heres-what-you-need-to-get-started/)
+- Make: [**Stencil film** at Dick Blick.](https://www.dickblick.com/products/grafix-edge-stencil-film/)
 
 ---
 
