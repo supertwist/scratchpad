@@ -19,6 +19,7 @@
 - Code: [**MaxMSP fluid simulation** tutorial](https://www.youtube.com/watch?v=TwNhusLCPQ0&t=1s)
 - Code: [An example of **using GIT and GitHub beyond code**: community participation in DC legal code!](https://dcist.com/story/18/11/28/github-is-a-programming-website-so-what-is-d-c-s-legal-code-doing-on-there/)
 - Code: [Random numbers.](https://www.freecodecamp.org/news/random-number-generator/)
+- Code: [**Pi.dev** as an alternative to Claude Code](https://pi.dev/)
 
 ---
 
