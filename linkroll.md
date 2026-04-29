@@ -20,6 +20,8 @@
 - Code: [An example of **using GIT and GitHub beyond code**: community participation in DC legal code!](https://dcist.com/story/18/11/28/github-is-a-programming-website-so-what-is-d-c-s-legal-code-doing-on-there/)
 - Code: [Random numbers.](https://www.freecodecamp.org/news/random-number-generator/)
 - Code: [**Pi.dev** as an alternative to Claude Code](https://pi.dev/)
+- Code: [Intro to **generative art.**](https://www.freecodecamp.org/news/an-introduction-to-generative-art-what-it-is-and-how-you-make-it-b0b363b50a70)
+- Code: [Pyhton tips.](https://www.freecodecamp.org/news/an-a-z-of-useful-python-tricks-b467524ee747)
 
 ---
 
@@ -63,6 +65,18 @@
 - Design: [10 basic **principles.**](https://blog.prototypr.io/10-basic-principles-of-visual-design-55b86b9f7241)
 - Design: [**100 questions** designers ask.](https://medium.com/ux-power-tools/100-questions-designers-always-ask-8b9f441bcd35)
 - Design: [A **file management** strategy for designers.](https://medium.com/google-design/file-management-for-designers-3bc04216a9ec)
+- Design: [Typography basics.](https://medium.muz.li/typography-that-sacred-cow-ea7a5909ca70)
+- Design: [**8 principles** of typography.](https://medium.com/gravitdesigner/typography-elements-everyone-needs-to-understand-5fdea82f470d)
+- Design: [Typography for **interfaces.**](https://blog.prototypr.io/how-to-use-typography-in-ui-design-ce045fa4ff2e#.h8h5jwbng)
+- Design: [More typography **basics.**](https://uxplanet.org/typography-in-ui-guide-for-beginners-7ee9bdbc4833)
+- Design: [More typography, a good baseline of practices to **check design against.**](https://medium.springboard.com/the-guide-to-getting-typography-right-in-digital-design-bb61214ff3ad)
+- Design: [A stretegy for **pairing typefaces.**](https://medium.freecodecamp.com/how-to-choose-and-pair-typefaces-98fee945d13c#.vpoqxomx2)
+- Design: [Good practices when designing with **type for the web.**](https://uxplanet.org/10-tips-on-typography-in-web-design-13a378f4aa0d)
+- Design: [Considerations when using SVG for web design.](https://medium.com/sketch-app-sources/how-designers-should-think-about-svg-b2b92efc4d77#.3hss638c6)
+- Design: [**Dev guide** for designers.](https://medium.com/pixelpoint/handoffs-guide-for-pixel-perfect-design-part-i-8bbd95d8ffcd#.djbgtl94k) 
+- Design: [Building a **front-end framework** in Figma or Sketch.](https://medium.com/sketch-app-sources/how-to-create-a-front-end-framework-with-sketch-2379edb5e7df#.uyqjpmqxu)
+- Design: [**Chrome** front-end dev tools.](https://medium.freecodecamp.com/mastering-chrome-developer-tools-next-level-front-end-development-techniques-3ac0b6fe8a3)
+- Design: [Super-interesting book on building **design systems.**](https://medium.com/svilenk/what-i-learned-from-the-2-000-elusive-design-book-designing-programmes-f518faefcf4b)
 
 ---
 
@@ -71,6 +85,7 @@
 - Make: [Intro to **3D scanning.**](https://makezine.com/article/digital-fabrication/3d-printing-workshop/3d-scanning-is-easier-than-ever-heres-what-you-need-to-get-started/)
 - Make: [**Stencil film** at Dick Blick.](https://www.dickblick.com/products/grafix-edge-stencil-film/)
 - Make: [**Chocolate** 3D printer.](https://cocoapress.com/)
+- Make: [2017 video of Apple presentation on **rapid prototying.**](https://developer.apple.com/videos/play/wwdc2017/818/)
 
 ---
 
@@ -85,3 +100,6 @@
 - Rabbithole: [**Pinky Violence** database???](https://www.grindhousedatabase.com/index.php/Pinky_Violence:_A_Beginner%27s_Guide)
 - Rabbithole: [**Zamrock** definition.](https://en.wikipedia.org/wiki/Zamrock)
 - Rabbithole: [A history of the **Chelsea Hotel.**](https://medium.com/@bagelboy/make-america-bohemian-again-de846e35d757#.bsxtbhira)
+- Rabbithole: [**Asymetrical** teaching method.](https://medium.com/solomonkingsnorth/the-extraordinary-case-of-mr-yamazaki-18739ebb4980)
+- Rabbithole: [Useful discussion of **critique.**](https://medium.mikeindustries.com/how-to-give-helpful-product-design-feedback-1e4c053b6da)
+- Rabbithole: [Why **net neutrality** matters.](https://medium.com/@alearningaday/why-you-should-care-about-net-neutrality-9d47995126a2)
