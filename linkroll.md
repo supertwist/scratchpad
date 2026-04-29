@@ -94,6 +94,7 @@
 - Make: [**Stencil film** at Dick Blick.](https://www.dickblick.com/products/grafix-edge-stencil-film/)
 - Make: [**Chocolate** 3D printer.](https://cocoapress.com/)
 - Make: [2017 video of Apple presentation on **rapid prototying.**](https://developer.apple.com/videos/play/wwdc2017/818/)
+- Make: [**Darktable,** an open source alternative to Adobe Lightroom.](https://www.darktable.org/)
 
 ---
 
