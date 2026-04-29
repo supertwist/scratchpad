@@ -1,5 +1,5 @@
 # Linkroll, in little particular order...
-- Code: [VENV primer.](https://realpython.com/python-virtual-environments-a-primer/#how-can-you-work-with-a-python-virtual-environment)
+- Code: [**VENV **primer.](https://realpython.com/python-virtual-environments-a-primer/#how-can-you-work-with-a-python-virtual-environment)
 - Code: [**ComfyUI** reddit.](https://www.reddit.com/r/comfyui/) 
 - Code: [**Machines of Loving Grace** essay from Anthropic.](https://darioamodei.com/machines-of-loving-grace)
 - Code: [**John Oliver** on data brokers.](https://www.youtube.com/watch?v=wqn3gR1WTcA)
@@ -32,7 +32,7 @@
 - Creativity: [**David Lynch** pushes back.](https://www.youtube.com/watch?v=-AHUEON7Fb8)
 - Creativity: [**Beastie Boys** live in Amsterdam.](https://www.youtube.com/watch?v=YcYrrLxQtUQ)
 - Creativity: [**The Ephemeral History of Perfume,** by Holly Dugan!](https://www.press.jhu.edu/books/title/10510/ephemeral-history-perfume)
-- Creativity: [Ellswoth Kelly's **collage poscards.**](https://hyperallergic.com/the-unexpected-humor-of-ellsworth-kelly/)
+- Creativity: [Ellsworth Kelly's **collage poscards.**](https://hyperallergic.com/the-unexpected-humor-of-ellsworth-kelly/)
 - Creativity: [I want this Ellsworth Kelly book...](https://www.amazon.com/Ellsworth-Kelly-1948-1973-Yve-Alain-Bois/dp/094232417X)
 - Creativity: [Angry women moving **civilization** forward.](https://rebeccatraister.com/books/good-and-mad/)
 - Creativity: [**Brian Eno** in conversation with **Hans-Ulrich Obrist.**](https://m.mixcloud.com/sonos/program-2-brian-enos-visual-art-in-conversation-with-hans-ulrich-obrist/)
@@ -40,7 +40,7 @@
 - Creativity: [Bruce Connor video for **"Mea Culpa."**](https://www.youtube.com/watch?v=KR715ql1-Fk)
 - Creativity: [**Tom Sachs** on geodesic domes.](https://www.instagram.com/p/CD4jah0HwUj/)
 - Creativity: [**James Bridle**'s presence on the interwebs.](https://jamesbridle.com/about/)
-- Creativity: [Art in the age of machine intellegence.](https://medium.com/artists-and-machine-intelligence/what-is-ami-ccd936394a83#.cl7vdnle5) "...one should not conclude that anything goes, that the direction of our development is predetermined, or that technology is somehow inherently utopian..."
+- Creativity: [Art in the age of machine intellegence.](https://medium.com/artists-and-machine-intelligence/what-is-ami-ccd936394a83#.cl7vdnle5) *"...one should not conclude that anything goes, that the direction of our development is predetermined, or that technology is somehow inherently utopian..."*
 
 ---
 
