@@ -15,6 +15,10 @@
 - Code: [**Chatbot** design for marketing.](https://sproutsocial.com/insights/chatbot-marketing/)
 - Code: [CLIP interrogator.](https://huggingface.co/spaces/pharma/CLIP-Interrogator)*"Want to figure out what a good prompt might be to create new images like an existing one?"*
 - Code: [**Artists vs diffusion** models.](https://www.nytimes.com/2023/02/13/technology/ai-art-generator-lensa-stable-diffusion.html?referringSource=articleShare)
+- Code: [**Danny Hillis'** tic-tac-toe computer built from tinkertoys.](https://www.youtube.com/watch?v=glt4whqaDEU)
+- Code: [**MaxMSP fluid simulation** tutorial](https://www.youtube.com/watch?v=TwNhusLCPQ0&t=1s)
+- Code: [An example of **using GIT and GitHub beyond code**: community participation in DC legal code!](https://dcist.com/story/18/11/28/github-is-a-programming-website-so-what-is-d-c-s-legal-code-doing-on-there/)
+- Code: [Random numbers.](https://www.freecodecamp.org/news/random-number-generator/)
 
 ---
 
@@ -36,6 +40,7 @@
 - Creativity: [Bruce Connor video for **"Mea Culpa."**](https://www.youtube.com/watch?v=KR715ql1-Fk)
 - Creativity: [**Tom Sachs** on geodesic domes.](https://www.instagram.com/p/CD4jah0HwUj/)
 - Creativity: [**James Bridle**'s presence on the interwebs.](https://jamesbridle.com/about/)
+- Creativity: [Art in the age of machine intellegence.](https://medium.com/artists-and-machine-intelligence/what-is-ami-ccd936394a83#.cl7vdnle5) "...one should not conclude that anything goes, that the direction of our development is predetermined, or that technology is somehow inherently utopian..."
 
 ---
 
@@ -72,3 +77,10 @@
 - Rabbithole: [The evolution of **conspiracy theories.**](https://arstechnica.com/science/2021/01/study-folklore-structure-reveals-how-conspiracy-theories-emerge-fall-apart/) **Thought experiment:** if Media Matters treated every assertion the GOP makes *as-if* it were a conspiracy theory, then network graphed it and used same type of analysis (as Tangherlini et al.), to what extent would the results be valid/supportable/authoritative?
 - Rabbithole: [**Video game simulations** and urban planning.](https://logicmag.io/play/model-metropolis/)
 - Rabbithole: [**Chlorophyl** battery.](https://www.youtube.com/watch?v=41hFxQdnYB8)
+- Rabbithole: [**Photovoltaic** cells vs. plants!](https://www.scientificamerican.com/article/plants-versus-photovoltaics-at-capturing-sunlight/)
+- Rabbithole: [More on **photovoltaics** vs plants.](https://futureoflife.org/2016/09/30/artificial-photosynthesis/)
+- Rabbithole: [**Afrorack** modular synth!](https://cdm.link/afrorack-first-african-modular/)
+- Rabbithole: [**The Hidden Spring,** book on consciousness.](https://www.amazon.com/Hidden-Spring-Journey-Source-Consciousness/dp/0393542017)
+- Rabbithole: [**Pinky Violence** database???](https://www.grindhousedatabase.com/index.php/Pinky_Violence:_A_Beginner%27s_Guide)
+- Rabbithole: [**Zamrock** definition.](https://en.wikipedia.org/wiki/Zamrock)
+- Rabbithole: [A history of the **Chelsea Hotel.**](https://medium.com/@bagelboy/make-america-bohemian-again-de846e35d757#.bsxtbhira)
