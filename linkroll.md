@@ -24,6 +24,9 @@
 - Code: [Pyhton tips.](https://www.freecodecamp.org/news/an-a-z-of-useful-python-tricks-b467524ee747)
 - Code: [from 2022, How to use NVIDIA's **NeRF code** to create 3D models](https://towardsdatascience.com/using-ai-to-generate-3d-models-2634398c0799/)
 - Code: [**Rapidly Generate 3D Assets** for Virtual Worlds with Generative AI](https://developer.nvidia.com/blog/rapidly-generate-3d-assets-for-virtual-worlds-with-generative-ai/)
+- Code: [Machine Learning for **poets.**](https://oao84.medium.com/abstractions-conceptual-compression-and-commoditization-9126e79bdbc8)
+- Code: [You know when you’re trying to learn something new, but get reeeeeeallly bored of building **the default example app?**](https://medium.freecodecamp.org/the-secret-to-being-a-top-developer-is-building-things-heres-a-list-of-fun-apps-to-build-aac61ac0736c)
+- Code: [Intro to **security** for full-stack web dev.](https://blog.logrocket.com/security-for-fullstack-web-developers-part-1-a56340283f7c)
 
 ---
 
