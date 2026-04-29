@@ -22,6 +22,8 @@
 - Code: [**Pi.dev** as an alternative to Claude Code](https://pi.dev/)
 - Code: [Intro to **generative art.**](https://www.freecodecamp.org/news/an-introduction-to-generative-art-what-it-is-and-how-you-make-it-b0b363b50a70)
 - Code: [Pyhton tips.](https://www.freecodecamp.org/news/an-a-z-of-useful-python-tricks-b467524ee747)
+- Code: [from 2022, How to use NVIDIA's **NeRF code** to create 3D models](https://towardsdatascience.com/using-ai-to-generate-3d-models-2634398c0799/)
+- Code: [**Rapidly Generate 3D Assets** for Virtual Worlds with Generative AI](https://developer.nvidia.com/blog/rapidly-generate-3d-assets-for-virtual-worlds-with-generative-ai/)
 
 ---
 
@@ -50,6 +52,7 @@
 - Design: [21 Ways to tell a **Story** in Three Minutes.](https://medium.com/fluxx-studio-notes/21-ways-to-tell-your-story-in-just-3-minutes-29c62951126f)
 - Design: [Visual **stortytelling.**](https://uxplanet.org/guide-to-visual-storytelling-for-ux-73d4dd7bd9e3)
 - Design: [More on **storytelling.**](https://uxdesign.cc/what-is-storytelling-in-design-fe3a6e94cc46)
+- Design: [“There are **only two ways** to tell your story.”](https://stevebryant.medium.com/there-are-only-two-ways-to-tell-your-story-2e72d0f50ce)
 - Design: [Common UX **mistakes.**](https://uxplanet.org/common-ux-mistakes-that-can-kill-your-project-ccae026605ae)
 - Design: [Why users **hate** your app.](https://uxplanet.org/what-users-hate-most-about-your-app-according-to-google-c4a089ddfafa)
 - Design: [**Gestalt** applied to UX.](https://uxplanet.org/gestalt-theory-for-efficient-ux-principle-of-similarity-827c20c175f5)
@@ -77,6 +80,11 @@
 - Design: [Building a **front-end framework** in Figma or Sketch.](https://medium.com/sketch-app-sources/how-to-create-a-front-end-framework-with-sketch-2379edb5e7df#.uyqjpmqxu)
 - Design: [**Chrome** front-end dev tools.](https://medium.freecodecamp.com/mastering-chrome-developer-tools-next-level-front-end-development-techniques-3ac0b6fe8a3)
 - Design: [Super-interesting book on building **design systems.**](https://medium.com/svilenk/what-i-learned-from-the-2-000-elusive-design-book-designing-programmes-f518faefcf4b)
+- Design: [How I Stopped Worrying and Learned to Love **Design Thinking**](https://cwodtke.medium.com/how-i-stopped-worrying-and-learned-to-love-design-thinking-f1142bab60e8)
+- Design: [A **"premortem"** to assess a startup idea.](https://medium.com/everproof/what-you-think-you-know-is-hurting-your-products-success-eb44d346c838)
+- Design: [Why **Most Designers Fail** Google’s Infamous Interview Design Challenge](https://medium.com/svilenk/the-1-000-floor-elevator-why-most-designers-fail-googles-infamous-interview-design-challenge-a5ff9ad91741)
+- Design: [Really basic **checklist for web design.**](https://uxplanet.org/dos-and-don-ts-of-web-design-8c9d6a5de7c6)
+- Design: [Web site **optimization.**](https://www.freecodecamp.org/news/a-beginners-guide-to-website-optimization-2185edca0b72)
 
 ---
 
