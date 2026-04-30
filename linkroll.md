@@ -118,3 +118,4 @@
 - Rabbithole: [The death of art schoool op/ed](https://hyperallergic.com/the-death-of-the-art-school/)
 - Rabbithole: [via Babette, **future art school.**](https://conditions.studio/)
 - Rabbithole: [McSAD](https://mcsad.us/)
+- Rabbithole: [Disney's 12 basic rules of animation.](https://en.wikipedia.org/wiki/Twelve_basic_principles_of_animation)
