@@ -98,6 +98,8 @@
 - Make: [**Chocolate** 3D printer.](https://cocoapress.com/)
 - Make: [2017 video of Apple presentation on **rapid prototying.**](https://developer.apple.com/videos/play/wwdc2017/818/)
 - Make: [**Darktable,** an open source alternative to Adobe Lightroom.](https://www.darktable.org/)
+- Make: [**Virual Foundry** has intersting filaments...](https://shop.thevirtualfoundry.com/)
+- Make: [More ceramic filaments.](https://additiveplus.com/)
 
 ---
 
@@ -118,4 +120,5 @@
 - Rabbithole: [The death of art schoool op/ed](https://hyperallergic.com/the-death-of-the-art-school/)
 - Rabbithole: [via Babette, **future art school.**](https://conditions.studio/)
 - Rabbithole: [McSAD](https://mcsad.us/)
-- Rabbithole: [Disney's 12 basic rules of animation.](https://en.wikipedia.org/wiki/Twelve_basic_principles_of_animation)
+- Rabbithole: [Disney's 12 basic **rules** of animation.](https://en.wikipedia.org/wiki/Twelve_basic_principles_of_animation)
+- Rabbithole: [Rauschenberg on erasing DeKooning](https://www.instagram.com/reel/DXv04tNsHbA/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==)
