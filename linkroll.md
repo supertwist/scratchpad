@@ -28,6 +28,7 @@
 - Code: [You know when you’re trying to learn something new, but get reeeeeeallly bored of building **the default example app?**](https://medium.freecodecamp.org/the-secret-to-being-a-top-developer-is-building-things-heres-a-list-of-fun-apps-to-build-aac61ac0736c)
 - Code: [Intro to **security** for full-stack web dev.](https://blog.logrocket.com/security-for-fullstack-web-developers-part-1-a56340283f7c)
 - Code: [**Ollama model list.**](https://ollama.com/library?sort=popular)
+- Code: [**MLX,** a possible alternative to Ollama that is Mac-friendlier?](https://mlx-framework.org/)
 
 ---
 
