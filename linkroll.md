@@ -124,3 +124,4 @@
 - Rabbithole: [McSAD](https://mcsad.us/)
 - Rabbithole: [Disney's 12 basic **rules** of animation.](https://en.wikipedia.org/wiki/Twelve_basic_principles_of_animation)
 - Rabbithole: [Rauschenberg on erasing DeKooning](https://www.instagram.com/reel/DXv04tNsHbA/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==)
+- Rabbithole: [**Jim Jarmusch** on soundtracks.](https://www.youtube.com/watch?v=X6zSI6dybaU)
