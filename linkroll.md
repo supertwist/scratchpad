@@ -102,6 +102,7 @@
 - Make: [**Darktable,** an open source alternative to Adobe Lightroom.](https://www.darktable.org/)
 - Make: [**Virual Foundry** has intersting filaments...](https://shop.thevirtualfoundry.com/)
 - Make: [More ceramic filaments.](https://additiveplus.com/)
+- Make: [**gCode tools,** of interest for ceramics](https://www.gcodetools.com/)
 
 ---
 
