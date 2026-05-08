@@ -29,6 +29,8 @@
 - Code: [Intro to **security** for full-stack web dev.](https://blog.logrocket.com/security-for-fullstack-web-developers-part-1-a56340283f7c)
 - Code: [**Ollama model list.**](https://ollama.com/library?sort=popular)
 - Code: [**MLX,** a possible alternative to Ollama that is Mac-friendlier?](https://mlx-framework.org/)
+- Code: ["How accurate is it to say that **algorithms** do things?"](https://lareviewofbooks.org/article/algorithmic-life/)
+- Code: [**Small functions** aren't always the most efficient.](https://medium.com/@copyconstruct/small-functions-considered-harmful-91035d316c29)
 
 ---
 
@@ -90,6 +92,21 @@
 - Design: [Why **Most Designers Fail** Google’s Infamous Interview Design Challenge](https://medium.com/svilenk/the-1-000-floor-elevator-why-most-designers-fail-googles-infamous-interview-design-challenge-a5ff9ad91741)
 - Design: [Really basic **checklist for web design.**](https://uxplanet.org/dos-and-don-ts-of-web-design-8c9d6a5de7c6)
 - Design: [Web site **optimization.**](https://www.freecodecamp.org/news/a-beginners-guide-to-website-optimization-2185edca0b72)
+- Design: [**6 UX guidelines** for animation.](https://blog.prototypr.io/6-animation-guidelines-for-ux-design-74c90eb5e47a)
+- Design: [**UX animation manifesto.**](https://medium.com/ux-in-motion/creating-usability-with-motion-the-ux-in-motion-manifesto-a87a4584ddc)
+- Design: [Disney's **12 principles of animation.**](https://en.wikipedia.org/wiki/12_basic_principles_of_animation)
+- Design: [**Why Disney's principles don't work for UX.**](https://medium.com/ux-in-motion/ui-animation-principles-disney-is-dead-8bf6c66207f9)
+- Design: [3 uses for animation in **mobile UX.**](https://uxplanet.org/3-key-uses-for-animation-in-mobile-ui-design-4d7c482dd84b#.ehq0iasz7)
+- Design: [**Sculpting time.**](https://medium.com/@pasql/sculpting-software-animation-7d818ddcd40a)
+- Design: [**Gamification** for stickyness.](https://uxplanet.org/gamification-in-ux-increasing-user-engagement-6437cbf702aa)
+- Design: [Better **grid systems** for UX.](https://medium.com/subform/better-grid-systems-in-ui-design-tools-495dc35c5791#.b7uxnj1f0)
+- Design: [Asking **the right questions.**](https://uxdesign.cc/asking-the-right-questions-on-user-research-interviews-and-testing-427261742a67#.xrw72vq6r)
+- Design: [Brief intro to **color theory.**](https://uxplanet.org/color-theory-brief-guide-for-designers-76e11c57eaa)
+- Design: [**Influence of color on user actions.**](https://blog.tubikstudio.com/color-in-design-influence-on-users-actions/)
+- Design: [Color and **branding.**](https://www.helpscout.net/blog/psychology-of-color/)
+- Design: [**Worst volume control** ever?](https://uxdesign.cc/the-worst-volume-control-ui-in-the-world-60713dc86950)
+- Design: [Rules of engagement for **design crotique.**](https://medium.com/designatmeta/critique-is-an-important-part-of-any-design-process-whether-you-work-as-part-of-a-team-or-solo-ef3dcb299ce3#.jfkaagowx)
+- 
 
 ---
 
@@ -128,3 +145,7 @@
 - Rabbithole: [Disney's 12 basic **rules** of animation.](https://en.wikipedia.org/wiki/Twelve_basic_principles_of_animation)
 - Rabbithole: [Rauschenberg on erasing DeKooning](https://www.instagram.com/reel/DXv04tNsHbA/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==)
 - Rabbithole: [**Jim Jarmusch** on soundtracks.](https://www.youtube.com/watch?v=X6zSI6dybaU)
+- Rabbithole: [Pedagogy and **paternalism.**](https://medium.com/@heinemann/if-you-think-youre-giving-students-of-color-a-voice-get-over-yourself-cc8a4a684f16)
+- Rabbithole: [**The pedagogy of inspiration.**](https://tseelig.medium.com/teaching-its-about-inspiration-not-information-1f64ddf019e7#.d2t43npag)
+- Rabbithole: [**Self-directed learning.**](https://medium.com/the-mission/three-strategies-to-power-your-self-directed-learning-adc93872692c#.x55ja011a
+)
