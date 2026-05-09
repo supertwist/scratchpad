@@ -138,12 +138,16 @@
 - Make: [**Chocolate** 3D printer.](https://cocoapress.com/)
 - Make: [2017 video of Apple presentation on **rapid prototying.**](https://developer.apple.com/videos/play/wwdc2017/818/)
 - Make: [**Darktable,** an open source alternative to Adobe Lightroom.](https://www.darktable.org/)
-- Make: [**Virual Foundry** has intersting filaments...](https://shop.thevirtualfoundry.com/)
 - Make: [More ceramic filaments.](https://additiveplus.com/)
 - Make: [**gCode tools,** of interest for ceramics.](https://www.gcodetools.com/)
-- Make: [**Numakers,** inexpensive filament recommended by a GW IT colleague.](https://numakers.com/)
 - Make: [**Cyberdecks,** straight out of William Gibson into the present!](https://www.instagram.com/explore/search/keyword/?q=%23cyberdeck)
 - Make: [Printing **TPU** on the Bambu H2D.](https://wiki.bambulab.com/en/h2/h2d-tpu-printing-guide)
+- Make: [**Planck** keyboard.](https://olkb.com/collections/planck)
+- Make: [MSG Cyberdeck **build.**](https://www.youtube.com/watch?v=54wqH243yuw&t=661s)
+- Make: [**Rocky linux,** used on the HPC.](https://rockylinux.org/)
+- Make: [2-spool **top feed** for Bambu H2D.](https://makerworld.com/en/models/1421552-h2d-flexible-filament-top-feed-rack#profileId-2100389)
+- Make: [**Numakers,** inexpensive filament recommended by a GW IT colleague.](https://numakers.com/)
+- Make: [**Virual Foundry** has intersting filaments...](https://shop.thevirtualfoundry.com/)
 
 ---
 
