@@ -109,7 +109,20 @@
 - Design: [Color and **branding.**](https://www.helpscout.net/blog/psychology-of-color/)
 - Design: [**Worst volume control** ever?](https://uxdesign.cc/the-worst-volume-control-ui-in-the-world-60713dc86950)
 - Design: [Rules of engagement for **design crotique.**](https://medium.com/designatmeta/critique-is-an-important-part-of-any-design-process-whether-you-work-as-part-of-a-team-or-solo-ef3dcb299ce3#.jfkaagowx)
-- 
+- Design: [**Placeholder text** and form elerments.](https://coyleandrew.medium.com/alternatives-to-placeholder-text-13f430abc56f#.x9fulyn3e)
+- Design: [Bullshit excuses to avoid using on **copywriters** for UX.](https://medium.com/@jsaito/10-things-ux-writers-hate-to-hear-a3d561a63ae8)
+- Design: [**Copywriting** for UX.](https://lmsanchez.medium.com/what-is-ux-writing-1eb71b0f0606)
+- Design: [Alist of **UX deliverables,** with examples.](https://uxplanet.org/a-complete-list-of-ux-deliverables-d62ccf1de434)
+- Design: [10 tips on **building products.**](https://uxplanet.org/10-things-i-learned-from-jason-fried-about-building-products-5b6694ff02aa)
+- Design: [The math and aesthetic behind **Apple's curvature.**](https://hackernoon.com/apples-icons-have-that-shape-for-a-very-good-reason-720d4e7c8a14#.907dnib9n
+) It's *not* a simple radious.
+- Design: [Cognitive bias.](https://medium.com/startup-grind/cognitive-bias-ad5f9fe7f59b#.8t3gmson3)
+- Design: [Brief discussion of **visual rest spaces** in design.](https://uxplanet.org/the-power-of-whitespace-a1a95e45f82b)
+- Design: [Anticipatory design.](https://uxplanet.org/anticipatory-design-how-to-create-magical-user-experiences-c6107530384c#.m0ouekhnr)
+- Design: [The limits of perception.](https://njoanna.medium.com/what-ux-designers-can-learn-from-psychology-9fd55d55a4fd#.v1mxawfkp)
+- Design: [More **psychology** principles.](https://uxplanet.org/the-psychology-principles-every-ui-ux-designer-needs-to-know-24116fd65778)
+- Design: [Exhaustive list of **cognitive biases.**](https://en.wikipedia.org/wiki/List_of_cognitive_biases)
+- Design: [Design methods.](https://uxplanet.org/most-common-ux-design-methods-and-techniques-c9a9fdc25a1e)
 
 ---
 
@@ -150,3 +163,4 @@
 - Rabbithole: [**The pedagogy of inspiration.**](https://tseelig.medium.com/teaching-its-about-inspiration-not-information-1f64ddf019e7#.d2t43npag)
 - Rabbithole: [**Self-directed learning.**](https://medium.com/the-mission/three-strategies-to-power-your-self-directed-learning-adc93872692c#.x55ja011a
 )
+- Rabbithole: [**Encrypt** your life.](https://medium.freecodecamp.com/tor-signal-and-beyond-a-law-abiding-citizens-guide-to-privacy-1a593f2104c3#.8hy4x88ke)
