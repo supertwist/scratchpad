@@ -52,7 +52,10 @@
 - Creativity: [Bruce Connor video for **"Mea Culpa."**](https://www.youtube.com/watch?v=KR715ql1-Fk)
 - Creativity: [**Tom Sachs** on geodesic domes.](https://www.instagram.com/p/CD4jah0HwUj/)
 - Creativity: [**James Bridle**'s presence on the interwebs.](https://jamesbridle.com/about/)
-- Creativity: [Art in the age of machine intellegence.](https://medium.com/artists-and-machine-intelligence/what-is-ami-ccd936394a83#.cl7vdnle5) *"...one should not conclude that anything goes, that the direction of our development is predetermined, or that technology is somehow inherently utopian..."*
+- Creativity: [Art in **the age of machine intellegence.**](https://medium.com/artists-and-machine-intelligence/what-is-ami-ccd936394a83#.cl7vdnle5) *"...one should not conclude that anything goes, that the direction of our development is predetermined, or that technology is somehow inherently utopian..."*
+- Creativity: [**Parametricism,** defining movement not just of 21st century art, but aesthetics in general.](https://www.dezeen.com/parametricism/)
+- Creativuty: [**Jim Jarmusch** on soundtracks.](https://www.youtube.com/watch?v=X6zSI6dybaU)
+- Creativity: [Rauschenberg on **erasing DeKooning.**](https://www.instagram.com/reel/DXv04tNsHbA/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==)
 
 ---
 
@@ -143,8 +146,6 @@
 - Rabbithole: [via Babette, **future art school.**](https://conditions.studio/)
 - Rabbithole: [McSAD](https://mcsad.us/)
 - Rabbithole: [Disney's 12 basic **rules** of animation.](https://en.wikipedia.org/wiki/Twelve_basic_principles_of_animation)
-- Rabbithole: [Rauschenberg on erasing DeKooning](https://www.instagram.com/reel/DXv04tNsHbA/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==)
-- Rabbithole: [**Jim Jarmusch** on soundtracks.](https://www.youtube.com/watch?v=X6zSI6dybaU)
 - Rabbithole: [Pedagogy and **paternalism.**](https://medium.com/@heinemann/if-you-think-youre-giving-students-of-color-a-voice-get-over-yourself-cc8a4a684f16)
 - Rabbithole: [**The pedagogy of inspiration.**](https://tseelig.medium.com/teaching-its-about-inspiration-not-information-1f64ddf019e7#.d2t43npag)
 - Rabbithole: [**Self-directed learning.**](https://medium.com/the-mission/three-strategies-to-power-your-self-directed-learning-adc93872692c#.x55ja011a
