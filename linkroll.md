@@ -138,6 +138,7 @@
 - Make: [**gCode tools,** of interest for ceramics.](https://www.gcodetools.com/)
 - Make: [**Numakers,** inexpensive filament recommended by a GW IT colleague.](https://numakers.com/)
 - Make: [**Cyberdecks,** straight out of William Gibson into the present!](https://www.instagram.com/explore/search/keyword/?q=%23cyberdeck)
+- Make: [Printing **TPU** on the Bambu H2D.](https://wiki.bambulab.com/en/h2/h2d-tpu-printing-guide)
 
 ---
 
