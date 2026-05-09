@@ -123,6 +123,11 @@
 - Design: [More **psychology** principles.](https://uxplanet.org/the-psychology-principles-every-ui-ux-designer-needs-to-know-24116fd65778)
 - Design: [Exhaustive list of **cognitive biases.**](https://en.wikipedia.org/wiki/List_of_cognitive_biases)
 - Design: [Design methods.](https://uxplanet.org/most-common-ux-design-methods-and-techniques-c9a9fdc25a1e)
+- Design: [Essay on **logo design** and psychology. Sketchy.](https://tubikstudio.medium.com/shape-and-color-in-logo-design-practical-cases-65df7e4c4e1a)
+- Design: [More psychology.](https://uxplanet.org/psychology-in-design-principles-helping-to-understand-users-10bcf122f4b0)
+- Design: [For **non-designers...** like engineers.](https://www.youtube.com/watch?v=ZbrzdMaumNk&feature=youtu.be)
+- Design: [UX for **ecommerce.**](https://uxplanet.org/ux-design-for-e-commerce-principles-and-strategies-9df7d81e59d8)
+- Design: [The difference between school and the **real world.**](https://medium.muz.li/from-student-to-professional-2bccb86f77a2#.sz0p5ap1n)
 
 ---
 
