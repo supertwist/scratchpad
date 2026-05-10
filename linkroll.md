@@ -143,6 +143,7 @@
 - Make: [**Cyberdecks,** straight out of William Gibson into the present!](https://www.instagram.com/explore/search/keyword/?q=%23cyberdeck)
 - Make: [Printing **TPU** on the Bambu H2D.](https://wiki.bambulab.com/en/h2/h2d-tpu-printing-guide)
 - Make: [**Planck** keyboard.](https://olkb.com/collections/planck)
+- Make: [Guide to **ortholinear** keyboards.](https://www.tryorthokeys.com/ultimate-guide-to-ortholinear-keyboards)
 - Make: [MSG Cyberdeck **build.**](https://www.youtube.com/watch?v=54wqH243yuw&t=661s)
 - Make: [**Rocky linux,** used on the HPC.](https://rockylinux.org/)
 - Make: [2-spool **top feed** for Bambu H2D.](https://makerworld.com/en/models/1421552-h2d-flexible-filament-top-feed-rack#profileId-2100389)
