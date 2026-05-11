@@ -54,7 +54,7 @@
 - Creativity: [**James Bridle**'s presence on the interwebs.](https://jamesbridle.com/about/)
 - Creativity: [Art in **the age of machine intellegence.**](https://medium.com/artists-and-machine-intelligence/what-is-ami-ccd936394a83#.cl7vdnle5) *"...one should not conclude that anything goes, that the direction of our development is predetermined, or that technology is somehow inherently utopian..."*
 - Creativity: [**Parametricism,** defining movement not just of 21st century art, but aesthetics in general.](https://www.dezeen.com/parametricism/)
-- Creativuty: [**Jim Jarmusch** on soundtracks.](https://www.youtube.com/watch?v=X6zSI6dybaU)
+- Creativity: [**Jim Jarmusch** on soundtracks.](https://www.youtube.com/watch?v=X6zSI6dybaU)
 - Creativity: [Rauschenberg on **erasing DeKooning.**](https://www.instagram.com/reel/DXv04tNsHbA/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==)
 
 ---
@@ -175,3 +175,5 @@
 - Rabbithole: [**Self-directed learning.**](https://medium.com/the-mission/three-strategies-to-power-your-self-directed-learning-adc93872692c#.x55ja011a
 )
 - Rabbithole: [**Encrypt** your life.](https://medium.freecodecamp.com/tor-signal-and-beyond-a-law-abiding-citizens-guide-to-privacy-1a593f2104c3#.8hy4x88ke)
+- Rabbithole: [What is an **A-corp?**](https://www.artistcorporations.com/?ref=blog.metalabel.com)
+- Rabbithole: [**Dark Forest** Operating System.](https://www.artistcorporations.com/?ref=blog.metalabel.com)
