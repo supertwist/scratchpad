@@ -1,4 +1,4 @@
-# Linkroll, in little particular order...
+# What I'm looking at, in little particular order...
 - Code: [**VENV **primer.](https://realpython.com/python-virtual-environments-a-primer/#how-can-you-work-with-a-python-virtual-environment)
 - Code: [**ComfyUI** reddit.](https://www.reddit.com/r/comfyui/) 
 - Code: [**Machines of Loving Grace** essay from Anthropic.](https://darioamodei.com/machines-of-loving-grace)
@@ -131,13 +131,6 @@
 
 ---
 
-- Make: [**3D Mold Maker** free web app.](https://moldmaker.vercel.app/)
-- Make: [Food grade **silicone.**](https://www.amazon.com/Food-Grade-Platinum-Cured-Rubber-Polyurethane/dp/B06XBSNQTJ?source=ps-sl-shoppingads-lpcontext&smid=A1T8XVKXOC8UGZ&gPromoCode=sns_us_en_5_2025Q1&gQT=1)
-- Make: [Intro to **3D scanning.**](https://makezine.com/article/digital-fabrication/3d-printing-workshop/3d-scanning-is-easier-than-ever-heres-what-you-need-to-get-started/)
-- Make: [**Stencil film** at Dick Blick.](https://www.dickblick.com/products/grafix-edge-stencil-film/)
-- Make: [**Chocolate** 3D printer.](https://cocoapress.com/)
-- Make: [2017 video of Apple presentation on **rapid prototying.**](https://developer.apple.com/videos/play/wwdc2017/818/)
-- Make: [**Darktable,** an open source alternative to Adobe Lightroom.](https://www.darktable.org/)
 - Make: [More ceramic filaments.](https://additiveplus.com/)
 - Make: [**gCode tools,** of interest for ceramics.](https://www.gcodetools.com/)
 - Make: [**Cyberdecks,** straight out of William Gibson into the present!](https://www.instagram.com/explore/search/keyword/?q=%23cyberdeck)
@@ -149,9 +142,18 @@
 - Make: [2-spool **top feed** for Bambu H2D.](https://makerworld.com/en/models/1421552-h2d-flexible-filament-top-feed-rack#profileId-2100389)
 - Make: [**Numakers,** inexpensive filament recommended by a GW IT colleague.](https://numakers.com/)
 - Make: [**Virual Foundry** has intersting filaments...](https://shop.thevirtualfoundry.com/)
+- Make: [**3D Mold Maker** free web app.](https://moldmaker.vercel.app/)
+- Make: [Food grade **silicone.**](https://www.amazon.com/Food-Grade-Platinum-Cured-Rubber-Polyurethane/dp/B06XBSNQTJ?source=ps-sl-shoppingads-lpcontext&smid=A1T8XVKXOC8UGZ&gPromoCode=sns_us_en_5_2025Q1&gQT=1)
+- Make: [Intro to **3D scanning.**](https://makezine.com/article/digital-fabrication/3d-printing-workshop/3d-scanning-is-easier-than-ever-heres-what-you-need-to-get-started/)
+- Make: [**Stencil film** at Dick Blick.](https://www.dickblick.com/products/grafix-edge-stencil-film/)
+- Make: [**Chocolate** 3D printer.](https://cocoapress.com/)
+- Make: [2017 video of Apple presentation on **rapid prototying.**](https://developer.apple.com/videos/play/wwdc2017/818/)
+- Make: [**Darktable,** an open source alternative to Adobe Lightroom.](https://www.darktable.org/)
 
 ---
 
+- Rabbithole: [What is an **A-corp?**](https://www.artistcorporations.com/?ref=blog.metalabel.com)
+- Rabbithole: [**Dark Forest** Operating System.](https://www.artistcorporations.com/?ref=blog.metalabel.com)
 - Rabbithole: [The Book of **Numbers,**](https://en.wikipedia.org/wiki/Book_of_Numbers)
 - Rabbithole: [The evolution of **conspiracy theories.**](https://arstechnica.com/science/2021/01/study-folklore-structure-reveals-how-conspiracy-theories-emerge-fall-apart/) **Thought experiment:** if Media Matters treated every assertion the GOP makes *as-if* it were a conspiracy theory, then network graphed it and used same type of analysis (as Tangherlini et al.), to what extent would the results be valid/supportable/authoritative?
 - Rabbithole: [**Video game simulations** and urban planning.](https://logicmag.io/play/model-metropolis/)
@@ -175,5 +177,3 @@
 - Rabbithole: [**Self-directed learning.**](https://medium.com/the-mission/three-strategies-to-power-your-self-directed-learning-adc93872692c#.x55ja011a
 )
 - Rabbithole: [**Encrypt** your life.](https://medium.freecodecamp.com/tor-signal-and-beyond-a-law-abiding-citizens-guide-to-privacy-1a593f2104c3#.8hy4x88ke)
-- Rabbithole: [What is an **A-corp?**](https://www.artistcorporations.com/?ref=blog.metalabel.com)
-- Rabbithole: [**Dark Forest** Operating System.](https://www.artistcorporations.com/?ref=blog.metalabel.com)
