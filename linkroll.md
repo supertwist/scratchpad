@@ -34,6 +34,8 @@
 
 ---
 
+- Creativity: [**Lisa Yuskavage** interviewed in Artforum.](https://www.artforum.com/video/lisa-yuskavage-under-the-influence-1234745522/)
+- Creativity: [Glenn O'Brien interviews Tom Waits on **Rain Dogs.**](https://www.spinmagazine.com/2019/07/tom-waits-1985-interview-tom-waits-for-no-man/)
 - Creativity: [Brian Eno on **surrender.**](https://www.youtube.com/watch?v=nIqQanW0rFE)
 - Creativity: [Brian Eno on **77 Million Paintings.**](https://www.youtube.com/watch?v=F-1cTC8DFu8)
 - Creativity: [Another Eno on **77 Million Paintings.**](https://www.youtube.com/watch?v=DmVXTMYPgqs)
@@ -152,6 +154,9 @@
 
 ---
 
+- Rabbithole: [I'd love to build a **school** similar to this in DC.](https://sfpc.study/)
+- Rabbithole: [A great **sound collage** exercise, potentially for my intro class, cribbed from SFPC.](https://www.instagram.com/p/DYQFdNBlXaV/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==)
+- Rabbithole: [The gulf between inartuculate instincts and words.](https://aeon.co/essays/what-comes-first-ideas-or-words-the-paradox-of-articulation)
 - Rabbithole: [What is an **A-corp?**](https://www.artistcorporations.com/?ref=blog.metalabel.com)
 - Rabbithole: [**Dark Forest** Operating System.](https://www.artistcorporations.com/?ref=blog.metalabel.com)
 - Rabbithole: [The Book of **Numbers,**](https://en.wikipedia.org/wiki/Book_of_Numbers)
