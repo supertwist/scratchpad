@@ -1,5 +1,7 @@
-+ Model: claude-opus-4-7
-+ Date: 26/05/13
+---
+Model: claude-opus-4-7
+Date: 26/05/13
+---
 
 # Desktop-Class Knitting Devices (Kevlar / 3D-Form Suitability)
 
