@@ -1,6 +1,8 @@
-+ Model: claude-opus-4-7
-+ Prompt: Create a table that lists devices that can knit kevlar into three-dimensional forms. The first column should be the device name. The second column should be a link to the product. Confirm the link is active; if 404 do not include in the list. The third column should include the maximum build volume. The fourth column should include pricing information; if no data is found, then fill with "unavailable." The fifth column should summarize key features.
-+ Date: 26/05/13
+---
+Model: claude-opus-4-7
+Prompt: Create a table that lists devices that can knit kevlar into three-dimensional forms. The first column should be the device name. The second column should be a link to the product. Confirm the link is active; if 404 do not include in the list. The third column should include the maximum build volume. The fourth column should include pricing information; if no data is found, then fill with "unavailable." The fifth column should summarize key features.
+Date: 26/05/13
+---
 
 # Devices That Can Knit Kevlar Into Three-Dimensional Forms
 
