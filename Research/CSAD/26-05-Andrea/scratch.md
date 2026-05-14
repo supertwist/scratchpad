@@ -46,3 +46,18 @@ Date: (insert yy/mm/dd)
 Create a table that includes a list of hardware sol,utions for projection mapping. The first column is the name of the device. The second column in a link to it's home page; check the link - if 404 do not include. The third column lists pricing; indicate if there is a free tier; indicate if it is open source. The fourth column indicates OS and system requiments. The fifth column assesses learning curve.
 
 Save the result to "projection-mapping-hardware.md" at /Users/james/GIT/scratchpad/Research/CSAD/26-05-Andrea
+
+---
+
+```
+Prepend the model used, the prompt,  and the date it was generated to the beginning of the document in the following YAML structure:
+---
+Model: (model name)
+Prompt: (insert prompt)
+Date: (insert yy/mm/dd)
+---
+```
+
+Create a table that Compares features of the Mayku Multiplier vs FormBox.
+
+Save the result to "mayku-multiplier-vs-formbox.md" at /Users/james/GIT/scratchpad/Research/CSAD/26-05-Andrea
