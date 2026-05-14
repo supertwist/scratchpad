@@ -5,9 +5,9 @@ Date: 2026-05-13
 
 # VR Headset Comparison for Interaction Design Education
 
-**Context:** VR headset evaluation for college-level interaction design courses. 
-**Priorities:** no personal account requirement, multi-user / classroom rotation suitability, tracking and input quality for teaching interaction design.
-**Minimum sources per row:** 2
++ **Context:** VR headset evaluation for college-level interaction design courses. 
++ **Priorities:** no personal account requirement, multi-user / classroom rotation suitability, tracking and input quality for teaching interaction design.
++ **Minimum sources per row:** 2
 
 ## Comparison Table
 
