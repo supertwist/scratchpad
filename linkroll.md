@@ -154,6 +154,7 @@
 
 ---
 
+- Rabbithole: [**AI Ethical Guidelines** working paper.](https://library.educause.edu/resources/2025/6/ai-ethical-guidelines)
 - Rabbithole: [I'd love to build a **school** similar to this in DC.](https://sfpc.study/)
 - Rabbithole: [A great **sound collage** exercise, potentially for my intro class, cribbed from SFPC.](https://www.instagram.com/p/DYQFdNBlXaV/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==)
 - Rabbithole: [The gulf between inartuculate instincts and words.](https://aeon.co/essays/what-comes-first-ideas-or-words-the-paradox-of-articulation)
