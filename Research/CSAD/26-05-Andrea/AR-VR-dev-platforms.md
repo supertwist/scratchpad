@@ -1,6 +1,8 @@
-+ Model: claude-opus-4-7[1m]
-+ Prompt: Create a table that includes a list of environments for developing cross-platform AR/VR content. The first column is the name of the environment. The second column is a link to its home page; check the link — if 404 do not include. The third column lists pricing; indicate if there is a free tier; indicate if it is open source. The fourth column indicates OS and system requirements. The fifth column assesses learning curve.
-+ Date: 26/05/14
+---
+Model: claude-opus-4-7[1m]
+Prompt: Create a table that includes a list of environments for developing cross-platform AR/VR content. The first column is the name of the environment. The second column is a link to its home page; check the link — if 404 do not include. The third column lists pricing; indicate if there is a free tier; indicate if it is open source. The fourth column indicates OS and system requirements. The fifth column assesses learning curve.
+Date: 26/05/14
+---
 
 # Cross-Platform AR/VR Development Environments
 
