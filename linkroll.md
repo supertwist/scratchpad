@@ -1,4 +1,6 @@
 # What I'm looking at, in little particular order...
+- Code: [Comparing VR Headsets for Education.](https://www.managexr.com/blog/comparing-vr-headsets-for-education)
+- Code: [A Practical Guide to Piloting VR in The Classroom.](https://www.managexr.com/blog/a-practical-guide-to-piloting-virtual-reality-in-the-classroom)
 - Code: [**A-frame** is a promising AR/VR dev tool.](https://aframe.io/) And [the GitHub repo.](https://github.com/aframevr)
 - Code: [**VENV **primer.](https://realpython.com/python-virtual-environments-a-primer/#how-can-you-work-with-a-python-virtual-environment)
 - Code: [**ComfyUI** reddit.](https://www.reddit.com/r/comfyui/) 

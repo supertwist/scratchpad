@@ -4,6 +4,10 @@ AR/VR
 + Device management for VR headsets?
 + multiuser
 
++ lockdown? not needed (we're using headsets for dev)
++ can charge when not in use (storage location needs power); connect to GWDevice network (new creds in August)
++ 
+
 ---
 
 [Vive Developer Page](https://developer.vive.com/resources/)
@@ -25,9 +29,7 @@ Create a table that includes a list of evironments for developing cross-platform
 
 Save the result to "AR-VR-dev-platforms.md" at /Users/james/GIT/scratchpad/Research/CSAD/26-05-Andrea
 
----
 
-+ compare makyu devices
 
 ---
 
@@ -61,3 +63,5 @@ Date: (insert yy/mm/dd)
 Create a table that Compares features of the Mayku Multiplier vs FormBox.
 
 Save the result to "mayku-multiplier-vs-formbox.md" at /Users/james/GIT/scratchpad/Research/CSAD/26-05-Andrea
+
+---
