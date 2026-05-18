@@ -6,7 +6,6 @@ AR/VR
 
 + lockdown? not needed (we're using headsets for dev)
 + can charge when not in use (storage location needs power); connect to GWDevice network (new creds in August)
-+ 
 
 ---
 
