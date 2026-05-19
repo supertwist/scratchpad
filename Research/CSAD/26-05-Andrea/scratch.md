@@ -28,8 +28,6 @@ Create a table that includes a list of evironments for developing cross-platform
 
 Save the result to "AR-VR-dev-platforms.md" at /Users/james/GIT/scratchpad/Research/CSAD/26-05-Andrea
 
-
-
 ---
 
 projection mapping
