@@ -18,10 +18,10 @@ Despite the anguished, pearl-clutching gasps of some at the prospect that genera
 
 *Discussion of the two pieces you picked out:*
 
-thesis two of ninety-five, 2023  
+**thesis two of ninety-five, 2023**  
 When I was teenager, I started exploring more of the city, ranging into new and strange neighborhoods. It seemed like Cool "Disco" Dan was everywhere a part of the visual fabric, both sides of the river, all four quadrants, all eight wards. I must be mis-remembering, exaggerating, because according to Wikipedia he mostly hit spots along the Red line. His tags - and graffiti in general - spoke to my own rebellion, AND my budding interest in... typography??? The written word can be viewed as a special case of 'visual phenomena,' and so another ingredient in my picture-making vocabulary (around this time I also had a crush on Barbara Kruger). I never knew Dan Hogg, but I have a childhood friend who did; I think she even commissioned him to tag the garage of her house. He was just a few months younger than I am, but sadly passed away in 2017. I wonder what his ghost or re-incarnation might be tagging in 500 years? In 5000? What language? What handwriting? And with all those ages of memory, what Lutheran manifesto would he tag on which door to authority?
 
-magic fire chevrolet, 2033  
+**magic fire chevrolet, 2033** 
 In my first semester of art school I was required (against my will!) to take a writing class. Not something I was looking forward to, as I was there to PAINT. But within five minutes of the first class, it was conveyed to me (possibly through psychic waves) that we were here to use language like colored mud on a canvas, or clay to assemble... ANYTHING. Our teacher was one of the L=A=N=G=U=A=G=E poets, Doug Lang, who insisted on chain smoking for the entire class. He was easygoing and forgiving, but for all that no less challenging or rigorous. On the last day of class he gave us our grades - with typewritten commentary, slipped into a chapbook, "Magic Fire Chevrolet." That was my first real book of poetry. It was in fact a collection of 'concrete' poetry: frustration, rage, and loss conveyed via typewriter and Letraset. This was about a decade before the desktop publishing revolution, but as soon as he could afford a computer he bought one and went NUTS! Doug and I continued to discuss all the important things (and a lot of the unimportant things) until his passing in 2022, and I still have conversations in my head, and wonder what weird language machines he might be experimenting with wherever he is now.
 
 ---
