@@ -37,6 +37,8 @@
 
 ---
 
+- Creativity: [Michaelangelo and **the Belvedere torso.**](https://medium.com/thinksheet/michelangelos-inspiration-the-belvedere-torso-5f0622062c03)
+- Creativity: [6 art historical **poses.**](https://www.artsy.net/article/artsy-editorial-arghavan-khosravis-intricate-paintings-find-hope-amid-oppression)
 - Creativity: [**Lisa Yuskavage** interviewed in Artforum.](https://www.artforum.com/video/lisa-yuskavage-under-the-influence-1234745522/)
 - Creativity: [Glenn O'Brien interviews Tom Waits on **Rain Dogs.**](https://www.spinmagazine.com/2019/07/tom-waits-1985-interview-tom-waits-for-no-man/)
 - Creativity: [Brian Eno on **surrender.**](https://www.youtube.com/watch?v=nIqQanW0rFE)
