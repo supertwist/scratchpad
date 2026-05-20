@@ -159,6 +159,7 @@
 
 ---
 
+- Rabbithole: "But the thought-making and question-asking and deep reading and writing that follow are tasks performed by journalists free of chips. The Times outlines its [**A.I. principles here**](https://www.nytco.com/press/principles-for-using-generative-a%e2%80%a4i%e2%80%a4-in-the-timess-newsroom/)."
 - Rabbithole: [**AI Ethical Guidelines** working paper.](https://library.educause.edu/resources/2025/6/ai-ethical-guidelines)
 - Rabbithole: [I'd love to build a **school** similar to this in DC.](https://sfpc.study/)
 - Rabbithole: [A great **sound collage** exercise, potentially for my intro class, cribbed from SFPC.](https://www.instagram.com/p/DYQFdNBlXaV/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==)
