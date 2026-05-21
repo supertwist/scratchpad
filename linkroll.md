@@ -37,6 +37,7 @@
 
 ---
 
+- Creativity: [The greatest **paint app** ever.](https://kidpix.app/)
 - Creativity: [Michaelangelo and **the Belvedere torso.**](https://medium.com/thinksheet/michelangelos-inspiration-the-belvedere-torso-5f0622062c03)
 - Creativity: [6 art historical **poses.**](https://www.artsy.net/article/artsy-editorial-arghavan-khosravis-intricate-paintings-find-hope-amid-oppression)
 - Creativity: [**Lisa Yuskavage** interviewed in Artforum.](https://www.artforum.com/video/lisa-yuskavage-under-the-influence-1234745522/)
