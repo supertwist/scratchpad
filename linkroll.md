@@ -1,4 +1,5 @@
 # What I'm looking at, in little particular order...
+- Code: [**Tails,** a portable, secure, linux OS.](https://tails.net/) Can it run on a Raspberry Pi cyberdeck?
 - Code: [Comparing VR Headsets for Education.](https://www.managexr.com/blog/comparing-vr-headsets-for-education)
 - Code: [A Practical Guide to Piloting VR in The Classroom.](https://www.managexr.com/blog/a-practical-guide-to-piloting-virtual-reality-in-the-classroom)
 - Code: [**A-frame** is a promising AR/VR dev tool.](https://aframe.io/) And [the GitHub repo.](https://github.com/aframevr)
