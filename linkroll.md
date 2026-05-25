@@ -1,4 +1,5 @@
 # What I'm looking at, in little particular order...
+- Code: [Karpathy's **LLM wiki.**](https://gist.github.com/karpathy)
 - Code: [Andrej Karpathy's **into to LLMs.**](https://www.youtube.com/watch?v=7xTGNNLPyMI)
 - Code: [Homepage for **ImageNet** database.](https://image-net.org/)
 - Code: [**Tails,** a portable, secure, linux OS.](https://tails.net/) Can it run on a Raspberry Pi cyberdeck?
