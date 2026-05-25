@@ -1,4 +1,5 @@
 # What I'm looking at, in little particular order...
+- Code: [Homepage for **ImageNet** database.](https://image-net.org/)
 - Code: [**Tails,** a portable, secure, linux OS.](https://tails.net/) Can it run on a Raspberry Pi cyberdeck?
 - Code: [Comparing VR Headsets for Education.](https://www.managexr.com/blog/comparing-vr-headsets-for-education)
 - Code: [A Practical Guide to Piloting VR in The Classroom.](https://www.managexr.com/blog/a-practical-guide-to-piloting-virtual-reality-in-the-classroom)
@@ -38,6 +39,7 @@
 
 ---
 
+- Creativity: [The films of **Joseph Cornell.**](https://ubuweb.com/film/cornell.html)
 - Creativity: [**Gene Kogan,** pioneering AI-artist-thinker-maker.](https://genekogan.com/)
 - Creativity: [**Holly Herndon and Trevorr Paglen** in conversation.](https://www.totei.com/story/trevor-paglen-holly-herndon-art-ai)
 - Creativity: [The greatest **paint app** ever.](https://kidpix.app/)
@@ -142,6 +144,7 @@
 
 ---
 
+- Make: [**Framework laptops,** completely upgradeable.](https://frame.work/laptop16)
 - Make: [**Online STL repair.**](https://www.formware.co/onlinestlrepair)
 - Make: [More ceramic filaments.](https://additiveplus.com/)
 - Make: [**gCode tools,** of interest for ceramics.](https://www.gcodetools.com/)
@@ -164,6 +167,8 @@
 
 ---
 
+- Rabbithole: [Discussion of **phenomenology.**](https://en.wikipedia.org/wiki/Phenomenology_(philosophy)) Of interest as a possible frame through which to design AI models and agents.
+- Rabbithole: [Discussion of **map-terrain relationship.** ](https://en.wikipedia.org/wiki/Map%E2%80%93territory_relation) Very useful for thinking about the nature of AI models.
 - Rabbithole: "But the thought-making and question-asking and deep reading and writing that follow are tasks performed by journalists free of chips. The Times outlines its [**A.I. principles here**](https://www.nytco.com/press/principles-for-using-generative-a%e2%80%a4i%e2%80%a4-in-the-timess-newsroom/)."
 - Rabbithole: [**AI Ethical Guidelines** working paper.](https://library.educause.edu/resources/2025/6/ai-ethical-guidelines)
 - Rabbithole: [I'd love to build a **school** similar to this in DC.](https://sfpc.study/)
