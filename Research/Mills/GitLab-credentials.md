@@ -1,7 +1,9 @@
 ---
 title: GitLab Mac mini — Credentials Inventory
 date: 2026-05-26
-companion_doc: Gitlab-install.md
+companion_docs:
+  - Gitlab-install.md
+  - AWS-config.md
 storage_recommendation: Use a single shared password manager (1Password, Bitwarden, etc.) with a "Mills GitLab" vault. Every row below is a separate entry in that vault.
 ---
 
@@ -39,6 +41,12 @@ Every credential listed below must be created, received, or rotated as part of t
 | 26 | **GitLab Enterprise license key** | Admin → Subscription | GitLab Sales | If EE | At renewal | Medium | Skip if running Community Edition |
 | 27 | **Container Registry signing / pull secret** | Per project / CI variable | Project maintainer | If Registry enabled | 6 months | Medium | Only if you turn the Container Registry on |
 | 28 | **Password manager master password** | Your password manager | You | Pre-install | 12 months | Critical | Everything above only matters if this is strong and unique |
+| 29 | **AWS root account password** | AWS console | You | Pre-deployment | 6 months | Critical | Use only for billing and IAM bootstrap — never for day-to-day work |
+| 30 | **AWS root MFA seed + recovery codes** | Authenticator app + paper backup | You | At AWS account creation | On device loss | Critical | AWS treats root-without-MFA as a P0 finding; print codes and store offline |
+| 31 | **IAM `route53-ddns` access key** | `~/.aws/credentials` on Mac mini | You via IAM console | Part 3 (DDNS setup) | 12 months | High | Scope to a single hosted zone; only needed if your home IP is dynamic |
+| 32 | **EC2 SSH key** (`gitlab-proxy.pem`) | `~/.ssh/` on admin machine | EC2 launch wizard | Part 4 (pass-through setup) | On admin change | High | Mode 600; never commit; only needed if using AWS pass-through |
+| 33 | **Tailscale account credentials** | tailscale.com login | You | Part 4 (pass-through setup) | 12 months + MFA | High | Same tailnet joins Mac mini and EC2; treat as a network secret |
+| 34 | **Caddy / Let's Encrypt contact email** | `Caddyfile` on EC2 | You | Part 4 (pass-through setup) | On role change | Low | Public string but used for expiry-warning email — must be monitored |
 
 ## Handling rules
 
@@ -46,5 +54,5 @@ Every credential listed below must be created, received, or rotated as part of t
 - Every Critical/High row above gets its own password-manager entry with: value, URL, owner, rotation date, recovery info.
 - 2FA recovery codes (#10, #12) are printed and stored physically; password-manager-only is a single point of failure.
 - `gitlab-secrets.json` (#16) is included in every backup bundle and stored encrypted (#17) off-host.
-- When a person with admin access leaves the team, rotate items 9, 11, 13, 18, 21, 23 within 24 hours.
+- When a person with admin access leaves the team, rotate items 9, 11, 13, 18, 21, 23, 29, 31, 33 within 24 hours.
 - Maintain a rotation calendar — items with a fixed cadence should have reminders set the day the credential is created.
