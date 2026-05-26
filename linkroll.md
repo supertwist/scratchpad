@@ -192,7 +192,7 @@
 - Rabbithole: [**Asymetrical** teaching method.](https://medium.com/solomonkingsnorth/the-extraordinary-case-of-mr-yamazaki-18739ebb4980)
 - Rabbithole: [Useful discussion of **critique.**](https://medium.mikeindustries.com/how-to-give-helpful-product-design-feedback-1e4c053b6da)
 - Rabbithole: [Why **net neutrality** matters.](https://medium.com/@alearningaday/why-you-should-care-about-net-neutrality-9d47995126a2)
-- Rabbithole: [The death of art schoool op/ed](https://hyperallergic.com/the-death-of-the-art-school/)
+- Rabbithole: [The death of art schoool op/ed.](https://hyperallergic.com/the-death-of-the-art-school/)
 - Rabbithole: [via Babette, **future art school.**](https://conditions.studio/)
 - Rabbithole: [McSAD](https://mcsad.us/)
 - Rabbithole: [Disney's 12 basic **rules** of animation.](https://en.wikipedia.org/wiki/Twelve_basic_principles_of_animation)
