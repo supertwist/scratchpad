@@ -204,9 +204,10 @@
 
 ---
 
-Book: [**How to See Like a Machine,** by Trevor Paglen.](https://www.versobooks.com/blogs/authors/paglen-trevor)
-Book: [**Maintenance: of Everything,** by Stewart Brand.](https://stripepress.substack.com/p/maintenance-of-everything-part-one)
-Book: [**Joseph Cornell's Dreams,** by Joseph Cornell](https://exactchange.com/books/p/joseph-cornell-joseph-cornells-dreams)
-Book: [**Intelligence for Dummies,** by Glenn O'Brien.](https://www.zebooks.com/books/intelligence-for-dummies)
-Book: [**No New York,** by Adele Bertei.](https://www.penguinrandomhouse.com/books/817608/no-new-york-by-adele-bertei/)
-Book: [**Everybody's Fly,** by Fab Five Freddy.](https://www.fab5freddy.com/product-page/everybody-s-fly-book)
+- Book: [**I Am Almost Always Hungry,** a monograph about Cahan and Associates.](https://www.amazon.com/Am-Almost-Always-Hungry-Publication/dp/1568981996)
+- Book: [**How to See Like a Machine,** by Trevor Paglen.](https://www.versobooks.com/blogs/authors/paglen-trevor)
+- Book: [**Maintenance: of Everything,** by Stewart Brand.](https://stripepress.substack.com/p/maintenance-of-everything-part-one)
+- Book: [**Joseph Cornell's Dreams,** by Joseph Cornell](https://exactchange.com/books/p/joseph-cornell-joseph-cornells-dreams)
+- Book: [**Intelligence for Dummies,** by Glenn O'Brien.](https://www.zebooks.com/books/intelligence-for-dummies)
+- Book: [**No New York,** by Adele Bertei.](https://www.penguinrandomhouse.com/books/817608/no-new-york-by-adele-bertei/)
+- Book: [**Everybody's Fly,** by Fab Five Freddy.](https://www.fab5freddy.com/product-page/everybody-s-fly-book)
