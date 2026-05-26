@@ -52,6 +52,40 @@ Prices in USD, gathered May 2026 from manufacturer or major retailer pages. All 
 
 ---
 
+## MOTU M2 setup (recommended premium path)
+
+### Signal path
+
+```
+MacBook Pro  ──USB-C──▶  MOTU M2  ──RCA L/R──▶  Cassette deck LINE IN
+```
+
+USB-C direct from the MacBook to the MOTU M2 is the correct connection. The M2 has a USB-C port on the back (included cable is USB-C → USB-C). No adapter needed for any current MacBook Pro. The M2 is bus-powered — that single USB-C cable carries both audio data and power.
+
+### Step-by-step configuration
+
+1. **Plug it in.** USB-C cable: MacBook Pro → MOTU M2 rear "USB-C" port. The M2's front LED meters light up; no driver install needed on macOS (class-compliant).
+2. **Select it as output in macOS.** System Settings → Sound → Output → choose **"M2"**. macOS now routes all system audio to the MOTU instead of the MacBook's headphone jack.
+3. **Cable the analog out.** Standard stereo RCA cable: MOTU M2 rear **RCA OUT L / R** (white + red jacks) → cassette deck **LINE IN L / R**.
+   - The M2 also has balanced 1/4" TRS line outs that are mirrored to the RCAs — ignore those for this use; the RCAs are the right ones.
+4. **Set levels.** On the M2's front panel:
+   - Use the big **MONITOR** knob to set output level — start around 12 o'clock.
+   - Watch the cassette deck's record-level meters; aim for peaks around 0 VU (or −3 to 0 on a digital meter), not pinned.
+   - Leave the MacBook's system volume at 100% — the M2's MONITOR knob is your real volume control now. (The MacBook's internal headphone-amp coloration is bypassed entirely.)
+5. **Headphones (optional).** If you want to monitor what's being sent, plug headphones into the M2's front **PHONES** jack. Its level is the small front-panel knob, independent of the MONITOR knob feeding the cassette deck.
+
+### What you'll need beyond the M2
+
+- **USB-C cable** — included in the box.
+- **Stereo RCA cable** (RCA male to RCA male, L+R pair) — *not* included. Any decent one is fine; 3–6 ft is typical. ~$8–15.
+- No 3.5mm adapter, no attenuator, no ground-loop isolator (the M2's line outs are at proper line level, and the USB-C connection isolates you from MagSafe ground-loop hum on most setups).
+
+### Why this beats the headphone-jack approach
+
+The MacBook headphone output is an amplified signal designed to drive headphones — too hot for LINE IN and colored by the internal amp. The M2 sends a fixed, calibrated line-level signal straight from its ESS Sabre32 DAC out the RCA jacks, which is exactly what the cassette deck's LINE IN expects. No level mismatch, no headphone-amp character, no ground path through the Mac's charger.
+
+---
+
 ## Notes
 
 - The **Rolls HE18** is the only product in this list that natively accepts a 3.5mm input — every other passive option assumes RCA or 1/4" and needs a 3.5mm-to-RCA adapter cable.
