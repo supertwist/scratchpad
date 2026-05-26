@@ -86,8 +86,43 @@ The MacBook headphone output is an amplified signal designed to drive headphones
 
 ---
 
+## Portable cassette recorder with only a 3.5mm MIC IN
+
+This is the actual use case. None of the products in the main table above pad enough — a MacBook headphone-out at full volume is ~1 Vrms (line-ish), and a 3.5mm mic input wants ~10 mV. That's a ratio of ~100:1, or **~40 dB of attenuation needed**. You want a **line-to-mic pad** with 3.5mm TRS in *and* 3.5mm TRS out so no adapters are needed.
+
+### Recommended: Sescom LN2MIC-TASDR100 — $63
+
+- [markertek.com](https://www.markertek.com/product/ln2mic-tasdr100/sescom-dslr-cable-3-5mm-trs-line-to-3-5mm-trs-mic-35db-attenuation-for-tascam-dr-series-handheld-audio) · also on [Amazon](https://www.amazon.com/Sescom-LN2MIC-TASDR100-Attenuation-Tascam-DR-100/dp/B004YUAGFG) and [B&H](https://www.bhphotovideo.com/c/product/746641-REG/Sescom_LN2MIC_PMD620_LN2MIC_PMD620_3_5_Line_to_Mic_Attenuation.html) (Marantz variant, same circuit)
+- **Fixed −35 dB L-pad**, 3.5mm TRS male → 3.5mm TRS male, ~9" pigtail.
+- 1% metal-film resistors, shield isolated on the recorder end to break ground-loop hum.
+- Built specifically for line-out into handheld recorders' mic input (Tascam DR series, Zoom H4n, Sony PCM, Marantz PMD — same idea applies to any portable cassette deck with 3.5mm mic in).
+- With the pad's −35 dB and the MacBook volume at ~50% (~−6 dB), you land around −41 dB total — right in the sweet spot for mic-level input.
+
+### Budget alternative: Cubilux 3-level switchable — $19
+
+- [cubilux.com](https://www.cubilux.com/products/3-5mm-trs-line-to-microphone-attenuator-cable3-level)
+- 3.5mm TRS in/out, **switchable −10 / −20 / −30 dB** via a 3-position toggle.
+- Lets you dial in the exact level. Set it to −30 dB and trim with MacBook volume.
+- Gold-plated, shielded, oxygen-free copper. Less ground-loop isolation than the Sescom (no shield-lift) but at 1/3 the price.
+
+### Setup notes for either pad
+
+```
+MacBook Pro  ──3.5mm──▶  [line-to-mic pad]  ──3.5mm──▶  Cassette recorder MIC IN
+```
+
+1. Plug into the MacBook's headphone jack, then into the cassette recorder's mic-in.
+2. **Start with MacBook volume at ~30%**, recorder's record-level meter (if any) or AGC will do the rest. If the recorder has manual record level, aim for peaks just below the red.
+3. If you still hear distortion, the recorder may have a built-in mic preamp with AGC that's clipping — lower MacBook volume further; the goal is the cleanest signal *into* the recorder.
+4. If the recorder is bus-powered from the MacBook charger and you hear hum, run the cassette deck on batteries (this is common with handheld dictation machines).
+
+### Why not the MOTU M2 here?
+
+The M2 outputs line level on RCA — your recorder doesn't have RCA *or* line-in, so you'd still need a separate ~−40 dB line-to-mic pad after the M2. For this specific case (3.5mm mic-in only), the Sescom pad direct from the headphone jack is simpler and cheaper.
+
+---
+
 ## Notes
 
-- The **Rolls HE18** is the only product in this list that natively accepts a 3.5mm input — every other passive option assumes RCA or 1/4" and needs a 3.5mm-to-RCA adapter cable.
+- The **Rolls HE18** is the only product in the main table that natively accepts a 3.5mm input — every other passive option there assumes RCA or 1/4" and needs a 3.5mm-to-RCA adapter cable.
 - Prices fluctuate; check the linked retailer for current pricing. Used Ebtech Hum X and Rolls HE18 units are commonly available on Reverb for ~30–50% less.
-- If the cassette recorder is portable and only has a 3.5mm mic input (e.g., a handheld Sony / Panasonic dictation machine), no attenuator on this list will pad enough — you need a dedicated line-to-mic pad (~−40 dB) or a small mixer with a mic-level out.
