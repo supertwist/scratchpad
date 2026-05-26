@@ -169,6 +169,7 @@
 
 ---
 
+- Rabbithole: [Discussion of the **Church Committee.**](https://en.wikipedia.org/wiki/Church_Committee)
 - Rabbithole: [Discussion of **phenomenology.**](https://en.wikipedia.org/wiki/Phenomenology_(philosophy)) Of interest as a possible frame through which to design AI models and agents.
 - Rabbithole: [Discussion of **map-terrain relationship.** ](https://en.wikipedia.org/wiki/Map%E2%80%93territory_relation) Very useful for thinking about the nature of AI models.
 - Rabbithole: "But the thought-making and question-asking and deep reading and writing that follow are tasks performed by journalists free of chips. The Times outlines its [**A.I. principles here**](https://www.nytco.com/press/principles-for-using-generative-a%e2%80%a4i%e2%80%a4-in-the-timess-newsroom/)."
