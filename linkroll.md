@@ -206,6 +206,7 @@
 
 ---
 
+- Book: [**Engineering for Industrial Designers and Inventors:** Fundamentals for Designers of Wonderful Things, First edition.](https://www.amazon.com/dp/1491932619)
 - Book: [**I Am Almost Always Hungry,** a monograph about Cahan and Associates.](https://www.amazon.com/Am-Almost-Always-Hungry-Publication/dp/1568981996)
 - Book: [**How to See Like a Machine,** by Trevor Paglen.](https://www.versobooks.com/blogs/authors/paglen-trevor)
 - Book: [**Maintenance: of Everything,** by Stewart Brand.](https://stripepress.substack.com/p/maintenance-of-everything-part-one)
