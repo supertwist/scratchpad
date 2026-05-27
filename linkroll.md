@@ -169,6 +169,7 @@
 
 ---
 
+- Rabbithole: [**The AI Bubble Isn't Like the Internet Bubble,** by Cory Doctorow](https://pluralistic.net/2026/05/26/the-ai-will-continue/#until-morale-improves)
 - Rabbithole: [Discussion of the **Church Committee.**](https://en.wikipedia.org/wiki/Church_Committee)
 - Rabbithole: [Discussion of **phenomenology.**](https://en.wikipedia.org/wiki/Phenomenology_(philosophy)) Of interest as a possible frame through which to design AI models and agents.
 - Rabbithole: [Discussion of **map-terrain relationship.** ](https://en.wikipedia.org/wiki/Map%E2%80%93territory_relation) Very useful for thinking about the nature of AI models.
