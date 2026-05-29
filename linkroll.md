@@ -1,4 +1,5 @@
 # What I'm looking at, in little particular order...
+- Code: [Repo for **Project Nomad,** an airgapped server for survivalists,](https://github.com/Crosstalk-Solutions/project-nomad)
 - Code: [Karpathy's **LLM wiki.**](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f)
 - Code: [Andrej Karpathy's **into to LLMs.**](https://www.youtube.com/watch?v=7xTGNNLPyMI)
 - Code: [Homepage for **ImageNet** database.](https://image-net.org/)
@@ -214,3 +215,4 @@
 - Book: [**Intelligence for Dummies,** by Glenn O'Brien.](https://www.zebooks.com/books/intelligence-for-dummies)
 - Book: [**No New York,** by Adele Bertei.](https://www.penguinrandomhouse.com/books/817608/no-new-york-by-adele-bertei/)
 - Book: [**Everybody's Fly,** by Fab Five Freddy.](https://www.fab5freddy.com/product-page/everybody-s-fly-book)
+- Book: [**A World Appears,** by Michael Pollan.](https://michaelpollan.com/books/a-world-appears/)
