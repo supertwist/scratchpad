@@ -207,6 +207,8 @@
 
 ---
 
+- Book: [**A Balthus Notebook,** by Guy Davenport.](https://www.davidzwirner.com/collect/a-balthus-notebook-book)
+- Book: [**More Brilliant than the Sun,** by Kodwo Eshun.](https://books.google.com/books/about/More_Brilliant_Than_the_Sun.html?id=ZxJyCwAAQBAJ)
 - Book: [**Engineering for Industrial Designers and Inventors:** Fundamentals for Designers of Wonderful Things, First edition.](https://www.amazon.com/dp/1491932619)
 - Book: [**I Am Almost Always Hungry,** a monograph about Cahan and Associates.](https://www.amazon.com/Am-Almost-Always-Hungry-Publication/dp/1568981996)
 - Book: [**How to See Like a Machine,** by Trevor Paglen.](https://www.versobooks.com/blogs/authors/paglen-trevor)
