@@ -42,6 +42,7 @@
 
 ---
 
+- Creativity: [Ian Svenonius interviews **Henry Rollins.**](https://www.youtube.com/watch?v=In6zZJb5BhI)
 - Creativity: [The films of **Joseph Cornell.**](https://ubuweb.com/film/cornell.html)
 - Creativity: [**Gene Kogan,** pioneering AI-artist-thinker-maker.](https://genekogan.com/)
 - Creativity: [**Holly Herndon and Trevorr Paglen** in conversation.](https://www.totei.com/story/trevor-paglen-holly-herndon-art-ai)
@@ -209,7 +210,7 @@
 
 - Book: [**A Balthus Notebook,** by Guy Davenport.](https://www.davidzwirner.com/collect/a-balthus-notebook-book)
 - Book: [**More Brilliant than the Sun,** by Kodwo Eshun.](https://books.google.com/books/about/More_Brilliant_Than_the_Sun.html?id=ZxJyCwAAQBAJ)
-- Book: [**Engineering for Industrial Designers and Inventors:** Fundamentals for Designers of Wonderful Things, First edition.](https://www.amazon.com/dp/1491932619)
+- Book: [**Engineering for Industrial Designers and Inventors:** Fundamentals for Designers of Wonderful Things, First edition, by Thomas Ask.](https://www.amazon.com/dp/1491932619)
 - Book: [**I Am Almost Always Hungry,** a monograph about Cahan and Associates.](https://www.amazon.com/Am-Almost-Always-Hungry-Publication/dp/1568981996)
 - Book: [**How to See Like a Machine,** by Trevor Paglen.](https://www.versobooks.com/blogs/authors/paglen-trevor)
 - Book: [**Maintenance: of Everything,** by Stewart Brand.](https://stripepress.substack.com/p/maintenance-of-everything-part-one)
