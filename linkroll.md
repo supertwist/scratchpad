@@ -1,4 +1,5 @@
 # What I'm looking at, in little particular order...
+- Code: [**Kiro,** an agentic IDE.](https://kiro.dev/blog/introducing-kiro/) But is it better than Zen?
 - Code: [Repo for **Project Nomad,** an airgapped server for survivalists,](https://github.com/Crosstalk-Solutions/project-nomad)
 - Code: [Karpathy's **LLM wiki.**](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f)
 - Code: [Andrej Karpathy's **into to LLMs.**](https://www.youtube.com/watch?v=7xTGNNLPyMI)
@@ -148,6 +149,8 @@
 
 ---
 
+- Make: [Online **anagram generator.**](https://ingesanagram.com/)
+- Make: [Amazing early color photography process, **Lippmann plates.**](https://en.wikipedia.org/wiki/Lippmann_plate)
 - Make: [**Framework laptops,** completely upgradeable.](https://frame.work/laptop16)
 - Make: [**Online STL repair.**](https://www.formware.co/onlinestlrepair)
 - Make: [More ceramic filaments.](https://additiveplus.com/)
