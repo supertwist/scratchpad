@@ -212,6 +212,7 @@
 
 ---
 
+- Book: [**The Anatomy of Harpo Marx,** by Wayne Koestenbaum.](https://www.ucpress.edu/books/the-anatomy-of-harpo-marx/paper)
 - Book: [**A Balthus Notebook,** by Guy Davenport.](https://www.davidzwirner.com/collect/a-balthus-notebook-book)
 - Book: [**More Brilliant than the Sun,** by Kodwo Eshun.](https://books.google.com/books/about/More_Brilliant_Than_the_Sun.html?id=ZxJyCwAAQBAJ)
 - Book: [**Engineering for Industrial Designers and Inventors:** Fundamentals for Designers of Wonderful Things, First edition, by Thomas Ask.](https://www.amazon.com/dp/1491932619)
