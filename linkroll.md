@@ -174,6 +174,7 @@
 
 ---
 
+- Rabbithole: [**Smart Film!**](https://smartfilm.com/)
 - Rabbithole: [Via Ryan, a broswer plugin to detect **AI slop music.**](https://news.uchicago.edu/story/song-ai-generated-uchicago-scientists-create-browser-extension-check)
 - Rabbithole: [**The AI Bubble Isn't Like the Internet Bubble,** by Cory Doctorow](https://pluralistic.net/2026/05/26/the-ai-will-continue/#until-morale-improves)
 - Rabbithole: [Discussion of the **Church Committee.**](https://en.wikipedia.org/wiki/Church_Committee)
