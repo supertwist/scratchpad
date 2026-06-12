@@ -1,4 +1,5 @@
 # What I'm looking at, in little particular order...
+- Code: [Video tutorial for **jit.gl.node.**](https://www.youtube.com/watch?v=EWlxTAzpyrI)
 - Code: [Local **MCP server** for Max.](https://github.com/tiianhk/MaxMSP-MCP-Server)
 - Code: [**Kiro,** an agentic IDE.](https://kiro.dev/blog/introducing-kiro/) But is it better than Zen?
 - Code: [Repo for **Project Nomad,** an airgapped server for survivalists,](https://github.com/Crosstalk-Solutions/project-nomad)
