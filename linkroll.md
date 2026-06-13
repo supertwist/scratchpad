@@ -152,6 +152,8 @@
 
 ---
 
+- Make: [**Video demo of mesh repair tools** in Rhino 8.](https://www.youtube.com/watch?v=QW-SjceefsQ)
+- Make: [**Mesh repair** in Rhino.](https://docs.mcneel.com/rhino/8/help/en-us/commands/meshrepair.htm)
 - Make: [Online **anagram generator.**](https://ingesanagram.com/)
 - Make: [Amazing early color photography process, **Lippmann plates.**](https://en.wikipedia.org/wiki/Lippmann_plate)
 - Make: [**Framework laptops,** completely upgradeable.](https://frame.work/laptop16)
