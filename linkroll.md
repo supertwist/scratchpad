@@ -5,7 +5,7 @@
 - Code: [**Kiro,** an agentic IDE.](https://kiro.dev/blog/introducing-kiro/) But is it better than Zen?
 - Code: [Repo for **Project Nomad,** an airgapped server for survivalists,](https://github.com/Crosstalk-Solutions/project-nomad)
 - Code: [Karpathy's **LLM wiki.**](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f)
-- Code: [Andrej Karpathy's **into to LLMs.**](https://www.youtube.com/watch?v=7xTGNNLPyMI)
+- Code: [Andrej Karpathy's **intro to LLMs.**](https://www.youtube.com/watch?v=7xTGNNLPyMI)
 - Code: [Homepage for **ImageNet** database.](https://image-net.org/)
 - Code: [**Tails,** a portable, secure, linux OS.](https://tails.net/) Can it run on a Raspberry Pi cyberdeck?
 - Code: [Comparing VR Headsets for Education.](https://www.managexr.com/blog/comparing-vr-headsets-for-education)
