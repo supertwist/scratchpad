@@ -46,6 +46,7 @@
 
 ---
 
+- Creativity: [Hans Ulrich Obrist's **Do It!**](http://projects.e-flux.com/do_it/homepage/do_it_home.html)
 - Creativity: [Ian Svenonius interviews **Henry Rollins.**](https://www.youtube.com/watch?v=In6zZJb5BhI)
 - Creativity: [The films of **Joseph Cornell.**](https://ubuweb.com/film/cornell.html)
 - Creativity: [**Gene Kogan,** pioneering AI-artist-thinker-maker.](https://genekogan.com/)
