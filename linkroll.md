@@ -1,4 +1,5 @@
 # What I'm looking at, in little particular order...
+- Code: [**Bloom,** an open source model.](https://en.wikipedia.org/wiki/BLOOM_(language_model))
 - Code: [Formulas for Photoshop **blending modes.**](https://www.deepskycolors.com/tools-tutorials/formulas-for-photoshop-blending-modes/)
 - Code: [Video tutorial for **jit.gl.node.**](https://www.youtube.com/watch?v=EWlxTAzpyrI)
 - Code: [Local **MCP server** for Max.](https://github.com/tiianhk/MaxMSP-MCP-Server)
