@@ -1,4 +1,5 @@
 # What I'm looking at, in little particular order...
+- Code: [**Tiktokenizer** deomnstrates tokenization.](https://tiktokenizer.vercel.app/)
 - Code: [**Bloom,** an open source model.](https://en.wikipedia.org/wiki/BLOOM_(language_model))
 - Code: [Formulas for Photoshop **blending modes.**](https://www.deepskycolors.com/tools-tutorials/formulas-for-photoshop-blending-modes/)
 - Code: [Video tutorial for **jit.gl.node.**](https://www.youtube.com/watch?v=EWlxTAzpyrI)
@@ -34,7 +35,7 @@
 - Code: [Random numbers.](https://www.freecodecamp.org/news/random-number-generator/)
 - Code: [**Pi.dev** as an alternative to Claude Code](https://pi.dev/)
 - Code: [Intro to **generative art.**](https://www.freecodecamp.org/news/an-introduction-to-generative-art-what-it-is-and-how-you-make-it-b0b363b50a70)
-- Code: [Pyhton tips.](https://www.freecodecamp.org/news/an-a-z-of-useful-python-tricks-b467524ee747)
+- Code: [Python tips.](https://www.freecodecamp.org/news/an-a-z-of-useful-python-tricks-b467524ee747)
 - Code: [from 2022, How to use NVIDIA's **NeRF code** to create 3D models](https://towardsdatascience.com/using-ai-to-generate-3d-models-2634398c0799/)
 - Code: [**Rapidly Generate 3D Assets** for Virtual Worlds with Generative AI](https://developer.nvidia.com/blog/rapidly-generate-3d-assets-for-virtual-worlds-with-generative-ai/)
 - Code: [Machine Learning for **poets.**](https://oao84.medium.com/abstractions-conceptual-compression-and-commoditization-9126e79bdbc8)
