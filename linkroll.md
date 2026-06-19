@@ -1,5 +1,6 @@
 # What I'm looking at, in little particular order...
-- Code: [**Tiktokenizer** deomnstrates tokenization.](https://tiktokenizer.vercel.app/)
+- Code: [Dan Schiffman's excellent **GitHub for Poets** series of video tutorials.](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV)
+- Code: [**Tiktokenizer** demonstrates tokenization.](https://tiktokenizer.vercel.app/)
 - Code: [**Bloom,** an open source model.](https://en.wikipedia.org/wiki/BLOOM_(language_model))
 - Code: [Formulas for Photoshop **blending modes.**](https://www.deepskycolors.com/tools-tutorials/formulas-for-photoshop-blending-modes/)
 - Code: [Video tutorial for **jit.gl.node.**](https://www.youtube.com/watch?v=EWlxTAzpyrI)
