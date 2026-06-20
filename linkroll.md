@@ -1,4 +1,5 @@
 # What I'm looking at, in little particular order...
+- Code: [**NotebookLM** video tutorial.](https://www.youtube.com/watch?v=OdCmZvPdr4s)
 - Code: [Dan Schiffman's excellent **GitHub for Poets** series of video tutorials.](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV)
 - Code: [**Tiktokenizer** demonstrates tokenization.](https://tiktokenizer.vercel.app/)
 - Code: [**Bloom,** an open source model.](https://en.wikipedia.org/wiki/BLOOM_(language_model))
