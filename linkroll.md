@@ -1,4 +1,5 @@
 # What I'm looking at, in little particular order...
+- Code: [Clark's capture of Chris Simmons' slides on **HPC and AI**](https://photos.google.com/share/AF1QipMPRnpU2zmFMlsTEY1ZkrNcM2rT0YKPolqZJ4kIk1zaMWpx52N2JDtNSxHfEhtsLw?key=eTVfUFVObDVWZ0l4ZW9HN2tYZWxmOUZycmRkeTF3)
 - Code: [**NotebookLM** video tutorial.](https://www.youtube.com/watch?v=OdCmZvPdr4s)
 - Code: [Dan Schiffman's excellent **GitHub for Poets** series of video tutorials.](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV)
 - Code: [**Tiktokenizer** demonstrates tokenization.](https://tiktokenizer.vercel.app/)
