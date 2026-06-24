@@ -46,3 +46,36 @@ Weld (180°) → UnifyMeshNormals → Check (verify)
 - **ReducePointCloud** is optional but strongly recommended for scans above ~5 million points before attempting `MeshFromPoints`.
 - **MeshRepair** (step 8) subsumes several individual commands (`FillMeshHoles`, `UnifyMeshNormals`, `CullDegenerateMeshFaces`). Run the full wizard first; use the individual commands for targeted re-work afterward.
 - For complex organic geometry with large holes, consider the **Patch** command (creates a NURBS surface fitted to the point cloud) or third-party plugins (e.g. **Rhino.Inside**, **Scan&Solve**, **QuadRemesh** post-mesh) depending on downstream use.
+
+---
+
+## Aligning Multiple E57 Scans
+
+This table covers the workflow for importing, aligning, and merging two or more scan files (e.g. multiple scanner positions of the same object or space) before proceeding to the mesh-repair steps above.
+
+> **Important limitation:** Rhino has no built-in ICP (Iterative Closest Point) automatic registration. For fully automated alignment without known reference targets, pre-register scans in dedicated software (CloudCompare — free and open-source; Autodesk ReCap; Faro Scene; Leica Cyclone) and import the pre-aligned result into Rhino. The workflow below covers manual target-based registration inside Rhino.
+
+| # | Phase | Command / Tool | Description & Key Parameters | Documentation |
+|---|-------|----------------|-------------------------------|---------------|
+| 1 | **Organize layers** | `Layer` | Before importing, create one named layer per scan (e.g. `scan-01`, `scan-02`). Set each layer's current state so imports land on the correct layer. This lets you toggle, lock, or transform individual scans independently throughout alignment. | [Layer — Rhino 8](https://docs.mcneel.com/rhino/8/help/en-us/commands/layer.htm) |
+| 2 | **Import each scan** | `Import` | Import scans one at a time via **File › Import**, assigning each to its designated layer. Rhino 8 supports multiple E57 imports in a single session. One scan becomes the **reference** (stays fixed); all others are **moving** scans to be aligned to it. | [E57 file import — Rhino 8](https://docs.mcneel.com/rhino/8/help/en-us/fileio/e57_import.htm) |
+| 3 | **Mark reference targets** | `Point` | Place point objects at three or more known registration anchors that appear in the overlap zone of adjacent scans — e.g. scan sphere centers, checkerboard corners, or fixed architectural features. Snap to the visible point locations in the reference scan. These become the source/target triplets for Orient3Pt. | [Point — Rhino 8](https://docs.mcneel.com/rhino/8/help/en-us/commands/point.htm) |
+| 4 | **Coarse alignment** | `Move` + `Rotate` / Gumball | Before running Orient3Pt, drag each moving scan roughly into position using `Move` (translate) and `Rotate` (spin around an axis). The Gumball widget provides interactive 6-DOF manipulation in the viewport. Coarse positioning ensures Orient3Pt's three-point pick is not confused by overlapping geometry from two un-registered scans. | [Move — Rhino 8](https://docs.mcneel.com/rhino/8/help/en-us/commands/move.htm) |
+| 5 | **Precise 3-point registration** | `Orient3Pt` | Select the moving scan, run `Orient3Pt`, then pick **three reference points** on the moving scan (the targets marked in step 3), followed by the **three corresponding target points** on the reference scan. Rhino transforms the moving scan to match. Parameters: **Copy** — move vs. duplicate (use Move for registration); **Scale** — auto-scale based on point spacing (leave **off** for scan registration; scans are already at true scale). Repeat for each additional scan. | [Orient3Pt — Rhino 8](https://docs.mcneel.com/rhino/8/help/en-us/commands/orient3pt.htm) |
+| 6 | **Verify overlap** | `PointCloudSection` | Cut a planar cross-section through a known overlap region. Select both scan clouds and run `PointCloudSection`; pick a cutting plane. The command outputs curves — compare sections from adjacent scans to check alignment quality. Persistent gaps or offsets indicate the registration needs refinement; return to step 5 with better target picks. | [PointCloudSection — Rhino 8](https://docs.mcneel.com/rhino/8/help/en-us/commands/pointcloudsection.htm) |
+| 7 | **Merge into one cloud** | `PointCloud` › **Add** | Once all scans are aligned, select all PointCloud objects and run `PointCloud`, then choose **Add** to absorb them into a single managed cloud. The merged cloud is now ready for the single-scan cleanup workflow (steps 3–5 of the main table above). | [PointCloud — Rhino 8](https://docs.mcneel.com/rhino/8/help/en-us/commands/pointcloud.htm) |
+| 8 | **Reduce overlap density** | `ReducePointCloud` | Scan overlap zones accumulate double (or triple) point density. Run `ReducePointCloud` on the merged cloud to thin it to a uniform density before meshing. Parameter: **Count** — number of points to remove. | [ReducePointCloud — Rhino 8](https://docs.mcneel.com/rhino/8/help/en-us/commands/reducepointcloud.htm) |
+| 9 | **Mesh the merged cloud** | `MeshFromPoints` *or* `ShrinkWrap` | Two options: **MeshFromPoints** — direct Delaunay triangulation (see main workflow step 6). **ShrinkWrap** (Rhino 8) — wraps a new closed mesh around all input geometry simultaneously, including mixed clouds, meshes, and surfaces; fills holes automatically. ShrinkWrap is preferable when scans have gaps or the object has complex internal topology. Parameters: **Target Edge Length** (output triangle size), **Fill Holes** (on by default), **Offset** (expand/shrink wrap distance). | [MeshFromPoints — Rhino 8](https://docs.mcneel.com/rhino/8/help/en-us/commands/meshfrompoints.htm) · [ShrinkWrap — Rhino 8](https://docs.mcneel.com/rhino/8/help/en-us/commands/shrinkwrap.htm) |
+| 10 | **Join separate meshes** | `Join` | If each scan was meshed independently before merging, select all mesh objects and run `Join` to combine them into one. Use the **JoinDisjointMeshes** sub-option to align naked vertices within tolerance even where meshes don't touch. After joining, continue from step 7 (MeshRepair) of the main workflow. | [Join — Rhino 8](https://docs.mcneel.com/rhino/8/help/en-us/commands/join.htm) |
+
+---
+
+### Multi-Scan Quick-Reference Order
+
+```
+Layer setup → Import each E57 (one per layer) → Mark targets (Point) →
+Coarse align (Move / Rotate) → Orient3Pt (×n scans) →
+Verify (PointCloudSection) → Merge (PointCloud > Add) →
+ReducePointCloud → MeshFromPoints or ShrinkWrap →
+Join → → continue at MeshRepair (main workflow step 8)
+```
