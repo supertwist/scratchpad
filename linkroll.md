@@ -1,4 +1,6 @@
 # What I'm looking at, in little particular order...
+- Code: [**Transformers** on Hugging Face.](https://huggingface.co/docs/transformers/index)
+- Code: [Daniel Schiffman on **transformers.js.**](https://www.youtube.com/watch?v=KR61bXsPlLU)
 - Code: [Convert docs to markdown files before reading to AI agentsor creating RAGs with **MarkItDown.**](https://github.com/microsoft/markitdown)
 - Code: [Clark's capture of Chris Simmons' slides on **HPC and AI**](https://photos.google.com/share/AF1QipMPRnpU2zmFMlsTEY1ZkrNcM2rT0YKPolqZJ4kIk1zaMWpx52N2JDtNSxHfEhtsLw?key=eTVfUFVObDVWZ0l4ZW9HN2tYZWxmOUZycmRkeTF3)
 - Code: [**NotebookLM** video tutorial.](https://www.youtube.com/watch?v=OdCmZvPdr4s)
@@ -159,6 +161,7 @@
 
 ---
 
+- Make: [**QGIS,** an open source tool for working with GIS data.](https://qgis.org/)
 - Make: [**Video demo of mesh repair tools** in Rhino 8.](https://www.youtube.com/watch?v=QW-SjceefsQ)
 - Make: [**Mesh repair** in Rhino.](https://docs.mcneel.com/rhino/8/help/en-us/commands/meshrepair.htm)
 - Make: [Online **anagram generator.**](https://ingesanagram.com/)
