@@ -79,7 +79,7 @@ def save_stl(vertices, faces, filepath):
 def repair_mesh(verts_np, faces_np):
     """Run PyMeshFix repair. Returns (verts, faces) numpy arrays."""
     mf = pymeshfix.MeshFix(verts_np.astype(np.float32), faces_np.astype(np.int32))
-    mf.repair(verbose=False)
+    mf.repair()
     return mf.v, mf.f
 
 
