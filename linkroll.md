@@ -58,7 +58,7 @@
 - Creativity: [Ian Svenonius interviews **Henry Rollins.**](https://www.youtube.com/watch?v=In6zZJb5BhI)
 - Creativity: [The films of **Joseph Cornell.**](https://ubuweb.com/film/cornell.html)
 - Creativity: [**Gene Kogan,** pioneering AI-artist-thinker-maker.](https://genekogan.com/)
-- Creativity: [**Holly Herndon and Trevorr Paglen** in conversation.](https://www.totei.com/story/trevor-paglen-holly-herndon-art-ai)
+- Creativity: [**Holly Herndon and Trevor Paglen** in conversation.](https://www.totei.com/story/trevor-paglen-holly-herndon-art-ai)
 - Creativity: [The greatest **paint app** ever.](https://kidpix.app/)
 - Creativity: [Michaelangelo and **the Belvedere torso.**](https://medium.com/thinksheet/michelangelos-inspiration-the-belvedere-torso-5f0622062c03)
 - Creativity: [6 art historical **poses.**](https://www.artsy.net/article/artsy-editorial-arghavan-khosravis-intricate-paintings-find-hope-amid-oppression)
