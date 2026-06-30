@@ -80,7 +80,7 @@ def repair_mesh(verts_np, faces_np):
     """Run PyMeshFix repair. Returns (verts, faces) numpy arrays."""
     mf = pymeshfix.MeshFix(verts_np.astype(np.float32), faces_np.astype(np.int32))
     mf.repair()
-    return mf.v, mf.f
+    return mf.points, mf.faces
 
 
 # ── Image loading ─────────────────────────────────────────────────────────────
