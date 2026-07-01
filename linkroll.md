@@ -54,6 +54,8 @@
 
 ---
 
+- Creativity: [Eno's **77 Million Paintings.**](https://www.youtube.com/watch?v=BkKtt3MkRtY&list=PLnYOc__tLshltaWbfRiq3BOmzZxcyPkqa)
+- Creativity: [**DEVO** makes something for everyone.](https://www.youtube.com/watch?v=1WpUtYkAD_s&list=PLDQljHwGEbGsaX0k3ylPD9sdE2hlTZiKW)
 - Creativity: [Hans Ulrich Obrist's **Do It!**](http://projects.e-flux.com/do_it/homepage/do_it_home.html)
 - Creativity: [Ian Svenonius interviews **Henry Rollins.**](https://www.youtube.com/watch?v=In6zZJb5BhI)
 - Creativity: [The films of **Joseph Cornell.**](https://ubuweb.com/film/cornell.html)
