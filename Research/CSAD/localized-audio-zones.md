@@ -30,5 +30,15 @@ Standard-technology alternative to ultrasonic units: tightly-controlled constant
 ## Notes for installation use
 
 - Parametric speakers are typically overhead-mounted and aimed straight down or at a shallow angle for a "pool of sound" effect around a single exhibit — good fit for isolating a small footprint in a large room.
-- Beam-steering columns are better when the target zone is larger (e.g., a seating cluster) or when you need program-quality full-range sound rather than a narrow, EQ-limited zone.
+- Beam-steering columns are better when the target zone is larger (e.g., a seating cluster) or when you need program-quality full-range sound rather than a narrow, EQ-limited zone. *Note, Mike Kern mentions these are in the $10-12K range per unit. After looking at the product literature, it's clear this tech is used in permanent setups, like an auditorium or PA in a train station - and require a fair amoint of infrastructure.*
 - Both approaches benefit from acoustically absorptive surfaces/ceilings nearby to reduce reflections re-spreading sound outside the intended zone — the electronics create directivity, but room acoustics can undo it.
+
+---
+
+## More links:
+Parametric speakers have >15° range - that may be too narrow for our purposes (1-2 people.)
+
+- [Holotronics **x-series.**](https://www.holosonics.com/products-x)
+- [Holosonics **AS-24iX** Audio Spotlight Directional Speaker, $2,299.](https://www.touchwindow.com/p/AS-24iX.html)
+- [Focusonics **museum application.**](https://www.focusonics.com/interactive-museum-solution/)
+- [Via Mike Kern, more beam steering.](https://renkus-heinz.com/beam-steering/)
