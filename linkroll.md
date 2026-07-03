@@ -163,6 +163,7 @@
 
 ---
 
+- Make: [Unclog an **AMS2.**](https://wiki.bambulab.com/en/ams-2-pro/maintenance/disassembly-and-assembly)
 - Make: [**QGIS,** an open source tool for working with GIS data.](https://qgis.org/)
 - Make: [**Video demo of mesh repair tools** in Rhino 8.](https://www.youtube.com/watch?v=QW-SjceefsQ)
 - Make: [**Mesh repair** in Rhino.](https://docs.mcneel.com/rhino/8/help/en-us/commands/meshrepair.htm)
