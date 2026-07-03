@@ -163,6 +163,8 @@
 
 ---
 
+- Make: [And the SHIK web editor.](https://editor.shik.tech/devices)
+- Make: [**SHIK **MIDI controller settings.](https://shik.tech/n32b-web-editor/)
 - Make: [Unclog an **AMS2.**](https://wiki.bambulab.com/en/ams-2-pro/maintenance/disassembly-and-assembly)
 - Make: [**QGIS,** an open source tool for working with GIS data.](https://qgis.org/)
 - Make: [**Video demo of mesh repair tools** in Rhino 8.](https://www.youtube.com/watch?v=QW-SjceefsQ)
