@@ -1,4 +1,5 @@
 # What I'm looking at, in little particular order...
+- Code: [**ComfyUI** GitHub repo.](https://github.com/Comfy-Org/ComfyUI)
 - Code: [**Transformers** on Hugging Face.](https://huggingface.co/docs/transformers/index)
 - Code: [Daniel Schiffman on **transformers.js.**](https://www.youtube.com/watch?v=KR61bXsPlLU)
 - Code: [Convert docs to markdown files before reading to AI agentsor creating RAGs with **MarkItDown.**](https://github.com/microsoft/markitdown)
