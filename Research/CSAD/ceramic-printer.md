@@ -61,3 +61,24 @@ These are not standalone printers — they are extruder/printhead upgrade kits t
 - WASP 40100 Production is suitable for series printing and industrial production.
 - Stoneflower doesn't reqire an air compressor
 - Stoneflower is James' preferred option at the moment (use as baseline for comparing with others.)
+
+## Other Ceramic 3D Printer Manufacturers (comprehensive scan, 2026-07-07)
+
+New manufacturers not covered in the main table above. All links were fetched and verified live (HTTP 200) and confirmed to match the named device. Prices are as-listed at time of access; industrial LCM/DLP resin systems (Lithoz, 3DCeram, ADMATEC) are quote-only and do not publish retail pricing. Build volumes normalized to `X inches (mm), Y inches (mm), Z inches (mm)`.
+
+| Device | Verified Link | Price | Build Volume |
+|---|---|---|---|
+| VormVrij LUTUM 4M (Netherlands; paste/LDM) | [vormvrij.nl](https://vormvrij.nl/lutum/) (200 OK, verified) | ~€3,150 / ~$3,400 (entry LUTUM 4M; range up to €9,730 for LUTUM 5/6) ([3DPrintingIndustry](https://3dprintingindustry.com/news/vormvrij-lutum-4-clay-3d-printer-technical-specifications-and-pricing-135058/), [Aniwaa](https://www.aniwaa.com/product/3d-printers/vormvrij-lutum-4m/)) | X 16.93 in (430 mm), Y 18.11 in (460 mm), Z 19.69 in (500 mm) |
+| Tronxy Moore 2 Pro (China; LDM) | [tronxy3d.com](https://www.tronxy3d.com/products/tronxy-moore-2-pro-ceramic-clay-3d-printer) (200 OK, verified) | $679.15 (from $799) ([tronxy3d.com](https://www.tronxy3d.com/products/tronxy-moore-2-pro-ceramic-clay-3d-printer)) | X 10.04 in (255 mm), Y 10.04 in (255 mm), Z 10.24 in (260 mm) |
+| Tronxy Moore 1 Mini (China; LDM) | [tronxy3d.com](https://www.tronxy3d.com/products/tronxy-moore-1-mini-clay-3d-printer) (200 OK, verified) | $466.65 (from $549) ([tronxy3d.com](https://www.tronxy3d.com/products/tronxy-moore-1-mini-clay-3d-printer)) | X 7.09 in (180 mm), Y 7.09 in (180 mm), Z 7.09 in (180 mm) |
+| Cerambot (China/Shandong; paste, desktop) | [cerambot.com](https://www.cerambot.com/) (200 OK, verified — homepage; manufacturer does not expose a stable per-model product URL) | ~$599 post-Kickstarter (campaign pricing was $199–$289) ([3druck](https://3druck.com/en/printers-and-products/eazao-zero-desktop-ceramic-3d-printer-01106015/), [Aniwaa](https://www.aniwaa.com/product/3d-printers/cerambot-cerambot/)) | X 6.69 in (170 mm), Y 6.69 in (170 mm), Z 11.22 in (285 mm) — cylindrical, Ø170mm × 285mm |
+| Lithoz CeraFab Lab (L30) (Austria; LCM/DLP resin) | [lithoz.com](https://www.lithoz.com/en/3d-printer/cerafab-lab/) (200 OK, verified) | Quote only — not publicly listed (industrial; entry-level of the CeraFab range) ([lithoz.com](https://www.lithoz.com/en/3d-printer/cerafab-lab/)) | X 2.99 in (76 mm), Y 1.69 in (43 mm), Z 6.69 in (170 mm) |
+| 3DCeram C1000 FLEXMATIC (France; SLA resin) | [3dceram.com](https://3dceram.com/imprimante-3d/c1000-flexmatic/) (200 OK, verified) | Quote only — not publicly listed (fully industrial system) ([3dceram.com](https://3dceram.com/imprimante-3d/c1000-flexmatic/), [Aniwaa](https://www.aniwaa.com/product/3d-printers/3dceram-c1000-flexmatic/)) | X 12.60 in (320 mm), Y 12.60 in (320 mm), Z 7.87 in (200 mm) |
+| ADMATEC Admaflex 130 (Netherlands; DLP resin, ceramic+metal) | [admateceurope.com](https://admateceurope.com/admaflex130) (200 OK, verified) | Quote only — not publicly listed (industrial) ([3DPrintingIndustry](https://3dprintingindustry.com/news/admatec-introduces-new-admaflex-300-dlp-3d-printer-for-ceramic-and-metal-technical-specifications-164862/), [Aniwaa](https://www.aniwaa.com/product/3d-printers/admatec-admaflex-130/)) | X 3.78 in (96 mm), Y 2.13 in (54 mm), Z 4.72 in (120 mm) |
+
+**Notes on this scan:**
+- Two distinct technology families appear here: **paste/LDM extrusion** (VormVrij, Tronxy, Cerambot — same clay-extrusion approach as the main table) and **photopolymer resin** systems (Lithoz LCM, 3DCeram SLA, ADMATEC DLP) that print ceramic-filled resin then debind/sinter — a fundamentally different, industrial-grade process producing dense technical ceramics (alumina, zirconia, silicon nitride) rather than pottery/clay.
+- Industrial resin systems (Lithoz, 3DCeram, ADMATEC) are sold by quote only; no public retail price exists, so the price cell reflects that rather than a fabricated figure.
+- Cerambot has no stable per-model product URL; the verified link is the official homepage. The original desktop Cerambot's build volume is cylindrical (Ø170 × 285 mm), expressed above as bounding X/Y.
+- The Aniwaa page for the original Cerambot returned HTTP 500 during verification and is cited only as a secondary spec/price corroborator, not as the primary link.
+- Same-manufacturer extensions were intentionally excluded to keep this to *other* manufacturers: Eazao's larger Matrix M500/M600/M700 line (Eazao already appears in the main table) and additional WASP/StoneFlower/3D Potter models.
