@@ -49,3 +49,15 @@ These are not standalone printers — they are extruder/printhead upgrade kits t
 | *Reference: Creality Ender 3 (base printer, not a ceramic printer)* | [creality.com](https://www.creality.com/products/ender-3-3d-printer) (200 OK, verified match) | $189.00 ([creality.com](https://www.creality.com/products/ender-3-3d-printer)) | N/A — this is the **host FDM printer** the three Eazao kits above are explicitly optimized for (adapter + custom firmware provided for this model); listed here as the baseline hardware cost to add to any Eazao kit price for a true all-in total. | Cartesian. Build volume: X 8.66 in (220 mm), Y 8.66 in (220 mm), Z 9.84 in (250 mm) ([Top3DShop Ender 3 review](https://top3dshop.com/blog/creality-ender-3-3d-printer-review), corroborated by [The 3D Printer Bee](https://the3dprinterbee.com/ender-3-bed-print-size-correct-measurements-upgrades/) and general search-aggregated specs). Well-established as one of the most popular budget FDM printers; extensive community/firmware support is exactly why Eazao and Blurolls target it as a conversion base. |
 
 **Caveat on all four kits:** none of them include the host printer itself — the "price" is add-on cost only, on top of whatever FDM printer (e.g., an Ender 3, commonly ~$150–$250) the buyer already owns or must separately purchase. None of the Eazao kits' cross-printer compatibility claims ("all FDM open-source 3D printers") were independently verified beyond the Ender 3, which is the only model explicitly named with a matching adapter/firmware on each product page.
+
+---
+
+## James' Notes
+- Build volume numbers look off - double-check
+- WASP needs an **air compressor:** "needed air compressor min. pressure 8 bar, 25 L min. tank, 8 mm pipe." - additional cost
+- WASP uses **Simplify3D** slicing software
+- WASP 2040 Clay is ideal for printing compact and precise parts, representing an excellent affordable entry-level choice for ceramic 3D printing.
+- WASP 40100 LDM is suitable for medium/large size prints, for designers and architectural studios. (base price 8.590 €); has an add-on for continuous feed
+- WASP 40100 Production is suitable for series printing and industrial production.
+- Stoneflower doesn't reqire an air compressor
+- Stoneflower is James' preferred option at the moment (use as baseline for comparing with others.)
