@@ -1,6 +1,6 @@
 ---
 Model: Claude Sonnet 5
-Prompt: create a table that compares 3D printers built for printing ceramics; create the following columns: first column = name of printer; second column = a link to the product web page - confirm the link matches the device in column 1, and is not 404, else remove the row; third column = price; fourth column indicates either "cartesian" or "delta"; fifth column gives a summary or general sentiment gathered from reviews and message boards; sixth column = build volume. Prepend the model used, the prompt, and the date it was generated to the beginning of the document in the following YAML structure: — Model: (model name) Prompt: (insert prompt) Date: (insert yy/mm/dd) — Save as "ceramic-printer.md" to /Users/james/GIT/scratchpad/Research/CSAD
+Prompt: create a table that compares 3D printers built for printing ceramics; create the following columns - first column = name of printer; second column = a link to the product web page - confirm the link matches the device in column 1, and is not 404, else remove the row; third column = price; fourth column indicates either "cartesian" or "delta"; fifth column gives a summary or general sentiment gathered from reviews and message boards; sixth column = build volume. 
 Date: 26/07/06
 ---
 
