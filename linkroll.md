@@ -1,4 +1,5 @@
 # What I'm looking at, in little particular order...
+- Code: [**Hermes** masterclasses.](https://www.youtube.com/watch?v=BeWUUclCin0&list=PLmpUb_PWAkDx-VWjh00tVCji794xAa_IX)
 - Code: [**ComfyUI** GitHub repo.](https://github.com/Comfy-Org/ComfyUI)
 - Code: [**Transformers** on Hugging Face.](https://huggingface.co/docs/transformers/index)
 - Code: [Daniel Schiffman on **transformers.js.**](https://www.youtube.com/watch?v=KR61bXsPlLU)
