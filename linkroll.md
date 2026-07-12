@@ -1,4 +1,5 @@
 # What I'm looking at, in little particular order...
+- Code: [AI capabilities in **BOX.**](https://ithelp.gwu.edu/en-us/article/2118920)
 - Code: [**Hermes** masterclasses.](https://www.youtube.com/watch?v=BeWUUclCin0&list=PLmpUb_PWAkDx-VWjh00tVCji794xAa_IX)
 - Code: [**ComfyUI** GitHub repo.](https://github.com/Comfy-Org/ComfyUI)
 - Code: [**Transformers** on Hugging Face.](https://huggingface.co/docs/transformers/index)
