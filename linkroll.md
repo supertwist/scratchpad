@@ -1,4 +1,5 @@
 # What I'm looking at, in little particular order...
+- Code: [A concise **Stanford lecture** explaining LLMs at a high level.](https://www.youtube.com/watch?v=9vM4p9NN0Ts)
 - Code: [AI capabilities in **BOX.**](https://ithelp.gwu.edu/en-us/article/2118920)
 - Code: [**Hermes** masterclasses.](https://www.youtube.com/watch?v=BeWUUclCin0&list=PLmpUb_PWAkDx-VWjh00tVCji794xAa_IX)
 - Code: [**ComfyUI** GitHub repo.](https://github.com/Comfy-Org/ComfyUI)
