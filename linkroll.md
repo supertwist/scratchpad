@@ -237,6 +237,7 @@
 
 ---
 
+- Book: [**The Geography of the Imagination,** by Guy Davenport.](https://archive.org/details/geographyofimagi0000dave)
 - Book: [**The Reverse Centaur's Guide to Life After AI,** by Cory Doctorow.](https://us.macmillan.com/books/9780374621575/thereversecentaursguidetolifeafterai/)
 - Book: [**On Censorship,** by Ai Weiwei.](https://www.thamesandhudsonusa.com/books/on-censorship-hardcover) Reads like a manifesto!
 - Book: [**Superforecasting,** by Philip Tetlock and Dab Gardner.](https://www.penguin.co.uk/books/418198/superforecasting-by-philip-tetlock-and-dan-gardner/9781847947154)
