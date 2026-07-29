@@ -237,6 +237,9 @@
 
 ---
 
+- Book: [**The Reverse Centaur's Guide to Life After AI,** by Cory Doctorow.](https://us.macmillan.com/books/9780374621575/thereversecentaursguidetolifeafterai/)
+- Book: [**On Censorship,** by Ai Weiwei.](https://www.thamesandhudsonusa.com/books/on-censorship-hardcover) Reads like a manifesto!
+- Book: [**Superforecasting,** by Philip Tetlock and Dab Gardner.](https://www.penguin.co.uk/books/418198/superforecasting-by-philip-tetlock-and-dan-gardner/9781847947154)
 - Book: [**The Anatomy of Harpo Marx,** by Wayne Koestenbaum.](https://www.ucpress.edu/books/the-anatomy-of-harpo-marx/paper)
 - Book: [**A Balthus Notebook,** by Guy Davenport.](https://www.davidzwirner.com/collect/a-balthus-notebook-book)
 - Book: [**More Brilliant than the Sun,** by Kodwo Eshun.](https://books.google.com/books/about/More_Brilliant_Than_the_Sun.html?id=ZxJyCwAAQBAJ)
