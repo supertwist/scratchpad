@@ -239,6 +239,7 @@
 
 ---
 
+- Book: [**Welcome to Your Life,** by Roland Orzabal.](https://www.harpercollins.com/products/welcome-to-your-life-roland-orzabal)
 - Book: [**The Geography of the Imagination,** by Guy Davenport.](https://archive.org/details/geographyofimagi0000dave)
 - Book: [**The Reverse Centaur's Guide to Life After AI,** by Cory Doctorow.](https://us.macmillan.com/books/9780374621575/thereversecentaursguidetolifeafterai/)
 - Book: [**On Censorship,** by Ai Weiwei.](https://www.thamesandhudsonusa.com/books/on-censorship-hardcover) Reads like a manifesto!
