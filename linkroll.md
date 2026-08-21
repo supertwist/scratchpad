@@ -168,6 +168,7 @@
 
 ---
 
+- Make: [Cool resource for **newsprint** publications.](https://www.newspaperclub.com/)
 - Make: [Adobe **skin for GIMP.**](https://github.com/Diolinux/PhotoGIMP)
 - Make: [And the SHIK web editor.](https://editor.shik.tech/devices)
 - Make: [**SHIK **MIDI controller settings.](https://shik.tech/n32b-web-editor/)
