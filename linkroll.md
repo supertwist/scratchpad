@@ -203,6 +203,7 @@
 
 ---
 
+- Rabbithole: [Ian Svenonius conducts **a seance!**](https://www.youtube.com/watch?v=-hQ_ztKTD0s)
 - Rabbithole: [Jon Stewart interviews **Cory Doctorow.**](https://www.youtube.com/watch?v=-dAIJRjb-Bw)
 - Rabbithole: [**Smart Film!**](https://smartfilm.com/)
 - Rabbithole: [Via Ryan, a broswer plugin to detect **AI slop music.**](https://news.uchicago.edu/story/song-ai-generated-uchicago-scientists-create-browser-extension-check)
