@@ -14,6 +14,7 @@ Form version 1.0 · Retain original; provide signed copy to Subject
 4. You get a copy of the file.
 5. You may cancel the Fab Lab's permission at any time, in writing.
 6. You are not being paid, and you may stop the scan at any moment for any reason.
+7. Because GW's own policy would otherwise give the University a claim to files made by paid staff, a University officer must also sign §12.4 waiving that claim. **If §12.4 is blank, do not sign this form and do not sit for the scan** — your ownership in point 2 depends on it.
 
 ---
 
@@ -96,7 +97,11 @@ The Fab Lab shall ensure that every individual who participates in creating, pro
 
 ### 3.4 No University Claim
 
-The Fab Lab and the University disclaim, and shall not assert, any ownership interest in the Scan File. Neither the Fab Lab nor the University shall register, or attempt to register, any copyright, trademark, patent, or other right in or to the Scan File or any derivative of it. This Agreement is intended to displace, as to the Scan File only, any University intellectual-property policy that would otherwise allocate ownership of works created using University facilities, and the Fab Lab represents that it has authority to enter into this Agreement on that basis.
+The Fab Lab and the University disclaim, and shall not assert, any ownership interest in the Scan File. Neither the Fab Lab nor the University shall register, or attempt to register, any copyright, trademark, patent, or other right in or to the Scan File or any derivative of it.
+
+This Agreement is intended to displace, as to the Scan File only, any University intellectual-property policy that would otherwise allocate ownership to the University — including the GW Copyright Policy's allocation of a "Work Made for Hire" prepared by a staff member or student employee within the scope of employment, and its allocation of works involving "Substantial Use of University Resources." The Parties acknowledge that a Scan File captured or processed by compensated Fab Lab personnel acting within the scope of their employment would, absent this Agreement, presumptively vest in the University as a Work Made for Hire, and that §3.2 and §12.4 are directed at that circumstance.
+
+The Parties further acknowledge that the GW Copyright Policy contemplates alteration or waiver of the University's rights by written agreement, and that authority to grant such a waiver rests with the relevant Vice President of the University or that Vice President's designee — not with the Fab Lab acting alone. Accordingly, the disclaimer in this §3.4 binds the University only as executed under §12.4.
 
 ### 3.5 Perpetuity; Survival
 
@@ -111,6 +116,14 @@ Within **thirty (30) calendar days** of the scanning session, the Fab Lab shall 
 - [ ] Other: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 Delivery is a material obligation of the Fab Lab. Failure to deliver does not affect Subject's ownership.
+
+### 3.7 Condition Precedent — Institutional Waiver
+
+Notwithstanding any other provision, this Agreement does not take effect, and **no scanning session shall be conducted**, unless §12.4 has been executed by the relevant Vice President or designee, or a Standing Delegation satisfying §12.4 is in force and recorded there. If a scan is nonetheless conducted without §12.4 having been satisfied:
+
+(a) §3.1 through §3.6 bind the Fab Lab and every individual bound under §3.3, to the fullest extent within their power to grant;
+(b) no license under §4 arises, and the Fab Lab shall delete the Scan File under the §4.5 procedure upon Subject's written request; and
+(c) the Fab Lab shall notify Subject in writing, within ten (10) business days of discovering the omission, that the institutional waiver was not obtained.
 
 ---
 
@@ -280,7 +293,7 @@ Subject (and parent or guardian, if applicable) affirms being of sufficient lega
 
 **11.4 No Waiver.** No failure or delay in exercising a right waives it. No waiver is effective unless in writing and signed by the waiving Party.
 
-**11.5 Entire Agreement; Amendment.** This Agreement, including Exhibit A, is the entire agreement of the Parties as to its subject matter and supersedes all prior understandings, representations, and course descriptions. It may be amended only by a writing signed by both Parties. No click-through, lab policy, syllabus, posted sign, or software end-user license shall be construed to modify §3, §4, or §5.
+**11.5 Entire Agreement; Amendment.** This Agreement, including Exhibit A and any Exhibit B attached under §12.4, is the entire agreement of the Parties as to its subject matter and supersedes all prior understandings, representations, and course descriptions. It may be amended only by a writing signed by both Parties. No click-through, lab policy, syllabus, posted sign, or software end-user license shall be construed to modify §3, §4, or §5.
 
 **11.6 Notices.** Notices shall be in writing and delivered by hand, by email with confirmation of receipt, or by certified mail to:
 
@@ -331,7 +344,7 @@ I have read this Agreement in full, or have had it read to me. I have had the op
 
 ### 12.3 Corcoran Fab Lab
 
-The undersigned represents that they are authorized to bind the Fab Lab, and that the Fab Lab accepts §3 (Ownership), §4.5 (Revocation), §5 (Restrictions), and §7 (Data) as material obligations.
+The undersigned represents that they are authorized to bind the Fab Lab as to operational matters, and that the Fab Lab accepts §3 (Ownership), §4.5 (Revocation), §5 (Restrictions), §6 (Publicity), and §7 (Data) as material obligations. The undersigned further represents that every individual with access to the Scan File has been bound as required by §3.3.
 
 | | |
 |---|---|
@@ -340,7 +353,40 @@ The undersigned represents that they are authorized to bind the Fab Lab, and tha
 | Title | \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ |
 | Date | \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ |
 
-### 12.4 Witness (optional)
+### 12.4 University — Institutional Waiver of Copyright Claim (REQUIRED)
+
+**This block is a condition precedent under §3.7. Without it, or without a Standing Delegation identified below, §3 does not bind the University and this Agreement is not effective.**
+
+The undersigned is the relevant Vice President of the University, or that Vice President's written designee, and holds authority under the GW Copyright Policy to waive or alter the University's rights in copyrightable works. On behalf of the University, the undersigned:
+
+(a) waives and disclaims any claim of the University to copyright or other ownership in the Scan File, whether arising as a Work Made for Hire, from Substantial Use of University Resources, under a sponsored-project agreement, or on any other basis;
+(b) confirms and ratifies the assignment to Subject set out in §3.2, including as to any Scan File prepared by a University employee or student employee within the scope of employment; and
+(c) confirms that no University policy, and no supplemental patent or copyright agreement signed by any Fab Lab personnel, is asserted against Subject's ownership under §3.
+
+| | |
+|---|---|
+| Signature | \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ |
+| Printed name | \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ |
+| Title | \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ |
+| Signing as | [ ] Vice President  [ ] Designee of the Vice President |
+| Date | \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ |
+
+**Alternative — Standing Delegation.** In lieu of a signature above, §12.4 is satisfied if a standing written delegation authorizing the Fab Lab to execute waivers in the form of §12.4(a)–(c) on the University's behalf is in force. Complete in full:
+
+| Field | Entry |
+|---|---|
+| Title of delegation instrument | |
+| Granting office (Vice President / designee) | |
+| Name and title of grantor | |
+| Date of delegation | |
+| Expiration or review date | |
+| Scope confirmed to cover 3D scans of human subjects (Y/N) | |
+| Copy of delegation attached as Exhibit B (Y/N) | |
+| Verified by (name, title, date) | |
+
+An incomplete delegation table does not satisfy §12.4.
+
+### 12.5 Witness (optional)
 
 | | |
 |---|---|
@@ -398,4 +444,6 @@ The undersigned represents that they are authorized to bind the Fab Lab, and tha
 
 ---
 
-*This is a drafting template prepared for the Corcoran Fab Lab. It is not legal advice, and it has not been reviewed by counsel. Before it is used with any human subject, it should be reviewed by GWU's Office of General Counsel — particularly §3.4 (which is drafted to override University IP policy and requires institutional authority to grant), §9.2 (release scope under D.C. law), §10 (parental release of a minor's claims), and §7 (whether the scanning program requires IRB review, which it may if the scans are used in human-subjects research rather than instruction).*
+*This is a drafting template prepared for the Corcoran Fab Lab. It is not legal advice, and it has not been reviewed by counsel. Before it is used with any human subject, it should be reviewed by GWU's Office of General Counsel — particularly §3.4 and §12.4 (which override the GW Copyright Policy's default allocation and require a waiver from the relevant Vice President or designee), §9.2 (release scope under D.C. law), §10 (parental release of a minor's claims), and §7 (whether the scanning program requires IRB review, which it may if the scans are used in human-subjects research rather than instruction).*
+
+*Policy basis for §3.4 and §12.4: [GW Copyright Policy](https://compliance.gwu.edu/copyright) (last material review Dec 19, 2014) and [GW Patents and Scholarly Work Policy](https://compliance.gwu.edu/patents-and-scholarly-work) (last material change Apr 5, 2005). Both list a next scheduled review of August 2026; confirm the operative text before use, as revised definitions of "Work Made for Hire" or "Substantial Use of University Resources" would change the analysis in §3.4.*
