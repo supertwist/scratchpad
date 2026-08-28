@@ -39,29 +39,79 @@ echo "==> Watertight installer"
 echo "    app dir : $APPDIR"
 
 # ── Python ────────────────────────────────────────────────────────────────────
-PY="$(command -v python3 || true)"
-if [[ -z "$PY" ]]; then
-  echo "!! python3 not found. Install it with:  brew install python@3.12" >&2
-  exit 1
-fi
-echo "    python  : $PY ($("$PY" --version 2>&1))"
+# We need >= 3.10: numpy 2.x and scipy require it, and FastAPI evaluates
+# "str | None" annotations at runtime, which 3.9 cannot parse. macOS ships
+# 3.9.6, so on a stock machine we fetch a private interpreter with uv rather
+# than touching the system Python or requiring an admin password for Homebrew.
+PY=""
+for c in python3.13 python3.12 python3.11 python3.10 python3; do
+  cand="$(command -v "$c" 2>/dev/null || true)"
+  [[ -z "$cand" ]] && continue
+  if "$cand" -c 'import sys; sys.exit(0 if sys.version_info >= (3,10) else 1)' 2>/dev/null; then
+    PY="$cand"; break
+  fi
+done
 
-# Leave at least a couple of cores free so the mini stays usable.
+USE_UV=""
+if [[ -n "$PY" ]]; then
+  echo "    python  : $PY ($("$PY" --version 2>&1))"
+else
+  SYS_PY_VER="$(python3 --version 2>&1 || echo 'none')"
+  echo "    python  : $SYS_PY_VER is too old (need >= 3.10)"
+  UV="$(command -v uv || true)"
+  [[ -z "$UV" && -x "$HOME/.local/bin/uv" ]] && UV="$HOME/.local/bin/uv"
+  if [[ -z "$UV" ]]; then
+    echo "==> Installing uv (user-local, no sudo) to fetch Python 3.12"
+    curl -LsSf https://astral.sh/uv/install.sh | sh >/dev/null 2>&1 || {
+      echo "!! Could not install uv. Install Python 3.10+ manually, then re-run." >&2
+      exit 1
+    }
+    UV="$HOME/.local/bin/uv"
+  fi
+  [[ -x "$UV" ]] || { echo "!! uv not usable at $UV" >&2; exit 1; }
+  echo "    uv      : $("$UV" --version 2>&1)"
+  USE_UV="$UV"
+fi
+
+# Size the worker pool against BOTH cores and RAM. Each worker can hold a whole
+# mesh plus PyMeshFix's working copies, so on a small-memory machine the core
+# count alone would oversubscribe and push the box into swap.
 if [[ -z "$WORKERS" ]]; then
   CORES="$(sysctl -n hw.ncpu 2>/dev/null || echo 4)"
-  WORKERS=$(( CORES > 4 ? CORES - 2 : 2 ))
+  RAM_GB=$(( $(sysctl -n hw.memsize 2>/dev/null || echo 8589934592) / 1073741824 ))
+  W_CORES=$(( CORES > 4 ? CORES - 2 : 2 ))
+  W_RAM=$(( RAM_GB / 4 ))
+  WORKERS=$(( W_CORES < W_RAM ? W_CORES : W_RAM ))
+  (( WORKERS < 1 )) && WORKERS=1
+  (( WORKERS > 4 )) && WORKERS=4
+  echo "    workers : $WORKERS  (${CORES} cores, ${RAM_GB} GB RAM)"
+  # Cap uploads on small-memory machines so one huge mesh cannot exhaust RAM.
+  if (( RAM_GB <= 8 )) && [[ -z "${MAX_MB:-}" ]]; then MAX_MB=150; fi
+else
+  echo "    workers : $WORKERS (specified)"
 fi
-echo "    workers : $WORKERS"
+MAX_MB="${MAX_MB:-200}"
+echo "    max upload: ${MAX_MB} MB"
 
 # ── Virtualenv ────────────────────────────────────────────────────────────────
-if [[ ! -d "$VENV" ]]; then
-  echo "==> Creating virtualenv"
-  "$PY" -m venv "$VENV"
+if [[ -n "$USE_UV" ]]; then
+  if [[ ! -x "$VENV/bin/python" ]]; then
+    echo "==> Creating virtualenv with a private Python 3.12 (downloads once)"
+    "$USE_UV" venv --python 3.12 "$VENV"
+  fi
+  echo "==> Installing dependencies"
+  "$USE_UV" pip install --python "$VENV/bin/python" -r "$APPDIR/requirements.txt"
+else
+  if [[ ! -d "$VENV" ]]; then
+    echo "==> Creating virtualenv"
+    "$PY" -m venv "$VENV"
+  fi
+  echo "==> Installing dependencies (this takes a minute)"
+  "$VENV/bin/pip" install --quiet --upgrade pip
+  "$VENV/bin/pip" install --quiet -r "$APPDIR/requirements.txt"
 fi
 
-echo "==> Installing dependencies (this takes a minute)"
-"$VENV/bin/pip" install --quiet --upgrade pip
-"$VENV/bin/pip" install --quiet -r "$APPDIR/requirements.txt"
+echo "    venv python: $("$VENV/bin/python" --version 2>&1)"
 
 echo "==> Verifying the repair engine"
 "$VENV/bin/python" - <<'PYCHECK'
@@ -112,6 +162,7 @@ sed -e "s|__VENV__|$VENV|g" \
 
 # Port is templated separately so --port works.
 /usr/libexec/PlistBuddy -c "Set :EnvironmentVariables:PORT $PORT" "$PLIST_DST" >/dev/null
+/usr/libexec/PlistBuddy -c "Set :EnvironmentVariables:WATERTIGHT_MAX_MB $MAX_MB" "$PLIST_DST" >/dev/null
 if [[ -n "$NO_AUTH" ]]; then
   /usr/libexec/PlistBuddy \
     -c "Set :EnvironmentVariables:WATERTIGHT_TOKEN " \

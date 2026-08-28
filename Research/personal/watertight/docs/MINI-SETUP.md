@@ -1,6 +1,12 @@
 # Setting up the Watertight server on the Mac mini
 
-The mini is `jamess-mac-mini`, Tailscale IP **100.105.251.86**.
+> **Already installed and running as of 2026-08-28.** This document is the
+> from-scratch procedure, kept for rebuilding or setting up a second machine.
+> To *change* settings on the live server — authentication, power, workers,
+> Funnel — use [OPERATIONS.md](OPERATIONS.md) instead.
+
+The mini is `jamess-mac-mini` (local hostname `MONUMENT`), Tailscale IP
+**100.105.251.86**. The account is **`gitlabadmin`**.
 
 Everything below is done **on the mini**, either sitting at it or over SSH once
 step 1 is finished. Total time: about 20 minutes, most of it waiting on
@@ -17,14 +23,14 @@ the machine itself.
 
 1. Open **System Settings → General → Sharing**.
 2. Turn **Remote Login** on.
-3. Click the **(i)** next to it and confirm your user (`james`) is allowed.
+3. Click the **(i)** next to it and confirm your user (`gitlabadmin`) is allowed.
 
 **Then from your MacBook**, copy your key over so you are not typing a password
 every time:
 
 ```bash
-ssh-copy-id -i ~/.ssh/id_rsa.pub james@100.105.251.86
-ssh james@100.105.251.86 'hostname && sw_vers -productVersion'
+ssh-copy-id -i ~/.ssh/id_rsa.pub gitlabadmin@100.105.251.86
+ssh gitlabadmin@100.105.251.86 'hostname && sw_vers -productVersion'
 ```
 
 You should see `jamess-mac-mini` and the macOS version. From here on you can do
@@ -35,7 +41,7 @@ everything from the laptop.
 ## Step 2 — Install the prerequisites
 
 ```bash
-ssh james@100.105.251.86
+ssh gitlabadmin@100.105.251.86
 ```
 
 Check what is already there:
@@ -45,7 +51,15 @@ python3 --version     # need 3.10 or newer
 git --version
 ```
 
-If `python3` is missing or older than 3.10, install Homebrew and Python:
+**On this mini, `python3` is Apple's 3.9.6, which is too old** — numpy 2.x and
+scipy require 3.10+, and FastAPI evaluates `str | None` annotations at runtime.
+
+You do **not** need to fix this by hand. `install.sh` detects it and bootstraps
+`uv`, which fetches a private Python 3.12 into your home directory: no `sudo`,
+no admin password, nothing installed system-wide. Homebrew is not required and
+was never installed here.
+
+If you would rather use Homebrew anyway (it needs an admin password):
 
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -73,7 +87,7 @@ your laptop instead:
 # run this on the MacBook, not the mini
 rsync -av --exclude .venv --exclude dist --exclude node_modules \
   ~/GIT/scratchpad/Research/personal/watertight/ \
-  james@100.105.251.86:~/Apps/watertight/
+  gitlabadmin@100.105.251.86:~/Apps/watertight/
 ```
 
 ---
@@ -125,7 +139,9 @@ curl -s http://100.105.251.86:8765/api/health
 If that works, open `http://100.105.251.86:8765` in a browser — you should get
 the Watertight dropzone. Paste the token when it asks.
 
-If it times out, the mini's firewall is blocking the port:
+In practice this worked immediately and **the firewall did not need touching**.
+If it does time out for you, the macOS application firewall is blocking the
+port:
 
 **System Settings → Network → Firewall → Options** → either turn off
 "Block all incoming connections", or add the Python binary at
@@ -237,6 +253,9 @@ Every repair logs one line, so you can see what students are running:
 
 ### Adding a token later
 
+> Full procedure, including how to read the token back and how to turn it off
+> again, is in [OPERATIONS.md](OPERATIONS.md#changing-authentication).
+
 This is the payoff of serving a web page rather than shipping an app: turning
 auth on is one command on the mini, and every student picks it up on their next
 page load. Nothing to redistribute.
@@ -265,16 +284,18 @@ Edit `~/Library/LaunchAgents/edu.gwu.corcoran.watertight.plist`, then
 | `WATERTIGHT_MAX_FACES` | `5000000` | largest mesh accepted |
 | `WATERTIGHT_WORKERS` | cores − 2 | concurrent repair jobs |
 
-`WATERTIGHT_WORKERS` is the one that matters with a class of 20. Each worker
-can use a full core and a few hundred MB on a large mesh. The installer leaves
-two cores free so the mini stays responsive.
+`WATERTIGHT_WORKERS` is the one that matters with a class of 20. The installer
+sizes it against **both** cores and RAM, taking the lower of `cores - 2` and
+`RAM_GB / 4`, clamped to 1–4. On this mini (8 cores, 8 GB) that gives **2**, and
+uploads are capped at **150 MB** rather than 200. See
+[OPERATIONS.md](OPERATIONS.md#tuning) for why, and how to raise it.
 
 ---
 
 ## Updating the server later
 
 ```bash
-ssh james@100.105.251.86
+ssh gitlabadmin@100.105.251.86
 cd ~/Apps/watertight            # or the git checkout
 git pull                        # or re-run the rsync from your laptop
 cd server && ./install.sh       # reuses the existing token

@@ -4,6 +4,11 @@ Makes student `.STL` files printable: no holes, no naked edges, no non-manifold
 edges. A dropzone, a plain-English report, and a `-FIXED.stl` in the Downloads
 folder.
 
+**Live since 2026-08-28** at `http://100.105.251.86:8765` on the Mac mini
+(account `gitlabadmin`, no authentication, 2 workers, 150 MB cap). Operational
+changes — auth, power, workers, Funnel — are in
+[docs/OPERATIONS.md](docs/OPERATIONS.md).
+
 **Students use a browser** — the server serves the whole interface, so it works
 on Mac, Windows, iPad, and Linux with nothing to install and no code signing.
 The Electron app is an optional macOS wrapper around the same API.
@@ -18,9 +23,10 @@ watertight/
 ├── shared/          UI code shared by the app and the browser (edit here)
 ├── sync.sh          copies shared/ into server/static and app/renderer
 └── docs/
-    ├── MINI-SETUP.md      set up the server on the mini      <- start here
+    ├── OPERATIONS.md      change settings on the live server <- start here
+    ├── MINI-SETUP.md      first-time install, from scratch
     ├── STUDENT-GUIDE.md   hand this to students
-    └── REMOTE-ACCESS.md   what I need to deploy it for you
+    └── REMOTE-ACCESS.md   SSH access to the mini, and its gotchas
 ```
 
 ## How the repair works

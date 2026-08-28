@@ -11,7 +11,7 @@ I can see the mini on your tailnet from this MacBook:
 Ping works (~98 ms). But SSH is refused:
 
 ```
-$ ssh james@100.105.251.86
+$ ssh gitlabadmin@100.105.251.86
 ssh: connect to host 100.105.251.86 port 22: Connection refused
 ```
 
@@ -26,25 +26,61 @@ already have that on).
 
 > **System Settings → General → Sharing → Remote Login: ON**
 >
-> Click the **(i)** button and make sure `james` is in the allowed list.
+> Click the **(i)** button and make sure `gitlabadmin` is in the allowed list.
 
 **Then, from this MacBook** (you run this, because it needs your password once):
 
 ```bash
-ssh-copy-id -i ~/.ssh/id_rsa.pub james@100.105.251.86
+ssh-copy-id -i ~/.ssh/id_rsa.pub gitlabadmin@100.105.251.86
 ```
 
 Verify it took:
 
 ```bash
-ssh -o BatchMode=yes james@100.105.251.86 'hostname'
+ssh -o BatchMode=yes gitlabadmin@100.105.251.86 'hostname'
 ```
 
-If that prints `jamess-mac-mini` with no password prompt, I can take over: I
+If that prints the hostname with no password prompt, I can take over: I
 already have `~/.ssh/id_rsa` available in this session, so key-based SSH will
 work for me too.
 
 Tell me when it's done and I will install and start the service for you.
+
+## Gotcha: a wrong username looks like a broken server
+
+Cost us an afternoon on 2026-08-28. The mini's account is **`gitlabadmin`**,
+not `james`. macOS sshd does not disclose that a user does not exist — it
+closes the connection instead:
+
+| Target user | `ssh` with the default auth order |
+|---|---|
+| `gitlabadmin` (exists) | `Permission denied (publickey,password,…)` — normal |
+| `james` (does not exist) | **`Connection closed by … port 22`**, no password prompt |
+
+`ssh-copy-id` and `rsync` inherit this and report it as
+`Connection closed` / `unexpected end of file`, naming neither authentication
+nor the username as the problem. The absence of a password prompt is the tell:
+a valid user always gets prompted, even when the password is wrong.
+
+**First thing to check when SSH to a Mac behaves inexplicably: run `whoami` on
+the target and confirm the short account name.** It is not necessarily the
+person's first name, and on this mini it is not.
+
+There is no `MaxAuthTries` restriction on the mini, and nothing in its
+`sshd_config` needs changing. An earlier version of this document claimed
+otherwise; that was wrong.
+
+## Key file placement, for reference
+
+The `.pub` file is only a carrier. What matters is that its single line ends up
+appended to `~/.ssh/authorized_keys` on the mini, with these permissions —
+sshd silently ignores the key otherwise:
+
+| Path | Mode |
+|---|---|
+| `~` | not group/world writable (`chmod go-w ~`) |
+| `~/.ssh` | `700` |
+| `~/.ssh/authorized_keys` | `600` |
 
 ## What I would do with that access
 

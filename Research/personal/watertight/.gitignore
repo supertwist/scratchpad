@@ -12,3 +12,6 @@ app/build/icon.iconset/
 
 # Server secrets and state
 server/.token
+
+# macOS
+.DS_Store

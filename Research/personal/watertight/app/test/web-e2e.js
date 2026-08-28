@@ -117,7 +117,12 @@ app.whenReady().then(async () => {
   if (st.overflow) return fail("page overflows horizontally at " + WIDTH + "px");
   console.log("PASS no horizontal overflow at " + WIDTH + "px");
 
-  const real = errors.filter((m) => !/favicon|DevTools/i.test(m));
+  // Electron injects its own dev-mode security warnings when a desktop shell
+  // loads a plain-http origin. They are about the harness, not the page, and a
+  // real browser never emits them, so they must not mask genuine page errors.
+  const real = errors.filter(
+    (m) => !/favicon|DevTools|Electron Security Warning/i.test(m)
+  );
   if (real.length) return fail("console errors: " + real.join(" | "));
   console.log("PASS no console errors");
 
