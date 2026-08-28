@@ -1,9 +1,8 @@
 /* Watertight -- shared front-end core.
  *
  * Platform-agnostic: knows how to talk to the API and how to render a report,
- * but nothing about how the fixed file gets saved. The host (browser page or
- * Electron renderer) supplies a `save` function, so the same rendering code
- * drives both.
+ * but nothing about how the fixed file gets saved. The host page supplies a
+ * `save` function, keeping this file free of any download mechanics.
  *
  * Canonical copy lives in /shared; sync.sh copies it. Edit it here.
  */

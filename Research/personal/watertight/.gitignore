@@ -3,13 +3,6 @@
 __pycache__/
 *.pyc
 
-# Node / Electron
-node_modules/
-app/dist/
-
-# Generated icon intermediates (icon.png and icon.icns are committed)
-app/build/icon.iconset/
-
 # Server secrets and state
 server/.token
 

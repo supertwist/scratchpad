@@ -1,8 +1,7 @@
 /* Watertight -- browser front-end.
  *
- * Same shared core as the Electron app; the only difference is how the fixed
- * file reaches disk (an anchor click into the browser's download folder rather
- * than a native write).
+ * Wires the shared core to the browser: the fixed file reaches disk via an
+ * anchor click into the download folder.
  */
 "use strict";
 
@@ -124,6 +123,8 @@ async function boot() {
   try {
     const h = await client.health();
     $("footInfo").textContent = `v${h.version} · up to ${h.max_upload_mb} MB`;
+    // Keep the stated ceiling honest if the server's cap is ever retuned.
+    $("uploadCap").textContent = `Max upload is ${h.max_upload_mb}MB`;
     // No point showing a token control on a server that does not want one.
     show($("tokenBtn"), h.auth_required);
     if (!h.auth_required) show($("tokenCard"), false);

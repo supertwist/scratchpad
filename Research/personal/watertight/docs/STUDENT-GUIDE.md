@@ -72,7 +72,7 @@ Otherwise the mini may be asleep or restarting; tell your instructor.
 **"That file could not be read as an STL"** — Watertight only reads `.stl`.
 Export from your modelling tool as STL (binary is fine) and try again.
 
-**"File is larger than the 200 MB limit"** — Reduce the polygon count before
+**"File is larger than the 50 MB limit"** — Reduce the polygon count before
 exporting. A print rarely needs more than a few hundred thousand triangles.
 
 **It's taking a long time** — Big meshes take a while, and you may be queued
@@ -81,22 +81,3 @@ behind classmates. A million-triangle scan can take a minute or two.
 **Nothing downloaded** — Check your browser didn't block it. Click
 **Download again** under the report.
 
-## Optional: the desktop app (macOS only)
-
-There is also a native Mac app, if you prefer one. The web page does the same
-job, so this is purely a preference.
-
-1. Get **Watertight-1.0.0-arm64.dmg** from your instructor.
-2. Open it and drag **Watertight** to **Applications**.
-3. **First launch needs one extra step.** The app isn't signed by Apple, so
-   macOS will say it "cannot be opened because Apple cannot check it for
-   malicious software." **Right-click** the app → **Open** → **Open**. Once
-   only.
-
-   If macOS still refuses:
-
-   ```bash
-   xattr -dr com.apple.quarantine /Applications/Watertight.app
-   ```
-
-4. In **Settings**, enter the server address and click **Test connection**.

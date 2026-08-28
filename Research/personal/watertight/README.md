@@ -5,13 +5,12 @@ edges. A dropzone, a plain-English report, and a `-FIXED.stl` in the Downloads
 folder.
 
 **Live since 2026-08-28** at `http://100.105.251.86:8765` on the Mac mini
-(account `gitlabadmin`, no authentication, 2 workers, 150 MB cap). Operational
+(account `gitlabadmin`, no authentication, 2 workers, 50 MB cap). Operational
 changes — auth, power, workers, Funnel — are in
 [docs/OPERATIONS.md](docs/OPERATIONS.md).
 
 **Students use a browser** — the server serves the whole interface, so it works
 on Mac, Windows, iPad, and Linux with nothing to install and no code signing.
-The Electron app is an optional macOS wrapper around the same API.
 
 Built on the PyMeshFix repair step from `../H3-pipeline.py`, wrapped in an
 escalating ladder so light damage gets a light fix.
@@ -19,9 +18,8 @@ escalating ladder so light damage gets a light fix.
 ```
 watertight/
 ├── server/          FastAPI service + repair engine + web UI (on the Mac mini)
-├── app/             Electron desktop app (macOS, optional)
-├── shared/          UI code shared by the app and the browser (edit here)
-├── sync.sh          copies shared/ into server/static and app/renderer
+├── shared/          canonical browser UI code (edit here)
+├── sync.sh          copies shared/ into server/static
 └── docs/
     ├── OPERATIONS.md      change settings on the live server <- start here
     ├── MINI-SETUP.md      first-time install, from scratch
@@ -64,18 +62,11 @@ cd server && ./install.sh --no-auth     # or --token <secret> to require one
 Students then open `http://100.105.251.86:8765` in any browser. Nothing else to
 install or distribute.
 
-**Optional Mac app:**
-
-```bash
-cd app && npm install && npm run dist
-# -> app/dist/Watertight-1.0.0-arm64.dmg
-```
-
-**Run the app against a local server while developing:**
+**Run a local server while developing:**
 
 ```bash
 cd server && WATERTIGHT_TOKEN=dev PORT=8765 .venv/bin/python watertight_server.py
-cd app && npm start          # then set the server to http://127.0.0.1:8765, token "dev"
+# then open http://127.0.0.1:8765
 ```
 
 ## Command line
@@ -115,28 +106,19 @@ grep -i '^x-watertight-report:' headers.txt | cut -d' ' -f2- | python3 -m json.t
 ```bash
 # repair-ladder regressions: 8 deliberately broken meshes
 cd server && ../.venv/bin/python test_repair.py
-
-# the served web page, driven in a real Chromium: drop -> report -> download
-cd app && SERVER=http://127.0.0.1:8799 STL=/path/model.stl \
-  ./node_modules/.bin/electron test/web-e2e.js
-
-# the Mac app, exercising the real main.js, IPC and native save
-cd app && SERVER=http://127.0.0.1:8799 TOKEN=dev STL=/path/model.stl \
-  ./node_modules/.bin/electron test/e2e-main.js
 ```
 
-Both e2e tests redirect userData and downloads into `/tmp`, so they cannot
-touch your real settings or Downloads folder. `web-e2e.js` also asserts the
-page does not overflow horizontally, which is how phone and iPad widths get
-checked.
+There is currently **no automated browser test**. The Chromium-driven page test
+(drop -> report -> download, plus a horizontal-overflow assertion for phone and
+iPad widths) lived in the removed Electron app and used its bundled Electron as
+the driver; recover it from git history at `app/test/web-e2e.js` in `2bbf1ad` if
+you port it to Playwright.
 
 ## Editing the UI
 
-`shared/watertight.css` and `shared/core.js` are the originals. Both the server
-and the app get **copies** via `sync.sh` (the Electron packager can only bundle
-files under `app/`, and FastAPI serves from `server/static/`). `npm start` and
-`npm run dist` sync automatically; run `./sync.sh` by hand if you edited
-`shared/` and are testing the server alone.
+`shared/watertight.css` and `shared/core.js` are the originals; `server/static/`
+gets **copies** via `sync.sh`, because FastAPI serves from `server/static/`. Run
+`./sync.sh` after editing anything in `shared/`.
 
 ## Known limits
 
@@ -147,8 +129,6 @@ files under `app/`, and FastAPI serves from `server/static/`). `npm start` and
   to print.
 - **Units are not inferred.** STL is unitless; Watertight never rescales, so
   whatever your modeller exported is what you get back.
-- **The optional Mac app is unsigned**, so first launch needs right-click →
-  Open. This is the main reason the browser is the recommended path.
 - **No authentication by default.** `--no-auth` leaves the service open to
   anyone who can reach it. Fine on a private tailnet; a deliberate risk with
   Funnel. `./install.sh --token <secret>` turns it on with no client changes.

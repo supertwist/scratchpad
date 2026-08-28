@@ -17,7 +17,7 @@ Auth
 
 Configuration (environment variables)
     WATERTIGHT_TOKEN          shared class token; empty disables auth
-    WATERTIGHT_MAX_MB         max upload size in MB            (default 200)
+    WATERTIGHT_MAX_MB         max upload size in MB            (default 50)
     WATERTIGHT_MAX_FACES      refuse meshes above this         (default 5000000)
     WATERTIGHT_WORKERS        concurrent repair jobs           (default 2)
     WATERTIGHT_ALLOW_NO_AUTH  set to 1 to run with no token
@@ -53,7 +53,7 @@ HERE = Path(__file__).resolve().parent
 STATIC = HERE / "static"
 
 TOKEN = os.environ.get("WATERTIGHT_TOKEN", "").strip()
-MAX_BYTES = int(float(os.environ.get("WATERTIGHT_MAX_MB", "200")) * 1024 * 1024)
+MAX_BYTES = int(float(os.environ.get("WATERTIGHT_MAX_MB", "50")) * 1024 * 1024)
 MAX_FACES = int(os.environ.get("WATERTIGHT_MAX_FACES", "5000000"))
 WORKERS = max(1, int(os.environ.get("WATERTIGHT_WORKERS", "2")))
 ALLOW_NO_AUTH = os.environ.get("WATERTIGHT_ALLOW_NO_AUTH", "") == "1"

@@ -18,7 +18,7 @@ How to change things after the initial install. For first-time setup see
 | Python | private **3.12.14** via `uv`, at `server/.venv` |
 | Authentication | **none** (`--no-auth`) |
 | Workers | **2** |
-| Max upload | **150 MB** |
+| Max upload | **50 MB** |
 | launchd label | `edu.gwu.corcoran.watertight` |
 | Logs | `~/Library/Logs/Watertight/watertight.log` |
 | Hardware | 8 cores, 8 GB RAM, 228 GB disk |
@@ -72,7 +72,7 @@ ssh mini 'cd ~/Apps/watertight/server && ./install.sh --token corcoran-fall-2026
 ```
 
 The page then asks for the token and remembers it per browser (in
-`localStorage`). The desktop app takes it under Settings.
+`localStorage`).
 
 **Generate a random token instead** — omit `--token`; the value is printed at
 the end and saved to `server/.token` (mode 600):
@@ -184,7 +184,7 @@ Edit `~/Library/LaunchAgents/edu.gwu.corcoran.watertight.plist`, then
 | `WATERTIGHT_TOKEN` | *(empty)* | shared class token |
 | `WATERTIGHT_ALLOW_NO_AUTH` | `1` | permit running with no token |
 | `PORT` | `8765` | listen port |
-| `WATERTIGHT_MAX_MB` | `150` | largest upload accepted |
+| `WATERTIGHT_MAX_MB` | `50` | largest upload accepted |
 | `WATERTIGHT_MAX_FACES` | `5000000` | largest mesh accepted |
 | `WATERTIGHT_WORKERS` | `2` | concurrent repair jobs |
 
@@ -199,7 +199,7 @@ workers = clamp( min(cores - 2, floor(RAM_GB / 4)), 1, 4 )
 The mini has 8 cores but only 8 GB, giving `min(6, 2) = 2`. Core count alone
 would have chosen 6, and six concurrent repairs — each holding a full mesh plus
 PyMeshFix's working copies — would push an 8 GB machine into swap, which is far
-slower than queueing. On the same reasoning, uploads are capped at 150 MB
+slower than queueing. On the same reasoning, uploads are capped at 50 MB
 rather than 200 on machines with 8 GB or less.
 
 Raise them explicitly if you add RAM or find the queue too slow:
@@ -253,8 +253,7 @@ From the laptop:
 ```bash
 cd ~/GIT/scratchpad/Research/personal/watertight
 rsync -az --delete \
-  --exclude '.venv' --exclude 'node_modules' --exclude 'dist' \
-  --exclude '__pycache__' --exclude '.token' --exclude 'app/build/icon.iconset' \
+  --exclude '.venv' --exclude '__pycache__' --exclude '.token' \
   ./ mini:~/Apps/watertight/
 ssh mini 'cd ~/Apps/watertight/server && ./install.sh --no-auth'
 ```
@@ -267,8 +266,6 @@ Verify afterwards:
 
 ```bash
 curl -s http://100.105.251.86:8765/api/health
-cd app && SERVER=http://100.105.251.86:8765 STL=/path/to/model.stl \
-  ./node_modules/.bin/electron test/web-e2e.js
 ```
 
 ---
@@ -314,5 +311,5 @@ Nothing was installed system-wide, so that is the whole footprint (plus `uv` in
 | `sudo: a terminal is required` | missing `-t` on ssh | `ssh -t mini 'sudo …'` |
 | Health shows `"pymeshfix": false` | dependency missing; severe damage can't be repaired | re-run `install.sh` |
 | Repairs are slow / queueing | 2 workers by design on 8 GB | `--workers 4`, watch for swap |
-| `413` on upload | over the 150 MB cap | decimate the mesh, or raise `WATERTIGHT_MAX_MB` |
+| `413` on upload | over the 50 MB cap | decimate the mesh, or raise `WATERTIGHT_MAX_MB` |
 | Service won't start | bad config | `tail -50 ~/Library/Logs/Watertight/watertight.error.log` |

@@ -85,12 +85,12 @@ if [[ -z "$WORKERS" ]]; then
   (( WORKERS < 1 )) && WORKERS=1
   (( WORKERS > 4 )) && WORKERS=4
   echo "    workers : $WORKERS  (${CORES} cores, ${RAM_GB} GB RAM)"
-  # Cap uploads on small-memory machines so one huge mesh cannot exhaust RAM.
-  if (( RAM_GB <= 8 )) && [[ -z "${MAX_MB:-}" ]]; then MAX_MB=150; fi
 else
   echo "    workers : $WORKERS (specified)"
 fi
-MAX_MB="${MAX_MB:-200}"
+# 50 MB is the class-wide ceiling: it keeps a single huge mesh from exhausting
+# RAM and keeps uploads quick over Funnel. Override with MAX_MB=<n> if needed.
+MAX_MB="${MAX_MB:-50}"
 echo "    max upload: ${MAX_MB} MB"
 
 # ── Virtualenv ────────────────────────────────────────────────────────────────

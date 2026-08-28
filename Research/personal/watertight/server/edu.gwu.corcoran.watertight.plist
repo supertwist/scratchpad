@@ -35,7 +35,7 @@
         <key>HOST</key>
         <string>0.0.0.0</string>
         <key>WATERTIGHT_MAX_MB</key>
-        <string>200</string>
+        <string>50</string>
         <key>WATERTIGHT_WORKERS</key>
         <string>__WORKERS__</string>
         <key>PYTHONUNBUFFERED</key>

@@ -85,7 +85,7 @@ your laptop instead:
 
 ```bash
 # run this on the MacBook, not the mini
-rsync -av --exclude .venv --exclude dist --exclude node_modules \
+rsync -av --exclude .venv --exclude __pycache__ \
   ~/GIT/scratchpad/Research/personal/watertight/ \
   gitlabadmin@100.105.251.86:~/Apps/watertight/
 ```
@@ -280,14 +280,14 @@ Edit `~/Library/LaunchAgents/edu.gwu.corcoran.watertight.plist`, then
 |---|---|---|
 | `WATERTIGHT_TOKEN` | generated | shared class token |
 | `PORT` | `8765` | listen port |
-| `WATERTIGHT_MAX_MB` | `200` | largest upload accepted |
+| `WATERTIGHT_MAX_MB` | `50` | largest upload accepted |
 | `WATERTIGHT_MAX_FACES` | `5000000` | largest mesh accepted |
 | `WATERTIGHT_WORKERS` | cores − 2 | concurrent repair jobs |
 
 `WATERTIGHT_WORKERS` is the one that matters with a class of 20. The installer
 sizes it against **both** cores and RAM, taking the lower of `cores - 2` and
 `RAM_GB / 4`, clamped to 1–4. On this mini (8 cores, 8 GB) that gives **2**, and
-uploads are capped at **150 MB** rather than 200. See
+uploads are capped at **50 MB**. See
 [OPERATIONS.md](OPERATIONS.md#tuning) for why, and how to raise it.
 
 ---

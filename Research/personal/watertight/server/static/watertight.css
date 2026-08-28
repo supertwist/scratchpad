@@ -1,6 +1,6 @@
-/* Watertight -- shared design system for the browser UI and the Electron app.
-   Canonical copy lives in /shared; sync.sh copies it into server/static and
-   app/renderer. Edit it here, not in the copies. */
+/* Watertight -- design system for the browser UI.
+   Canonical copy lives in /shared; sync.sh copies it into server/static.
+   Edit it here, not in the copy. */
 
 :root {
   --bg: #f7f8fa;
@@ -74,8 +74,6 @@ header {
   border-bottom: 1px solid var(--line);
   background: var(--surface);
   flex: 0 0 auto;
-  /* Lets the whole bar act as the window drag handle in Electron. */
-  -webkit-app-region: drag;
 }
 
 header .brand {
@@ -90,8 +88,6 @@ header .brand {
 header .drop-icon { color: var(--accent); display: flex; }
 
 header .spacer { flex: 1; }
-
-header button, header .status { -webkit-app-region: no-drag; }
 
 .status {
   display: inline-flex;
@@ -156,6 +152,15 @@ main {
 .dropzone p { margin: 0; color: var(--text-dim); font-size: 13px; }
 .dropzone .arrow { color: var(--accent); }
 .dropzone input[type="file"] { display: none; }
+
+/* Upload ceiling, stated before the user picks a file rather than after a
+   rejected 413. web.js keeps the number in sync with the server's real cap. */
+.upload-cap {
+  margin: 0 0 8px;
+  text-align: center;
+  color: var(--text-faint);
+  font-size: 12.5px;
+}
 
 /* ── Cards ─────────────────────────────────────────────────────────────── */
 
