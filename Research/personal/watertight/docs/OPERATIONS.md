@@ -13,10 +13,11 @@ How to change things after the initial install. For first-time setup see
 | Machine | Mac mini, local hostname `MONUMENT`, Tailscale `jamess-mac-mini` |
 | Tailscale IP | `100.105.251.86` |
 | **Account** | **`gitlabadmin`** (not `james` — see REMOTE-ACCESS.md) |
-| Student URL | `http://100.105.251.86:8765` |
+| Student URL | `https://jamess-mac-mini.taila003e7.ts.net` (Funnel, public) |
+| Tailnet URL | `http://100.105.251.86:8765` |
 | Code | `/Users/gitlabadmin/Apps/watertight` |
 | Python | private **3.12.14** via `uv`, at `server/.venv` |
-| Authentication | **none** (`--no-auth`) |
+| Authentication | **token required** (`WATERTIGHT_TOKEN`) |
 | Workers | **2** |
 | Max upload | **50 MB** |
 | launchd label | `edu.gwu.corcoran.watertight` |
@@ -96,6 +97,26 @@ Without `--token` or `--no-auth` it reuses the existing token.
 > guard exists so a tokenless server is always a deliberate choice, never an
 > accident — it matters most with Funnel, which puts the service on the public
 > internet.
+
+### Editing the token by hand
+
+If you skip `install.sh` and edit the LaunchAgent plist directly, **`launchctl
+kickstart` is not enough.** launchd serves the plist it cached when the job was
+loaded, so it restarts the process with the *old* environment and the token
+change silently does nothing — `/api/health` will still report
+`"auth_required": false`. A full unload/reload is required:
+
+```bash
+ssh mini
+PLIST=~/Library/LaunchAgents/edu.gwu.corcoran.watertight.plist
+/usr/libexec/PlistBuddy -c "Set :EnvironmentVariables:WATERTIGHT_TOKEN <new>" "$PLIST"
+/usr/libexec/PlistBuddy -c "Delete :EnvironmentVariables:WATERTIGHT_ALLOW_NO_AUTH" "$PLIST"
+launchctl bootout gui/$(id -u)/edu.gwu.corcoran.watertight
+launchctl bootstrap gui/$(id -u) "$PLIST"
+curl -s http://127.0.0.1:8765/api/health      # confirm "auth_required":true
+```
+
+Always confirm with `/api/health` rather than assuming the restart took.
 
 ---
 

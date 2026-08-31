@@ -4,9 +4,13 @@ Makes student `.STL` files printable: no holes, no naked edges, no non-manifold
 edges. A dropzone, a plain-English report, and a `-FIXED.stl` in the Downloads
 folder.
 
-**Live since 2026-08-28** at `http://100.105.251.86:8765` on the Mac mini
-(account `gitlabadmin`, no authentication, 2 workers, 50 MB cap). Operational
-changes — auth, power, workers, Funnel — are in
+**Live since 2026-08-28** on the Mac mini (account `gitlabadmin`, 2 workers,
+50 MB cap, token auth on). Public via Tailscale Funnel since 2026-08-31:
+
+- Students: `https://jamess-mac-mini.taila003e7.ts.net` (any network, token required)
+- On the tailnet: `http://100.105.251.86:8765`
+
+Operational changes — auth, power, workers, Funnel — are in
 [docs/OPERATIONS.md](docs/OPERATIONS.md).
 
 **Students use a browser** — the server serves the whole interface, so it works
@@ -56,11 +60,11 @@ Two deliberate choices worth knowing about:
 **Server** (on the mini — see [docs/MINI-SETUP.md](docs/MINI-SETUP.md)):
 
 ```bash
-cd server && ./install.sh --no-auth     # or --token <secret> to require one
+cd server && ./install.sh --token <secret>     # or --no-auth for an open server
 ```
 
-Students then open `http://100.105.251.86:8765` in any browser. Nothing else to
-install or distribute.
+Students then open the Funnel URL in any browser. Nothing else to install or
+distribute.
 
 **Run a local server while developing:**
 
@@ -129,8 +133,9 @@ gets **copies** via `sync.sh`, because FastAPI serves from `server/static/`. Run
   to print.
 - **Units are not inferred.** STL is unitless; Watertight never rescales, so
   whatever your modeller exported is what you get back.
-- **No authentication by default.** `--no-auth` leaves the service open to
-  anyone who can reach it. Fine on a private tailnet; a deliberate risk with
-  Funnel. `./install.sh --token <secret>` turns it on with no client changes.
+- **A single shared token is the only access control.** One leaked token means
+  public access until it is rotated, and there is no per-student revocation.
+  `--no-auth` removes even that — fine on a private tailnet, but never with
+  Funnel, which is on the public internet.
 - **The mini must be logged in.** The service is a LaunchAgent — see
   MINI-SETUP.md step 7.

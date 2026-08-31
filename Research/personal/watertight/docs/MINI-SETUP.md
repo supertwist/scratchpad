@@ -96,12 +96,16 @@ rsync -av --exclude .venv --exclude __pycache__ \
 
 ```bash
 cd ~/Apps/watertight/server     # or .../scratchpad/Research/personal/watertight/server
-./install.sh --no-auth
+./install.sh --token <secret>
 ```
 
-`--no-auth` means no access token: anyone who can reach the address can use it.
-That is what you asked for, and it is the simplest thing for students — they
-just open a URL. See "Adding a token later" below when you want to change it.
+`--no-auth` is available instead, and means no access token: anyone who can
+reach the address can use it. That is the simplest thing for students on a
+private tailnet — they just open a URL.
+
+> **Do not use `--no-auth` if Funnel is enabled** (step 9). Funnel puts the
+> service on the public internet, where an open upload endpoint gets found by
+> scanners within minutes. As deployed, this server uses a token.
 
 The installer:
 

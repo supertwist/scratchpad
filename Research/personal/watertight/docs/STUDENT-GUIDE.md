@@ -5,16 +5,21 @@ it can, and hands you back a printable file.
 
 ## Using it
 
-**Open the address your instructor gave you in any browser.** That's it —
-nothing to install, and it works on Mac, Windows, iPad, and Linux.
+**Open this address in any browser:**
 
-- On the tailnet: `http://100.105.251.86:8765`
-- From anywhere: the `https://….ts.net` address
+```
+https://jamess-mac-mini.taila003e7.ts.net
+```
 
-> If the address starts with `100.`, you need to be **connected to Tailscale**
-> for it to work. The `https://` address works from any network.
+That's it — nothing to install, no VPN, and it works on Mac, Windows, iPad, and
+Linux, on any network including phone data.
 
-**Drag an `.stl` file onto the page.** That's the whole workflow.
+**The first time, it asks for an access token.** Paste in the token your
+instructor gave you and click **Save**. Your browser remembers it, so this is a
+one-time step per browser (and per device). The token is stored only on your own
+machine.
+
+**Then drag an `.stl` file onto the page.** That's the whole workflow.
 
 Watertight will:
 
@@ -66,8 +71,15 @@ scratch. It *is* watertight, but:
 
 ## Problems
 
-**Page won't load** — Turn Tailscale on if you're using the `100.` address.
-Otherwise the mini may be asleep or restarting; tell your instructor.
+**Page won't load** — Check the address starts with `https://`. If it still
+won't load, the mini may be asleep or restarting; tell your instructor.
+
+**"Token required", or the token box keeps reappearing** — The token is wrong or
+was mistyped. Click **Token** in the top right, re-paste it, and click **Save**.
+Watch for a trailing space when copying.
+
+**"Invalid or missing access token"** — Same cause: re-enter the token. If it
+was working yesterday and stopped, your instructor may have changed it.
 
 **"That file could not be read as an STL"** — Watertight only reads `.stl`.
 Export from your modelling tool as STL (binary is fine) and try again.
