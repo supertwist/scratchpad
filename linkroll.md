@@ -207,6 +207,7 @@
 
 ---
 
+- Rabbithole: [Cory Doctorow lectuture: **The Future of the Tech Crisis**](https://iai.tv/video/the-future-of-the-tech-crisis)
 - Rabbithole: [Ian Svenonius conducts **a seance!**](https://www.youtube.com/watch?v=-hQ_ztKTD0s)
 - Rabbithole: [Jon Stewart interviews **Cory Doctorow.**](https://www.youtube.com/watch?v=-dAIJRjb-Bw)
 - Rabbithole: [**Smart Film!**](https://smartfilm.com/)
