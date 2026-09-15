@@ -1,4 +1,5 @@
 # What I'm looking at, in little particular order...
+- Code: [Dario Amodei on pacing **AI development.**](https://darioamodei.com/post/we-must-pace-the-frontier)
 - Code: [**JetBrains Mono,** a nice typeface recommended by a student.](https://fonts.google.com/specimen/JetBrains+Mono)
 - Code: [**An MCP for ComfyUI!**](https://comfy.org/mcp) Will I ever see daylight to test it out???
 - Code: [A concise **Stanford lecture** explaining LLMs at a high level.](https://www.youtube.com/watch?v=9vM4p9NN0Ts)
