@@ -61,6 +61,7 @@
 
 ---
 
+- Creativity: [**Richard Serra** on models.](https://www.instagram.com/reel/DdMC4ITm5l0/?utm_source=ig_web_copy_link&stkn=NTc4MTIwNjQ2YQ==)
 - Creativity: [**Roland Orzabal** on looking inward.] (https://thecreativeindependent.com/people/songwriter-roland-orzabal-on-looking-inward-to-create-your-best-work/)
 - Creativity: [Adam Curtis on **the dangers of self expression.**](https://thecreativeindependent.com/people/adam-curtis-on-the-dangers-of-self-expression/)
 - Creativity: [**Tim Hawkinson** on Art21.](https://art21.org/watch/art-in-the-twenty-first-century/s2/tim-hawkinson-in-time-segment/)
