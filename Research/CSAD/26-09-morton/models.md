@@ -13,3 +13,18 @@ Institutions and initiatives that have released downloadable, freely-licensed (p
 ## Notes
 - License scope varies by object even within a single institution's Sketchfab or Open Access hub — verify the license tag (CC0, CC-BY, etc.) on each specific model page before downloading/reuse.
 - Not included: aggregators like Google Arts & Culture, which primarily offer in-browser viewers rather than direct downloadable files for most Greco-Roman objects.
+
+## Louvre / RMN-Grand Palais
+
+The Louvre does not host its own downloadable-3D-model site, but 3D scans of its collection are published officially through **RMN-Grand Palais** (Réunion des musées nationaux — Grand Palais), the public agency that manages reproductions and digitization for the Louvre and other French national museums.
+
+| Source | Link | Description |
+|---|---|---|
+| RMN-Grand Palais official Sketchfab account | [sketchfab.com/francecollections](https://sketchfab.com/francecollections) | Official account, self-described as "Official 3D reproductions of the French national museums' collections." ~930 models, 1.1M+ views. |
+| Musée du Louvre collection (on the above account) | [sketchfab.com/francecollections/collections/musee-du-louvre](https://sketchfab.com/francecollections/collections/musee-du-louvre-b3a47cd15ead4f2992ab02d6339712b6) | Curated collection of Louvre-object scans, including Greco-Roman/classical antiquities (e.g., "Cavalier Romain," "Tête de Perse") alongside Egyptian and Renaissance pieces. Download availability and license are set per model — check each model page individually; not all are free to download. |
+
+**Unofficial/independent scans (not Louvre-published, sourced from Louvre objects):**
+
+| Source | Link | Description |
+|---|---|---|
+| Benjamin Bardou — 25 Louvre scans | [gum.co/xAQxj](https://gum.co/xAQxj) (previews on [Sketchfab](https://sketchfab.com/meryon)) | Independent photogrammetrist's free scans of 25 Louvre statues (incl. works by Nicolas and Guillaume Coustou, Antoine Coysevox), made for the short film *Gloria Victis*. Not an official Louvre release — verify license before reuse. |
