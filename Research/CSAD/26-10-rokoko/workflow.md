@@ -62,21 +62,22 @@ A simple end-to-end pipeline for taking motion capture data recorded with Rokoko
 
 ---
 
-Rokoko
-[YouTube channel](https://www.youtube.com/@RokokoMotion)
+Rokoko:
+- [YouTube channel](https://www.youtube.com/@RokokoMotion)
 
 Onboarding:
-[startup 1]([x](https://www.youtube.com/watch?v=YDaMf23DUq0))
-[startup 2](https://www.youtube.com/watch?v=-_Pwgcx2npc)
-[startup 3](https://www.youtube.com/watch?v=YzrabStm2Nk)
-[startup 4](https://www.youtube.com/watch?v=u1tI1VObT1c)
+- [startup 1]([x](https://www.youtube.com/watch?v=YDaMf23DUq0))
+- [startup 2](https://www.youtube.com/watch?v=-_Pwgcx2npc)
+- [startup 3](https://www.youtube.com/watch?v=YzrabStm2Nk)
+- [startup 4](https://www.youtube.com/watch?v=u1tI1VObT1c)
 
-[Rokoko > Blender plugin](https://www.youtube.com/watch?v=6iZXy66t3gg)
-[Blender workflow](https://www.youtube.com/watch?v=LZVNvFwwwko)
+Blender:
+- [Rokoko > Blender plugin](https://www.youtube.com/watch?v=6iZXy66t3gg)
+- [Blender workflow](https://www.youtube.com/watch?v=LZVNvFwwwko)
 
 ---
 
-Can mocap data go to Aframe?
-Peanuts dance party
-Malik dance
-Army of Me
+- Can mocap data go to Aframe?
+- Peanuts dance party
+- Malik dance
+- Army of Me
