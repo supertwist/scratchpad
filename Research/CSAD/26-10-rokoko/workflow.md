@@ -66,7 +66,7 @@ Rokoko:
 - [YouTube channel](https://www.youtube.com/@RokokoMotion)
 
 Onboarding:
-- [startup 1]([x](https://www.youtube.com/watch?v=YDaMf23DUq0))
+- [startup 1](https://www.youtube.com/watch?v=YDaMf23DUq0)
 - [startup 2](https://www.youtube.com/watch?v=-_Pwgcx2npc)
 - [startup 3](https://www.youtube.com/watch?v=YzrabStm2Nk)
 - [startup 4](https://www.youtube.com/watch?v=u1tI1VObT1c)

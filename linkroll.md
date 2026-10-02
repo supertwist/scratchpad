@@ -1,4 +1,5 @@
 # What I'm looking at, in little particular order...
+- Code: [Plotter drawing optimization with **vpype.**](https://vpype.readthedocs.io/en/latest/index.html)
 - Code: [**Trellis** tutorial](https://www.youtube.com/watch?v=FuFm8zBHDWI)
 - Code: [Dario Amodei on pacing **AI development.**](https://darioamodei.com/post/we-must-pace-the-frontier)
 - Code: [**JetBrains Mono,** a nice typeface recommended by a student.](https://fonts.google.com/specimen/JetBrains+Mono)
