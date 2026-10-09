@@ -218,11 +218,125 @@ This is the setup I'd aim for once you're comfortable: build all three individua
 
 ---
 
+## Part 5 — Looping continuously
+
+Yes, there's more to it than matching duration and frame rate. Several of these only bite after the thing has been running for an hour, which is exactly the wrong time to discover them.
+
+### Where the loop setting lives
+
+Open the Video cue's inspector → **Time & Loops** tab. It's the same tab as Audio cues, with one video-only extra (see "Hold at end" below).
+
+- **Play count** — defaults to 1. Enter any whole number to repeat the file that many times.
+- **Infinite loop** — the checkbox below Play count. Loops the whole file forever.
+
+Both apply to the **entire file**. If you only want to loop a *section*, use slices.
+
+### Slices — looping part of a file
+
+Useful when a file has a one-off intro followed by a section that should cycle forever.
+
+1. Click in the waveform view, then click **Add Slice** (or press **M**). A green marker appears.
+2. The section between two markers — or between a marker and the start/end — is a slice.
+3. The green numbers along the bottom are per-slice play counts, defaulting to 1. **Double-click a number to edit it.**
+4. **To loop a slice infinitely, type any letter.** (Not a number — this changed from QLab 4.)
+5. **To skip a slice seamlessly, type 0.** It greys out and is passed over.
+6. At least one slice must have a play count above zero.
+
+Markers can't sit closer than 0.05 seconds apart. Drag the green handle at the top of a marker to move it, or type an exact value in the field at the left. Click-dragging to select a region before pressing **M** creates markers on *both* sides of the selection.
+
+### "Hold at end"
+
+Beneath the waveform, toward the right, is a checkbox labelled **Hold at end** — this one exists on Video cues but not Audio cues.
+
+- **Checked:** when the cue reaches its final frame, that frame stays on screen and the cue stays active until something stops it.
+- **Unchecked:** the cue stops itself after the last frame, and the screen goes to whatever is behind it — usually black.
+
+For a looping installation this mostly doesn't apply, but it is your safety net: if a loop ever does terminate, "Hold at end" leaves a held frame rather than a black screen.
+
+### ⚠️ The big one: drift accumulates in Option B
+
+This is the consideration that matters most and the one people get caught by.
+
+**Option A (one wide file) loops perfectly, forever.** One file, one decoder, one clock. When it wraps, all three panels wrap on the same frame because they *are* the same frame. There is no drift mechanism. **If you are building something that runs continuously and unattended, use Option A.** That is the real argument for it — not the initial sync, which Option B handles fine, but the thousandth loop.
+
+**Option B (three cues) drifts, and the error compounds.** Three independently decoded files each wrap on their own clock. A sub-frame discrepancy per loop is invisible once; over a six-hour gallery day at a 2-minute loop, that's 180 wraps of accumulated error. Identical duration and frame rate reduce this but do not eliminate it — decode timing is not deterministic across three streams.
+
+If you must use Option B continuously, build in a **periodic resync**:
+
+1. Give each Video cue a finite play count instead of infinite loop — say 20 passes.
+2. Below the Timeline Group, add a **Goto cue** (or a Start cue) targeting the Group.
+3. Set the Group to **auto-follow** so the Goto fires the moment the Group completes.
+4. Set the Goto itself to auto-continue/auto-follow so it actually re-triggers rather than just moving the playhead.
+
+Every 20 passes, everything stops and restarts from frame zero, and drift resets to nothing. You'll see one brief re-cue — put it at a moment the content can absorb, like a fade to black.
+
+Two cautions on that pattern: a Goto cue that isn't set to auto-continue will only reset the playhead without firing, so the loop silently stalls. And **any cue placed below the Goto will never be reached** when running the list from the top.
+
+### An infinitely looping Timeline Group never ends
+
+Worth understanding before it confuses you: if the children of a Timeline Group are set to infinite loop, the Group never completes. It has no end. That means:
+
+- An auto-follow on the Group will never fire — nothing downstream will ever run.
+- The cue shows an infinite duration.
+- You cannot simply "wait for it to finish."
+
+To get out, you need an explicit exit — a Stop cue, or a **Devamp cue**.
+
+### Devamp — exiting a loop gracefully
+
+A Devamp cue targets a looping Audio or Video cue and breaks it out of its loop *at a musically/visually sensible point* rather than cutting mid-frame. Two modes:
+
+- **Devamp currently looping slice** — acts at the end of the current slice; playback exits the loop and continues into the next slice.
+- **Devamp looping cue** — ignores slices, acts when the cue reaches its end; if the cue is looping, it stops.
+
+With multiple looping slices you need multiple Devamp cues — each one un-loops whichever slice happens to be looping when it runs.
+
+In Option B, you'd need **one Devamp per video cue**, fired together in their own Timeline Group, so all three exit on the same beat. In Option A, one Devamp handles all three screens because there's only one cue.
+
+### Encode the files to loop cleanly
+
+**The loop seam is a content problem, not a QLab problem.** If the last frame doesn't flow into the first frame, you'll see a visible jump every cycle. Grade and edit the two ends to match — colour, position, motion — or build a short crossfade into the file itself so the wrap is invisible.
+
+**Codec choice matters even more when looping.** The ProRes and HAP codecs recommended earlier are *all-intra* — every frame is complete and independent, so the jump from last frame to first is instant and clean. H.264 and H.265 use long GOPs, meaning the decoder has to rebuild from a keyframe at the wrap point. On a single play you might not notice; looping every two minutes for eight hours, that hitch becomes the thing everyone stares at. This is a second, independent reason to transcode to ProRes 422 LT or HAP.
+
+**Trim to exact frame boundaries.** A file that's 1800 frames plus a stray partial frame will accumulate a frame of slip per loop. Export to a whole number of frames.
+
+**Watch the audio, if any.** If the videos carry sound, a loop seam that's clean visually can still click audibly. Fade the audio to silence across the last few frames and up from the first few, or strip the audio into a separate, separately-looped Audio cue.
+
+### Running unattended for hours or days
+
+Continuous looping usually means nobody is watching the machine. Harden it:
+
+- **Thermals.** Three video streams decoding non-stop is sustained GPU load. If the mini is in a closed rack or cabinet, give it genuine airflow. Run the actual loop for several hours before you trust it — a machine that throttles at hour three will not reveal that in a twenty-minute test.
+- **Disable automatic macOS updates.** An overnight restart to install an update is the classic way to arrive to three black screens.
+- **Disable the screensaver** as well as display sleep. They're separate settings and both will ruin your day.
+- **Set a Focus mode** so no notification can appear over the content.
+- **Auto-restart after power loss.** For a permanent installation, set the Mac to power on automatically after a power failure (`sudo pmset -a autorestart 1`, or the equivalent in Energy settings), enable auto-login, and add QLab to Login Items. Combine that with QLab's workspace setting to open and start a cue automatically and the installation recovers from a power blip without anyone attending.
+- **Plan a scheduled restart.** For anything running more than a couple of days, a nightly stop-and-restart of QLab costs nothing and clears any slow resource creep. A cue list triggered on a timer, or a simple nightly reboot, both work.
+- **Monitor remotely.** QLab's per-stage audition windows let you confirm all three screens are still alive over Screen Sharing without walking into the room.
+
+### Looping quick reference
+
+| Goal | Setting |
+|---|---|
+| Loop whole file forever | Time & Loops → **Infinite loop** |
+| Loop whole file N times | Time & Loops → **Play count** = N |
+| Loop one section forever | Add slice (**M**), double-click its play count, **type any letter** |
+| Skip a section entirely | Set that slice's play count to **0** |
+| Hold the last frame on screen | Check **Hold at end** |
+| Exit a loop on cue | **Devamp cue** targeting the looping cue |
+| Loop the whole cue list | **Goto cue** at the bottom targeting the top cue, set to auto-continue |
+| Resync three drifting screens | Finite play count + auto-follow + Goto back to the Group |
+
+---
+
 ## Sources
 
 - [QLab 5 — Video Output](https://qlab.app/docs/v5/video/video-output/)
 - [QLab 5 — Video Cues](https://qlab.app/docs/v5/video/video-cues/)
 - [QLab 5 — Group Cues](https://qlab.app/docs/v5/fundamentals/group-cues/)
+- [QLab 5 — Devamp Cues](https://qlab.app/docs/v5/other-cues/devamp-cues/)
+- [QLab — Cue Sequences](https://qlab.app/docs/v4/general/cue-sequences/)
 - [QLab 5 — Features by License Type](https://qlab.app/docs/v5/general/features/)
 - [QLab 5 — Licenses](https://qlab.app/docs/v5/general/licenses/)
 - [QLab 5 — System Recommendations](https://qlab.app/docs/v5/general/system-recommendations/)
