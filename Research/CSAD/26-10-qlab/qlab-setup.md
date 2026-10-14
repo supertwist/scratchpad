@@ -330,6 +330,22 @@ Continuous looping usually means nobody is watching the machine. Harden it:
 
 ---
 
+## Appendix — Audio: stereo source to one short + one long XLR run
+
+Adjacent to the QLab video install: a Micca Speck (1/8"/3.5mm stereo line out) feeding two speakers — one with an XLR input ~10' away, one ~80' away. An unbalanced 1/8" cable run that long is a real risk for noise and hum; the fix is converting both channels to balanced XLR right at the source with a passive stereo DI box, then running standard XLR cable for both distances.
+
+| Item | Purpose | Product | Vendor link |
+|---|---|---|---|
+| Stereo DI box | Converts the Speck's 1/8" unbalanced stereo out into two independent, transformer-balanced, color-coded XLR outputs (L and R) — one box handles both channels | Whirlwind pcDI | [Whirlwind product page](https://www.whirlwindusa.com/products/black-boxes-effects-and-dis-direct-boxes-pcdi) · [B&H Photo](https://www.bhphotovideo.com/c/product/328757-REG/Whirlwind_PCDI_pcDI_Stereo_Direct_Box.html) |
+| Short XLR cable (10') | Balanced run from DI box to the near speaker's XLR input | Hosa HMIC-010 Pro REAN XLR(M)–XLR(F), 10 ft | [B&H Photo](https://www.bhphotovideo.com/c/product/828157-REG/Hosa_Technology_HMIC_010_HMIC_010_Cable_Pro_Series.html) |
+| Long XLR cable (80')* | Balanced run from DI box to the far speaker's XLR input | Hosa CMK-075AU (Neutrik) XLR(M)–XLR(F), 75 ft | [B&H Photo](https://www.bhphotovideo.com/c/product/158249-REG/Hosa_Technology_CMK_075AU_XLR_Male_to_XLR.html) |
+
+\* Hosa's stock lengths jump from 75' to 100'; for an 80' run, buy the 100' (search "Hosa XLR 100 ft" at the same retailer) rather than extending the 75' with a barrel/coupler, which adds a noise-prone connection point.
+
+**Why this over a plain 1/8"-to-XLR adapter cable:** an adapter cable just re-pins the signal onto XLR connectors — the run is still electrically unbalanced for its full length, which is exactly what causes hum/buzz pickup and high-frequency rolloff past ~25–50'. The pcDI has real transformers, so both the 10' and 80' runs are genuinely balanced from the box onward, and it includes a ground-lift switch if the long run picks up hum anyway.
+
+---
+
 ## Sources
 
 - [QLab 5 — Video Output](https://qlab.app/docs/v5/video/video-output/)
