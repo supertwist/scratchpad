@@ -348,6 +348,22 @@ Adjacent to the QLab video install: a Micca Speck (1/8"/3.5mm stereo line out) f
 
 ---
 
+## Appendix — Wireless alternative: Bluetooth transmitter/receiver pair for the 80' run
+
+A wireless option to replace the long XLR cable: one identical unit set to **TX** at the Micca Speck (1/8" in), a second unit of the **same model** set to **RX** at the far speaker (1/8" out), paired to each other over Bluetooth instead of cabled. All three below are switchable TX/RX on the same hardware and rated well past the 80' requirement in open air — note that real-world indoor/through-wall range is lower than the open-air spec, so test the actual room before committing to this over a cable.
+
+| Make / Model | Verified link | Rating | Price |
+|---|---|---|---|
+| Avantree Oasis Plus | [Amazon](https://www.amazon.com/Avantree-Bluetooth-Transmitter-Receiver-Simultaneously/dp/B07BQYYDNJ) | ★★★★☆ (4/5, mixed-to-positive reviews) | ~$70–80 |
+| Miccus Home RTX 2.0 | [Amazon](https://www.amazon.com/Miccus-Bluetooth-Transmitter-Receiver-Headphones/dp/B075J4RKGH) | ★★★★☆ (independent reviews "best in class for range," no Amazon star count confirmed) | ~$90–100 |
+| 1Mii B03Pro | [Amazon](https://www.amazon.com/Bluetooth-Transmitter-Receiver-Wireless-Audiophile/dp/B08J7MKYN1) | ★★★★☆ (4.1/5) | ~$66 |
+
+**Range notes (open air / through walls):** Avantree Oasis Plus — up to 164 ft / ~50–70 ft indoor. Miccus Home RTX 2.0 — up to 300 ft / ~160 ft through walls. 1Mii B03Pro — up to ~265 ft / ~80–110 ft indoor. All three clear the 80' open-air requirement; the Miccus and 1Mii have the most headroom if the signal has to pass through walls or other obstructions.
+
+**Trade-off vs. the wired pcDI + XLR path above:** Bluetooth adds audio latency (even with aptX Low Latency, tens of milliseconds) and a wireless link that can drop or need re-pairing — a real concern for an unattended installation. The wired balanced-XLR path is the more reliable choice for a permanent install; use this table only if running an 80' cable isn't an option.
+
+---
+
 ## Sources
 
 - [QLab 5 — Video Output](https://qlab.app/docs/v5/video/video-output/)
