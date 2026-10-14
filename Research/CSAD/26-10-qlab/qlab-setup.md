@@ -334,11 +334,13 @@ Continuous looping usually means nobody is watching the machine. Harden it:
 
 Adjacent to the QLab video install: a Micca Speck (1/8"/3.5mm stereo line out) feeding two speakers — one with an XLR input ~10' away, one ~80' away. An unbalanced 1/8" cable run that long is a real risk for noise and hum; the fix is converting both channels to balanced XLR right at the source with a passive stereo DI box, then running standard XLR cable for both distances.
 
-| Item | Purpose | Product | Vendor link |
-|---|---|---|---|
-| Stereo DI box | Converts the Speck's 1/8" unbalanced stereo out into two independent, transformer-balanced, color-coded XLR outputs (L and R) — one box handles both channels | Whirlwind pcDI | [Whirlwind product page](https://www.whirlwindusa.com/products/black-boxes-effects-and-dis-direct-boxes-pcdi) · [B&H Photo](https://www.bhphotovideo.com/c/product/328757-REG/Whirlwind_PCDI_pcDI_Stereo_Direct_Box.html) |
-| Short XLR cable (10') | Balanced run from DI box to the near speaker's XLR input | Hosa HMIC-010 Pro REAN XLR(M)–XLR(F), 10 ft | [B&H Photo](https://www.bhphotovideo.com/c/product/828157-REG/Hosa_Technology_HMIC_010_HMIC_010_Cable_Pro_Series.html) |
-| Long XLR cable (80')* | Balanced run from DI box to the far speaker's XLR input | Hosa CMK-075AU (Neutrik) XLR(M)–XLR(F), 75 ft | [B&H Photo](https://www.bhphotovideo.com/c/product/158249-REG/Hosa_Technology_CMK_075AU_XLR_Male_to_XLR.html) |
+| Item | Purpose | Product | Price | Vendor link |
+|---|---|---|---|---|
+| 1/8" stereo cable (10") | Short patch from the Micca Speck's headphone/line-out jack into the pcDI's 3.5mm input — keeps the DI box right at the source instead of running unbalanced cable any distance | Hosa CMM-100.8 3.5mm TRS–TRS, 8 in (shortest stock length; nearest to 10") | ~$6 | [Hosa product page](https://hosatech.com/products/analog-audio/interconnect-cables/specialty-interconnects/cmm-100/) |
+| Stereo DI box | Converts the Speck's 1/8" unbalanced stereo out into two independent, transformer-balanced, color-coded XLR outputs (L and R) — one box handles both channels | Whirlwind pcDI | ~$177–207 | [Whirlwind product page](https://www.whirlwindusa.com/products/black-boxes-effects-and-dis-direct-boxes-pcdi) · [B&H Photo](https://www.bhphotovideo.com/c/product/328757-REG/Whirlwind_PCDI_pcDI_Stereo_Direct_Box.html) |
+| Short XLR cable (10') | Balanced run from DI box to the near speaker's XLR input | Hosa HMIC-010 Pro REAN XLR(M)–XLR(F), 10 ft | ~$18–30 | [B&H Photo](https://www.bhphotovideo.com/c/product/828157-REG/Hosa_Technology_HMIC_010_HMIC_010_Cable_Pro_Series.html) |
+| Long XLR cable (80')* | Balanced run from DI box to the far speaker's XLR input | Hosa CMK-075AU (Neutrik) XLR(M)–XLR(F), 75 ft | ~$98 | [B&H Photo](https://www.bhphotovideo.com/c/product/158249-REG/Hosa_Technology_CMK_075AU_XLR_Male_to_XLR.html) |
+| Speaker pair (XLR input) | Inexpensive powered monitors with a real balanced XLR input, one per channel | PreSonus Eris E5 powered studio monitors (pair) | ~$200/pair | [Sweetwater product page](https://www.sweetwater.com/store/detail/ErisE5Pair--presonus-eris-e5-5.25-inch-powered-studio-monitor-pair) |
 
 \* Hosa's stock lengths jump from 75' to 100'; for an 80' run, buy the 100' (search "Hosa XLR 100 ft" at the same retailer) rather than extending the 75' with a barrel/coupler, which adds a noise-prone connection point.
 
