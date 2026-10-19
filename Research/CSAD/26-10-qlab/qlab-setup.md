@@ -379,3 +379,11 @@ A wireless option to replace the long XLR cable: one identical unit set to **TX*
 - [Buy QLab](https://qlab.app/shop/) · [Site License Pricing](https://qlab.app/site-license-pricing/) · [Educational Policy](https://qlab.app/educational-pricing/)
 - [Mac mini (2024) Tech Specs — Apple](https://support.apple.com/en-us/121555)
 - [External Display Support on Apple Silicon — Plugable](https://kb.plugable.com/docking-stations-and-video/understanding-external-display-support-on-apple-m1-m2-m3-and-m4-chips)
+
+---
+
+## James' notes:
+
+Optimal file settings from Premiere to Qlab:
+- Format (wrapper) = QuickTime
+- Codec = Apple ProRes 422 Proxy
