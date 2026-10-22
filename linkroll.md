@@ -104,6 +104,7 @@
 
 ---
 
+- Design: [**POPULAR,** on DFOS](https://app.dfos.com/spaces/space_z94a849d9kdftfvv3n9hn7)
 - Design: [21 Ways to tell a **Story** in Three Minutes.](https://medium.com/fluxx-studio-notes/21-ways-to-tell-your-story-in-just-3-minutes-29c62951126f)
 - Design: [Visual **stortytelling.**](https://uxplanet.org/guide-to-visual-storytelling-for-ux-73d4dd7bd9e3)
 - Design: [More on **storytelling.**](https://uxdesign.cc/what-is-storytelling-in-design-fe3a6e94cc46)
@@ -254,6 +255,7 @@
 
 ---
 
+- Book: [**Washington, A Life,** by Ron Chernow.](https://ronchernow.com/washington/)
 - Book: [**Welcome to Your Life,** by Roland Orzabal.](https://www.harpercollins.com/products/welcome-to-your-life-roland-orzabal)
 - Book: [**The Geography of the Imagination,** by Guy Davenport.](https://archive.org/details/geographyofimagi0000dave)
 - Book: [**The Reverse Centaur's Guide to Life After AI,** by Cory Doctorow.](https://us.macmillan.com/books/9780374621575/thereversecentaursguidetolifeafterai/)
