@@ -44,6 +44,52 @@ If the "blur" is actually visible stepping in a gradient rather than a true doub
 4. If still smeared, run/adjust the **paper feed calibration** for the Photo-Tex profile.
 5. As a diagnostic isolation step, temporarily print **uni-directional** — if the blur disappears, you've confirmed it's bidirectional registration (alignment or feed), not a head strike or file issue.
 
+## Step-by-step: Steps 2, 4, and 5 on the P9570
+
+### Step 2 — Bi-D (and Uni-D) head alignment, on the Photo-Tex media profile
+
+1. Load Photo-Tex and confirm it's tracking flat/no curl before you start.
+2. On the front panel, press **Home**, then tap **Menu**.
+3. Tap **Paper Setting**, then select the paper/media entry currently loaded (this must be your Photo-Tex profile — if you don't have a dedicated custom profile for it yet, create one via **Paper Setting → Add/Create Custom Paper** or Epson Media Installer first, since alignment is stored per media type on this printer, not globally).
+4. With the Photo-Tex profile selected, tap **Print Adjustments → Print Head Alignment**.
+5. Choose **Bi-D Alignment** (9–13 min) if you print bidirectionally (the normal/fast mode). Choose **Uni-D Alignment** (25–35 min) if you've set the driver to unidirectional, or do both if you plan to use either mode.
+6. You'll then be asked to pick **Auto** or **Manual**:
+   - **Auto:** select **Nozzle Check Pattern → Start** first (clogged nozzles will corrupt the reading), then **Auto Adjustment → Start**. The front sensor reads the printed pattern and sets the alignment automatically. Don't open the front cover or power off during this.
+   - **Manual** (use this if Auto doesn't fully converge, or if the fabric's texture confuses the optical sensor — common on textured/matte media): select **Manual → Start**. The printer prints a numbered pattern; on the LCD, pick the line in each set that looks most continuous/least doubled. If multiple pattern sets print (wide roll), check all of them and enter the averaged value, rounded to the nearest whole number.
+7. After it finishes, print a test image and inspect. If still misaligned, repeat Auto once, then fall back to Manual if needed.
+
+### Step 4 — Paper feed (media advance) calibration for the Photo-Tex profile
+
+This is a separate calibration from head alignment and lives in the same **Print Adjustments** submenu, run against the same per-media profile.
+
+1. **Home → Menu → Paper Setting**, select the Photo-Tex media profile (same one used above).
+2. Tap **Print Adjustments → Automatic Adjustment** (this is Epson's combined routine that runs **Paper Feed Adjust** and **Ruled Line Alignment** together).
+3. Select **Standard → Auto Adjustment → Start** to let the printer print and read its own calibration pattern.
+4. If Auto reports an error, or you still see light/dark banding after it completes, back out one level and look for **Paper Feed Adjust** directly inside **Print Adjustments** to run it manually:
+   - Choose **Pattern** to print a feed-adjustment test strip, then measure the gap between the printed `+` marks with a ruler/loupe and enter the measured offset on the panel, or
+   - Choose **Value** to enter a known numeric feed offset directly if you already have one from a prior calibration.
+5. Re-run the nozzle check and print your test image to confirm the bands/offset are gone.
+6. Re-run this calibration any time you change roll width, feed tension, or vacuum/suction setting for this media, since those all shift the feed rate slightly.
+
+### Step 5 — Uni-directional print diagnostic (isolating Bi-D registration)
+
+This toggle lives in the **computer's print driver**, not the printer's front panel — it's typically labeled **High Speed**, not "Bidirectional."
+
+**Windows:**
+1. In Photoshop, go to **File → Print**, choose the P9570 as the printer, then click **Print Settings** (or **Properties**) to open the Epson driver.
+2. Go to the **Main** or **Print Quality** tab (naming varies slightly by driver version).
+3. Find the **High Speed** checkbox and **uncheck it** — this forces unidirectional (single-direction) printing.
+4. Print your test file. If the vertical blur disappears, the defect is confirmed as a bidirectional registration issue (alignment and/or feed, per Steps 2 and 4) rather than a head-strike or file problem.
+
+**macOS:**
+1. In Photoshop's **File → Print** dialog, select the P9570, then open the driver's extra panel via the preset dropdown or **Printer Settings** (sometimes under **Print Settings / Advanced**).
+2. Look for **High Speed** under the quality/advanced options and uncheck it.
+3. Print the same test file and compare.
+
+Note unidirectional printing is noticeably slower and only intended here as a diagnostic (or stopgap) — the real fix for production work is correcting the Bi-D alignment and feed calibration in Steps 2 and 4 so you can go back to running bidirectional at full speed.
+
+- Sources: [Epson — Optimizing the Media Settings (Automatic Adjustment)](https://files.support.epson.com/docid/cpd6/cpd61762/source/pro_graphics/source/media_loading/tasks/scp6570d_sct7770dl/adjusting_feed_auto_scp6570d_sct7770dl.html), [Epson — Paper Feed Adjustment concept](https://files.support.epson.com/docid/cpd6/cpd61762/source/pro_graphics/source/media_loading/concepts/paper_feed_adjustment_scp6570d_sct7770dl.html), [Epson Media Installer — Custom Media sheet (references SC-P9570)](http://files.support.epson.com/pdf/media_installer/EpsonMediaInstaller-CustomMedia_sheet_v24-01-19-1.pdf), [Epson — Aligning the Print Head Automatically (P7570/P9570)](https://files.support.epson.com/docid/cpd5/cpd58368/source/spcs/source/printers/source/ink_functions/tasks/scp7570_9570/aligning_head_lcd_auto_scp7570_9570.html), [Epson — Aligning the Print Head Manually (P7570/P9570)](https://files.support.epson.com/docid/cpd5/cpd58368/source/spcs/source/printers/source/ink_functions/tasks/scp7570_9570/aligning_head_lcd_manual_scp7570_9570.html), [Emerson College — Guide for Epson SureColor P900 (driver option naming: High Speed, Finest Detail, etc.)](https://support.emerson.edu/hc/en-us/articles/21709027380123-Guide-for-Epson-SureColor-P900)
+
 ## Sources
 - [DPReview — Epson P9570 Banding](https://www.dpreview.com/forums/threads/epson-p9570-banding.4609782/)
 - [DPReview — Banding with Epson SureColor P9570](https://www.dpreview.com/forums/thread/4635003)
