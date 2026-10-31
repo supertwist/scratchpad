@@ -63,6 +63,7 @@
 
 ---
 
+- Creativity: [War of the poems.](https://craic-headpoetry.blogspot.com/2026/10/the-war-of-poems-doug-langs-americans.html)
 - Creativity: [Contemporary Art Daily.](https://www.contemporaryartdaily.com/)
 - Creativity: [**Electronic Music Winners,** 1976.](https://music.youtube.com/playlist?list=OLAK5uy_mmcxr83BAETWmP1kJCoyLCRfunuP3zKUM) Source samples for Radiohead...
 - Creativity: [**Richard Serra** on models.](https://www.instagram.com/reel/DdMC4ITm5l0/?utm_source=ig_web_copy_link&stkn=NTc4MTIwNjQ2YQ==)
