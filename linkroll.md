@@ -180,6 +180,8 @@
 
 ---
 
+- Make: [**Layerling,** a possible replacement for TinkerCAD.](https://layerling.com)
+- Make: [**ArtCraft** suite to compete with Adobe Creative Cloud](https://getartcraft.com/)
 - Make: [ScupltGL](https://stephaneginier.com/sculptgl/)
 - Make: [I wish there was a MAC version of **Pepakura.**](https://pepakura.tamasoft.co.jp/pepakura_designer/)
 - Make: [Adjustable French cleat.](https://www.printables.com/model/1795754-adjustable-french-cleat-height-adjustable-picture)
