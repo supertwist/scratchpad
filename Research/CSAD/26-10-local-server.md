@@ -329,3 +329,78 @@ If Steps 2-4 confirm you must host regulated data on your own infrastructure, th
 3. Get a BAA / confirm your SAQ type before writing any code that touches the data.
 4. Bring in a qualified assessor/consultant — don't self-certify from a blog post.
 5. Only then adjust your hosting setup, using their findings as the actual spec, with the changes in Step 5 as a preview of what's likely coming.
+
+---
+
+## Part 8: Migrating Off This Server Later (New Hardware or Cloud)
+
+Every server eventually gets migrated — hardware ages out, you outgrow it, or you decide to move to a cloud provider. The good news: if you followed Parts 3 and 4 above (Docker containers + disciplined backups), you already did most of the hard work. Migration is mostly "restore your backups somewhere else," not a rebuild from scratch. Here's the step-by-step plan either way.
+
+### Step 1: Decide the destination and get it provisioned
+
+Don't start copying data until the destination exists and is reachable.
+
+- **New on-prem hardware:** Buy/rack the new server, install the same OS (Part 2) on it, and get it on the network with its own fixed IP (3.1). Don't reuse the old server's IP yet — see Step 6.
+- **Cloud service:** Decide between a cloud VM (e.g., a plain virtual machine on AWS/Azure/GCP/DigitalOcean where you still manage the OS yourself — closest to what you have now) versus a managed platform (e.g., a managed container service or PaaS where the provider handles the OS). For a team that just went through this guide, a cloud VM is the gentler move: the Docker-based setup from Part 3.4 transfers almost unchanged. A managed PaaS is less maintenance long-term but means re-learning a new deployment model — treat that as a separate, later decision rather than bundling it into this migration.
+
+**Action:** Provision the destination, confirm you can SSH into it (or access its console), and apply the same baseline hardening from Part 2.3 and Part 3.2 (updates, firewall, non-root user, SSH keys) before anything else moves there.
+
+### Step 2: Inventory everything that actually needs to move
+
+Write down every component currently running on the old server, so nothing gets forgotten. For a typical setup from this guide, that's:
+
+- The `docker-compose.yml` file(s) and any associated config files (Caddyfile, `.env` files, etc.).
+- Named Docker volumes / bind-mount directories holding app data and uploaded files.
+- The database and its current data.
+- Any cron jobs or scheduled scripts (`crontab -l` for your user and `sudo crontab -l` for root).
+- TLS/HTTPS certificates (if not using Caddy's automatic renewal, which re-issues on the new box anyway).
+- The WireGuard VPN config (if using Option A from Part 3.5) — server keys and the per-user peer configs.
+- DNS records pointing at the old server's IP, and anywhere its IP or hostname is hardcoded (app config, scripts, documentation).
+
+**Action:** Turn this into a literal checklist file before you touch anything — this becomes your cutover checklist in Step 5.
+
+### Step 3: Do a full "cold" test migration before touching production
+
+Don't migrate the live system on your first attempt. Practice on a copy first:
+
+1. Take a fresh backup of everything using the process already in Part 4.
+2. Restore that backup to the new server (or a throwaway cloud VM if testing a cloud move) while the old server keeps running normally.
+3. Bring the app up on the new server using a different hostname/port, log in, click through its core functions, and confirm the data looks correct and complete.
+4. Note anything that broke or needed manual fixing — fix the process, not just the instance, so the real cutover goes smoothly.
+
+**Action:** Repeat this trial restore until it works cleanly without manual patching. This also happens to be the same exercise as your quarterly backup-restore test from Part 4.2 — if you've been doing that already, you're most of the way there.
+
+### Step 4: Plan the cutover window
+
+Pick a low-traffic time (evening/weekend for a 9-to-5 internal tool) and tell your users in advance: what's happening, how long it should take, and what they'll see (e.g., "the app will be unreachable from 6-7 PM").
+
+**Action:** Block time on the calendar, and prepare a short status message you can send if it runs long, so people aren't left guessing.
+
+### Step 5: Execute the real migration
+
+1. Put the old app in maintenance mode if possible, or stop accepting new writes (e.g., `docker compose stop app` while leaving the database briefly available for a final dump).
+2. Take one last, final backup/export of the database and any data volumes — this is the copy that will actually go live, not the one from Step 3.
+3. Transfer it to the new server (`rsync` over SSH, or restore from the off-site backup location directly).
+4. Bring the stack up on the new server (`docker compose up -d`), restore the database from the final dump, and restore the WireGuard config / TLS setup from your Step 2 inventory.
+5. Test thoroughly on the new server using its temporary address before any DNS/user-facing change.
+
+### Step 6: Cut traffic over
+
+- Update DNS records to point at the new server's address (for cloud destinations) or update your router's port-forwarding/DHCP reservation to the new machine (for new on-prem hardware).
+- If using VPN-only access, distribute updated VPN peer configs if the server's public endpoint changed, and test connectivity yourself before telling anyone else to reconnect.
+- Expect DNS changes to take a little time to propagate everywhere; keep the old server running and unchanged (but not accepting writes) for a day or two as a fallback.
+
+**Action:** Have one colleague test full end-to-end access (VPN connect → load app → log in → do a real task) from outside your office network before declaring the migration done.
+
+### Step 7: Decommission the old server properly
+
+Once the new server has run cleanly for a few days with no issues reported:
+
+- Take one final backup of the old server as an archive, and confirm it's stored somewhere safe (just in case).
+- Securely wipe the old server's drives before disposing, reselling, or repurposing it (regulated data, if any, makes this mandatory — see Part 7 — but it's good practice regardless). A simple full-disk overwrite (e.g., `shred` or the drive's built-in secure-erase) is sufficient for most on-prem hardware; physically destroy drives instead if the data was ever in scope for HIPAA/PCI.
+- Update your Part 5.4 documentation file with the new server's details — IP, specs, what's running, backup locations — so it reflects reality again.
+- Cancel/reclaim anything tied to the old box specifically (static IP reservation, UPS pairing, monitoring alerts pointed at the old address).
+
+### A note on moving to a managed cloud platform specifically
+
+If the destination is a managed PaaS rather than a cloud VM (i.e., you're giving up direct OS access in exchange for the provider managing more of the stack), steps 1-4 of this plan still apply, but step 5 changes: instead of restoring Docker Compose onto a bare OS, you'll be adapting your container definitions to that platform's deployment format (most support standard Dockerfiles with minor tweaks). Budget extra time for this translation step and test it thoroughly during Step 3's cold migration rather than discovering platform-specific quirks during the real cutover.
