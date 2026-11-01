@@ -18,7 +18,17 @@ Since you didn't specify, here's what this guide assumes. If any of these are wr
 - Uptime matters (people need to use the app during work hours) but you can tolerate a short outage for maintenance, i.e., this isn't life-safety or financial-transaction critical.
 - Remote access is needed (at least some of your 500 users aren't walking up to the physical machine).
 
-If this app handles regulated data (health records, payment cards, etc.), stop and get compliance advice before following a generic guide — HIPAA/PCI have specific hosting requirements this document doesn't cover.
+If this app handles regulated data (health records, payment cards, etc.), stop and get compliance advice before following a generic guide — HIPAA/PCI have specific hosting requirements this document doesn't cover. (See Part 7 for a step-by-step guide to assessing that situation if it comes up later.)
+
+### Note: all apps are browser-based
+
+Since every app here is accessed through a browser rather than a native/desktop client, the setup below is actually simpler than it would otherwise be:
+
+- Everything users need goes over standard web ports (80/443). There's no need to open or forward any app-specific ports — the reverse proxy (3.3) is the single front door for every app.
+- One reverse proxy can host all your apps under different subdomains, each getting its own free HTTPS certificate automatically. You don't need a different setup per app.
+- Because access is just "open a URL," the VPN-only option (3.5, Option A) works transparently — users just need the VPN connected before loading the page, no special client configuration per app.
+- Session security becomes mostly an application concern: make sure each app sets cookies with `Secure`, `HttpOnly`, and `SameSite=Lax` (or stricter) attributes, and enforces HTTPS-only (no plain HTTP fallback). This matters more than usual since the reverse proxy is doing the TLS termination for you — the app itself may "think" it's running on plain HTTP internally, which is fine, but double check it isn't issuing cookies or redirects that assume `http://`.
+- No need to worry about Windows at all — browser-based apps virtually never require a Windows server underneath. Part 2's Linux recommendation applies without exception now.
 
 ---
 
@@ -67,7 +77,7 @@ At 10 concurrent / 500 total users, a single well-backed-up server is appropriat
 
 ### 2.1 Pick a server Linux distribution
 
-Use Linux, not Windows, unless your app specifically requires Windows (e.g., a .NET Framework app that isn't on .NET Core/5+). Linux servers are lighter, more secure by default, and dominant for hosting web apps.
+Use Linux. Since all apps here are browser-based, there's no scenario in this guide that requires Windows — that caveat only applies to legacy Windows-only backends (e.g., old .NET Framework apps), which doesn't describe anything you're building. Linux servers are lighter, more secure by default, and dominant for hosting web apps.
 
 Recommended: **Ubuntu Server LTS** (currently 24.04 LTS as of this writing, or whatever the newest LTS is when you buy). Reasons for a beginner:
 
@@ -257,3 +267,65 @@ Keep a simple text file (stored off the server, e.g., in a password manager's se
 ## A note on scope
 
 This guide gets you to "a solid, secure, maintainable single-server setup appropriate for ~500 registered / ~10 concurrent users." If any of the following become true, revisit the architecture rather than just scaling this setup up: you need guaranteed high availability (no acceptable downtime), you're handling regulated data, your user count grows by an order of magnitude, or you need geographically distributed access with low latency everywhere. Those scenarios call for a different conversation.
+
+---
+
+## Part 7: If HIPAA or PCI Gets Added to an App Later
+
+This happens more often than people expect: an app starts as an internal tool, and later someone wants to add a field for a patient note (HIPAA) or a "pay your invoice here" button (PCI). Treat that as a trigger to stop and reassess — don't just keep building on the setup above. Here's how to work through it step by step.
+
+### Step 1: Confirm whether you're actually in scope
+
+Don't assume — check first, because "in scope" has a precise meaning for each framework:
+
+- **HIPAA** applies if the app will create, store, process, or transmit PHI (Protected Health Information) — anything that ties health information to an identifiable person (name, DOB, MRN, etc.) — **and** you're a covered entity or business associate under HIPAA (e.g., you're building this for or with a healthcare provider, insurer, or clearinghouse, or you process PHI on their behalf).
+- **PCI DSS** applies if the app will store, process, or transmit cardholder data (primary account number, expiration date, etc.) — "we take payments" is the trigger, even if you use a processor.
+
+**Action:** Write down, specifically, what new data field or feature is driving this. If you genuinely can't avoid handling PHI or card data directly, continue to Step 2. If you can avoid it (see Step 2), that's usually the better outcome for a small team.
+
+### Step 2: Ask whether you can offload the regulated part instead of becoming compliant yourself
+
+This is the single highest-leverage decision, and most small teams get it wrong by trying to become compliant themselves when they don't have to:
+
+- **For payments (PCI):** Never handle raw card numbers on your own server. Use a hosted payment processor (Stripe, Square, Braintree, etc.) with their hosted checkout page or client-side tokenization (e.g., Stripe Elements/Checkout). Done correctly, the card data never touches your server at all, and your PCI obligation drops to the lightest tier (SAQ A), which is mostly a short self-assessment questionnaire — not a hosting overhaul.
+- **For health data (HIPAA):** Consider whether the sensitive processing/storage can live in a HIPAA-eligible managed cloud service (e.g., AWS/Azure/GCP services covered under their Business Associate Agreement) rather than on your on-prem box, even if the rest of the app stays on-prem. This is a legitimate, common architecture — "hybrid," not "all-or-nothing."
+
+**Action:** Before touching your server config, see if you can route the regulated data path through a compliant third party instead of expanding what your on-prem box must satisfy. If yes, do that, and the rest of this guide's setup remains valid for the non-regulated parts of the app.
+
+### Step 3: If you genuinely must host regulated data yourselves, get a Business Associate Agreement (BAA) or equivalent in place first
+
+- For HIPAA: you cannot legally handle PHI as a business associate without a signed BAA with the covered entity (and with any subcontractor/vendor who will also touch that data — including your backup/cloud storage provider). Do not write a single line of code that touches PHI before this is signed.
+- For PCI: review your merchant agreement with your acquiring bank/processor — they will specify which SAQ (Self-Assessment Questionnaire) type applies to your setup, which tells you exactly what's required.
+
+**Action:** Stop and get these agreements signed, or a lawyer's confirmation they're not needed, before proceeding to Step 4. This is not optional paperwork — it's the mechanism that defines your legal obligations.
+
+### Step 4: Get a qualified third party involved — don't DIY the compliance assessment
+
+At this point, bring in outside expertise rather than relying on this guide or general internet research:
+
+- **HIPAA:** Engage a HIPAA compliance consultant or firm to perform a formal Security Risk Assessment (required under the HIPAA Security Rule regardless of your size). This typically costs a few thousand dollars for a small environment and produces a concrete remediation list.
+- **PCI:** If your SAQ type requires it (generally only larger merchants or specific integration types), engage a Qualified Security Assessor (QSA). For most small teams using a hosted payment page, you'll self-complete the applicable SAQ instead — but have someone who's done this before review your answers at least once.
+
+**Action:** Get a quote and timeline from a consultant before committing to a launch date for the regulated feature. Compliance work is usually the long pole, not the engineering.
+
+### Step 5: Expect these specific hosting changes versus the base setup in this guide
+
+If Steps 2-4 confirm you must host regulated data on your own infrastructure, the baseline setup in this guide needs to change in at least these ways:
+
+- **Encryption at rest:** Full-disk encryption (LUKS on Linux) becomes mandatory, not optional, for any drive holding regulated data, including backup drives.
+- **Access logging:** You need an audit trail of who accessed what regulated record and when — this is an application-level requirement (most frameworks have libraries for this), not just server logs.
+- **Network segmentation:** The server (or at least the regulated-data path) typically needs to be isolated on its own network segment/VLAN, separate from general office traffic — the single flat home-office network implied in Part 3 is no longer sufficient.
+- **Backup/vendor agreements:** Any backup destination, cloud storage, or third-party service that touches the regulated data needs its own BAA (HIPAA) or PCI attestation — re-check every tool named in Part 4 (Backblaze, restic's defaults, etc.) against this requirement.
+- **Multi-factor authentication:** Becomes mandatory (not just recommended) for all administrative access, and likely for end-user login to the regulated app as well.
+- **Formal incident response plan:** You need a written plan for what happens if there's a breach, including notification obligations (HIPAA breach notification rules have specific timelines).
+- **Physical security:** HIPAA in particular expects documented physical safeguards around the server itself (locked room/cabinet, access logging for who entered the space) — "a closet anyone in the office can walk into" will not pass an assessment.
+
+**Action:** Treat this as a checklist to hand to the consultant from Step 4, not something to implement solo from this summary — the specifics depend on your exact data flows and the assessment's findings.
+
+### Summary flow
+
+1. Confirm you're actually in scope (don't guess).
+2. Try to offload the regulated data path to a compliant third party first — this avoids most of the rest.
+3. Get a BAA / confirm your SAQ type before writing any code that touches the data.
+4. Bring in a qualified assessor/consultant — don't self-certify from a blog post.
+5. Only then adjust your hosting setup, using their findings as the actual spec, with the changes in Step 5 as a preview of what's likely coming.
