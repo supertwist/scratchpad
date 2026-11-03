@@ -261,6 +261,7 @@
 
 ---
 
+- Book: [**The Space Behind the Face,** by Robert Wilson.](https://robertwilson.com/news/2026/11/3/memoir-launch)
 - Book: [**Washington, A Life,** by Ron Chernow.](https://ronchernow.com/washington/)
 - Book: [**Welcome to Your Life,** by Roland Orzabal.](https://www.harpercollins.com/products/welcome-to-your-life-roland-orzabal)
 - Book: [**The Geography of the Imagination,** by Guy Davenport.](https://archive.org/details/geographyofimagi0000dave)
