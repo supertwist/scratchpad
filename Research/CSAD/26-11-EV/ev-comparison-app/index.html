@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electric Vehicle Comparison Tool</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Electric Vehicle Comparison</h1>
+            <p>Compare EVs by price, range, and specifications</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#home" class="active" data-page="home">Home</a></li>
+                <li><a href="#filters" data-page="filters">Filters</a></li>
+                <li><a href="#methodology" data-page="methodology">Methodology</a></li>
+                <li><a href="#about" data-page="about">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section id="home" class="page active">
+            <div class="hero">
+                <h2>Find Your Perfect Electric Vehicle</h2>
+                <p>Compare electric vehicles based on price, range, and performance metrics.</p>
+                <button onclick="showPage('filters')">Start Comparing</button>
+            </div>
+
+            <div class="features">
+                <div class="feature-card">
+                    <h3>Price Comparison</h3>
+                    <p>See which electric vehicles offer the best value for your budget.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Range Analysis</h3>
+                    <p>Compare driving range under real-world conditions.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Performance Metrics</h3>
+                    <p>Analyze acceleration, charging speed, and efficiency.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="filters" class="page">
+            <h2>Filter Electric Vehicles</h2>
+            
+            <div class="filter-controls">
+                <div class="filter-group">
+                    <label for="manufacturer">Manufacturer:</label>
+                    <select id="manufacturer">
+                        <option value="">All Manufacturers</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="minPrice">Min Price (€):</label>
+                    <input type="number" id="minPrice" min="0">
+                </div>
+                
+                <div class="filter-group">
+                    <label for="maxPrice">Max Price (€):</label>
+                    <input type="number" id="maxPrice" min="0">
+                </div>
+                
+                <div class="filter-group">
+                    <label for="minRange">Min Range (km):</label>
+                    <input type="number" id="minRange" min="0">
+                </div>
+                
+                <div class="filter-group">
+                    <label for="maxRange">Max Range (km):</label>
+                    <input type="number" id="maxRange" min="0">
+                </div>
+                
+                <button onclick="applyFilters()">Apply Filters</button>
+                <button onclick="resetFilters()">Reset Filters</button>
+            </div>
+
+            <div class="results-info">
+                <p id="results-count">Showing 0 vehicles</p>
+            </div>
+
+            <div class="vehicles-table-container">
+                <table id="vehiclesTable">
+                    <thead>
+                        <tr>
+                            <th>Vehicle</th>
+                            <th>Manufacturer</th>
+                            <th>Price (€)</th>
+                            <th>Range (km)</th>
+                            <th>Battery (kWh)</th>
+                            <th>0-100 km/h (s)</th>
+                            <th>Charging (kW)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="vehiclesTableBody">
+                        <!-- Vehicle data will be populated here -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="methodology" class="page">
+            <h2>Methodology</h2>
+            
+            <p>This comparison tool uses data from the <a href="https://github.com/gaia-charge/evdb">gaia-charge/evdb</a> project, 
+            which provides an open-source database of electric vehicle specifications.</p>
+            
+            <h3>Data Sources</h3>
+            <ul>
+                <li><a href="https://github.com/gaia-charge/evdb">gaia-charge/evdb GitHub repository</a></li>
+                <li>Manufacturer specifications and official documentation</li>
+                <li>Independent testing and real-world data</li>
+            </ul>
+            
+            <h3>Data Collection Process</h3>
+            <p>The database collects information from multiple sources including manufacturer specifications, 
+            independent testing organizations, and real-world performance metrics. Data is verified and updated regularly.</p>
+            
+            <h3>Calculations</h3>
+            <ul>
+                <li><strong>Range:</strong> Calculated based on WLTP (Worldwide Harmonized Light Vehicle Test Procedure) or EPA standards where available</li>
+                <li><strong>Efficiency:</strong> Measured in kWh per 100 km</li>
+                <li><strong>Charging Time:</strong> Indicates time to charge from 10% to 80%</li>
+            </ul>
+
+            <h3>Citations</h3>
+            <p>All vehicle specifications are cited from their official sources. For more information, see the 
+            <a href="https://github.com/gaia-charge/evdb">gaia-charge/evdb GitHub repository</a> and their 
+            <a href="https://gaia-charge.github.io/evdb/">documentation</a>.</p>
+        </section>
+
+        <section id="about" class="page">
+            <h2>About This Project</h2>
+            
+            <p>This electric vehicle comparison tool has been created to help consumers make informed decisions about 
+            electric vehicle purchases by providing a simple interface to compare key specifications.</p>
+            
+            <p>The application uses real-time data from the <a href="https://github.com/gaia-charge/evdb">gaia-charge/evdb</a> 
+            open-source database of electric vehicles.</p>
+            
+            <h3>Data Accuracy</h3>
+            <p>Please note that vehicle specifications may change over time. This tool provides the most current 
+            available data from official sources.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Electric Vehicle Comparison Tool. Data provided by gaia-charge/evdb.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/data-handler.js"></script>
+</body>
+</html>
