@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="968" height="604" viewBox="0 0 968 604" font-family="Arial, Helvetica, sans-serif">
+  <!-- Background -->
+  <rect x="0" y="0" width="968" height="604" fill="#ffffff"/>
+
+  <!-- Outer rounded border -->
+  <rect x="8" y="8" width="952" height="588" rx="14" fill="none" stroke="#e8e0da" stroke-width="1.5"/>
+
+  <!-- Column x positions -->
+  <!-- Col1: 30-210 | Col2: 215-375 | Col3: 380-555 | Col4: 560-765 | Col5: 770-940 -->
+
+  <!-- Header row -->
+  <path d="M8,22 q0,-14 14,-14 h924 q14,0 14,14 v37 h-952 z" fill="#fbe3d4"/>
+  <rect x="8" y="22" width="952" height="37" fill="#fbe3d4"/>
+
+  <text x="30" y="46" font-size="15.5" font-weight="700" fill="#2b2b2b">Product</text>
+  <text x="215" y="46" font-size="15.5" font-weight="700" fill="#2b2b2b">Product category</text>
+  <text x="380" y="46" font-size="15.5" font-weight="700" fill="#2b2b2b">Best-fit workflow</text>
+  <text x="560" y="46" font-size="15.5" font-weight="700" fill="#2b2b2b">Key strength</text>
+  <text x="770" y="46" font-size="15.5" font-weight="700" fill="#2b2b2b">Choose it when</text>
+
+  <!-- Row backgrounds (alternating) -->
+  <!-- Row1 y:59-136 -->
+  <rect x="8" y="59" width="952" height="77" fill="#ffffff"/>
+  <!-- Row2 y:136-211 -->
+  <rect x="8" y="136" width="952" height="75" fill="#f4f4f4"/>
+  <!-- Row3 y:211-281 -->
+  <rect x="8" y="211" width="952" height="70" fill="#ffffff"/>
+  <!-- Row4 y:281-370 -->
+  <rect x="8" y="281" width="952" height="89" fill="#f4f4f4"/>
+  <!-- Row5 y:370-445 -->
+  <rect x="8" y="370" width="952" height="75" fill="#ffffff"/>
+  <!-- Row6 y:445-520 -->
+  <rect x="8" y="445" width="952" height="75" fill="#f4f4f4"/>
+  <!-- Row7 y:520-588 (last, rounded bottom corners) -->
+  <path d="M8,520 h952 v54 q0,14 -14,14 h-924 q-14,0 -14,-14 z" fill="#ffffff"/>
+
+  <!-- Row separators -->
+  <g stroke="#e3e3e3" stroke-width="1">
+    <line x1="8" y1="59" x2="960" y2="59"/>
+    <line x1="8" y1="136" x2="960" y2="136"/>
+    <line x1="8" y1="211" x2="960" y2="211"/>
+    <line x1="8" y1="281" x2="960" y2="281"/>
+    <line x1="8" y1="370" x2="960" y2="370"/>
+    <line x1="8" y1="445" x2="960" y2="445"/>
+    <line x1="8" y1="520" x2="960" y2="520"/>
+  </g>
+
+  <!-- Row 1: Revopoint MIRACO Plus -->
+  <text x="30" y="84" font-size="15" font-weight="700" fill="#d44a1c">Revopoint MIRACO</text>
+  <text x="30" y="104" font-size="15" font-weight="700" fill="#d44a1c">Plus</text>
+  <text x="215" y="94" font-size="14.5" fill="#333">Standalone</text>
+  <text x="380" y="94" font-size="14.5" fill="#333">Small-large; field</text>
+  <text x="560" y="84" font-size="14.5" fill="#333">0.04 mm single-frame;</text>
+  <text x="560" y="104" font-size="14.5" fill="#333">measurement kit</text>
+  <text x="770" y="84" font-size="14.5" fill="#333">One-device</text>
+  <text x="770" y="104" font-size="14.5" fill="#333">workflow</text>
+
+  <!-- Row 2: Revopoint POP 4 -->
+  <text x="30" y="160" font-size="15" font-weight="700" fill="#d44a1c">Revopoint POP 4</text>
+  <text x="215" y="160" font-size="14.5" fill="#333">Hybrid portable</text>
+  <text x="380" y="160" font-size="14.5" fill="#333">General; outdoor</text>
+  <text x="560" y="160" font-size="14.5" fill="#333">Blue laser + infrared; AI</text>
+  <text x="770" y="150" font-size="14.5" fill="#333">Flexible multi-</text>
+  <text x="770" y="170" font-size="14.5" fill="#333">workflow scanning</text>
+
+  <!-- Row 3: Revopoint MINI 2 -->
+  <text x="30" y="233" font-size="15" font-weight="700" fill="#d44a1c">Revopoint MINI 2</text>
+  <text x="215" y="233" font-size="14.5" fill="#333">Blue-light detail</text>
+  <text x="380" y="223" font-size="14.5" fill="#333">Small parts; fine</text>
+  <text x="380" y="243" font-size="14.5" fill="#333">geometry</text>
+  <text x="560" y="233" font-size="14.5" fill="#333">Up to 0.02 mm precision</text>
+  <text x="770" y="233" font-size="14.5" fill="#333">Detail over volume</text>
+
+  <!-- Row 4: Revopoint INSPIRE 2 -->
+  <text x="30" y="307" font-size="15" font-weight="700" fill="#d44a1c">Revopoint INSPIRE 2</text>
+  <text x="215" y="307" font-size="14.5" fill="#333">Entry portable</text>
+  <text x="380" y="297" font-size="14.5" fill="#333">Beginners; makers;</text>
+  <text x="380" y="317" font-size="14.5" fill="#333">printing</text>
+  <text x="560" y="297" font-size="14.5" fill="#333">Infrared laser +</text>
+  <text x="560" y="317" font-size="14.5" fill="#333">structured light; 0.05 +</text>
+  <text x="560" y="337" font-size="14.5" fill="#333">0.1 x L (m)</text>
+  <text x="770" y="297" font-size="14.5" fill="#333">Accessible mobile</text>
+  <text x="770" y="317" font-size="14.5" fill="#333">start</text>
+
+  <!-- Row 5: Revopoint MetroX Pro -->
+  <text x="30" y="398" font-size="15" font-weight="700" fill="#d44a1c">Revopoint MetroX</text>
+  <text x="30" y="418" font-size="15" font-weight="700" fill="#d44a1c">Pro</text>
+  <text x="215" y="408" font-size="14.5" fill="#333">Industrial blue-laser</text>
+  <text x="380" y="408" font-size="14.5" fill="#333">Dark/shiny parts</text>
+  <text x="560" y="398" font-size="14.5" fill="#333">Four modes; up to 0.02</text>
+  <text x="560" y="418" font-size="14.5" fill="#333">mm</text>
+  <text x="770" y="408" font-size="14.5" fill="#333">Surface handling</text>
+
+  <!-- Row 6: Revopoint MetroY Ultra -->
+  <text x="30" y="473" font-size="15" font-weight="700" fill="#d44a1c">Revopoint MetroY</text>
+  <text x="30" y="493" font-size="15" font-weight="700" fill="#d44a1c">Ultra</text>
+  <text x="215" y="483" font-size="14.5" fill="#333">Measurement blue-</text>
+  <text x="215" y="503" font-size="14.5" fill="#333">light</text>
+  <text x="380" y="483" font-size="14.5" fill="#333">Inspection; reverse</text>
+  <text x="380" y="503" font-size="14.5" fill="#333">engineering</text>
+  <text x="560" y="483" font-size="14.5" fill="#333">0.015 + 0.04 x L (m)</text>
+  <text x="560" y="503" font-size="14.5" fill="#333">volumetric</text>
+  <text x="770" y="483" font-size="14.5" fill="#333">Complex-part</text>
+  <text x="770" y="503" font-size="14.5" fill="#333">confidence</text>
+
+  <!-- Row 7: Revopoint Trackit SR -->
+  <text x="30" y="548" font-size="15" font-weight="700" fill="#d44a1c">Revopoint Trackit</text>
+  <text x="30" y="568" font-size="15" font-weight="700" fill="#d44a1c">SR</text>
+  <text x="215" y="558" font-size="14.5" fill="#333">Optical tracking</text>
+  <text x="380" y="558" font-size="14.5" fill="#333">Large objects; field</text>
+  <text x="560" y="548" font-size="14.5" fill="#333">Marker-free; 0.025 +</text>
+  <text x="560" y="568" font-size="14.5" fill="#333">0.04 x L (m)</text>
+  <text x="770" y="548" font-size="14.5" fill="#333">Less setup on large</text>
+  <text x="770" y="568" font-size="14.5" fill="#333">parts</text>
+</svg>
