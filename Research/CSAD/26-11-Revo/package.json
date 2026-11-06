@@ -1,0 +1,32 @@
+{
+  "name": "rebuilder",
+  "version": "1.0.0",
+  "description": "A general-purpose tool to convert bitmap images to SVG with preserved structure and design styles",
+  "main": "src/index.js",
+  "bin": {
+    "rebuilder": "./src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "image",
+    "svg",
+    "conversion",
+    "bitmap",
+    "ocr",
+    "vector"
+  ],
+  "author": "REBUILDER Development Team",
+  "license": "MIT",
+  "dependencies": {
+    "sharp": "^0.32.0",
+    "tesseract.js": "^4.0.0",
+    "@tensorflow/tfjs-node": "^4.0.0",
+    "svg.js": "^2.7.0",
+    "d3": "^7.0.0",
+    "pica": "^9.0.0",
+    "argparse": "^2.0.0"
+  }
+}
