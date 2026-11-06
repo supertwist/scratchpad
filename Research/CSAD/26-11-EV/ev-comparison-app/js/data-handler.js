@@ -243,5 +243,7 @@ class EVDataHandler {
     }
 }
 
-// Initialize data handler when the page loads
-let dataHandler = new EVDataHandler();
+// Make sure we export the class for global access (this is for browser compatibility)
+if (typeof window !== 'undefined') {
+    window.EVDataHandler = EVDataHandler;
+}

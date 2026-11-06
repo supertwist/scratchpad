@@ -46,6 +46,9 @@ async function init() {
     document.getElementById('maxPrice').addEventListener('input', applyFilters);
     document.getElementById('minRange').addEventListener('input', applyFilters);
     document.getElementById('maxRange').addEventListener('input', applyFilters);
+    
+    // Initialize with all vehicles displayed
+    displayVehicles(dataHandler.vehicles);
 }
 
 // Load vehicle data from external source
@@ -57,11 +60,15 @@ async function loadVehicleData() {
         // Populate manufacturer dropdown
         populateManufacturers();
         
-        // Display initial data
-        displayVehicles(vehicles);
+        // Display initial data (will be called after page loads)
+        console.log("Vehicles loaded:", vehicles.length);
         
     } catch (error) {
         console.error('Error loading vehicle data:', error);
+        // Fallback to sample data
+        dataHandler.loadSampleData();
+        populateManufacturers();
+        displayVehicles(dataHandler.vehicles);
     }
 }
 
@@ -69,7 +76,7 @@ async function loadVehicleData() {
 function populateManufacturers() {
     const manufacturerSelect = document.getElementById('manufacturer');
     
-    // Clear existing options
+    // Clear existing options (keep default)
     manufacturerSelect.innerHTML = '<option value="">All Manufacturers</option>';
     
     const manufacturers = dataHandler.getManufacturers();
@@ -85,7 +92,7 @@ function populateManufacturers() {
     manufacturerSelect.addEventListener('change', applyFilters);
 }
 
-// Filter vehicles based on selected criteria
+// Filter vehicles based on selected criteria  
 function applyFilters() {
     const minPrice = document.getElementById('minPrice').value || null;
     const maxPrice = document.getElementById('maxPrice').value || null;
