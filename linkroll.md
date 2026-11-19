@@ -1,4 +1,5 @@
 # What I'm looking at, in little particular order...
+- Code: [Ollama model **ranking.**](https://benchlm.ai/best/ollama-models)
 - Code: [Via Clark, **Diceware.**](https://diceware.dmuth.org/)
 - Code: [**FM1** firmware library.](https://fm1-editor.com/firmware/)
 - Code: [Plotter drawing optimization with **vpype.**](https://vpype.readthedocs.io/en/latest/index.html)
