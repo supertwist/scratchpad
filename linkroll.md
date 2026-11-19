@@ -223,6 +223,7 @@
 
 ---
 
+- Rabbithole: [**War of the poems!** Terrance Winch VS Dog Lang!](https://craic-headpoetry.blogspot.com/2026/10/the-war-of-poems-doug-langs-americans.html?sc=1793144478121#c6888266881284885967)
 - Rabbithole: [Ryan's discussion of **AI harnesses for research.**](https://ryanrwatkins.github.io/LLM_research_guides/science-harnesses.html)
 - Rabbithole: [Cory Doctorow lectuture: **The Future of the Tech Crisis**](https://iai.tv/video/the-future-of-the-tech-crisis)
 - Rabbithole: [Ian Svenonius conducts **a seance!**](https://www.youtube.com/watch?v=-hQ_ztKTD0s)
