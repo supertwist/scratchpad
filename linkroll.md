@@ -1,4 +1,5 @@
 # What I'm looking at, in little particular order...
+- Code: [Via Clark, **Diceware.**](https://diceware.dmuth.org/)
 - Code: [**FM1** firmware library.](https://fm1-editor.com/firmware/)
 - Code: [Plotter drawing optimization with **vpype.**](https://vpype.readthedocs.io/en/latest/index.html)
 - Code: [**Trellis** tutorial](https://www.youtube.com/watch?v=FuFm8zBHDWI)
@@ -181,6 +182,7 @@
 
 ---
 
+- Make: [FDM-printable 10" **server rack.**](https://makerworld.com/en/models/1294480-lab-rax-10-server-rack-5u#profileId-1325352)
 - Make: [Adam Savage Interviews **Tom Sachs.**](https://www.youtube.com/watch?v=cxLxwbm7FMA)
 - Make: [**Layerling,** a possible replacement for TinkerCAD.](https://layerling.com)
 - Make: [**ArtCraft** suite to compete with Adobe Creative Cloud](https://getartcraft.com/)
