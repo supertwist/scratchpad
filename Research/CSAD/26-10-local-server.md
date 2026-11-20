@@ -404,3 +404,46 @@ Once the new server has run cleanly for a few days with no issues reported:
 ### A note on moving to a managed cloud platform specifically
 
 If the destination is a managed PaaS rather than a cloud VM (i.e., you're giving up direct OS access in exchange for the provider managing more of the stack), steps 1-4 of this plan still apply, but step 5 changes: instead of restoring Docker Compose onto a bare OS, you'll be adapting your container definitions to that platform's deployment format (most support standard Dockerfiles with minor tweaks). Budget extra time for this translation step and test it thoroughly during Step 3's cold migration rather than discovering platform-specific quirks during the real cutover.
+
+---
+
+## Appendix: Server Options Under $2,000 (16-Core, 64GB RAM, 2x1TB SSD)
+
+Based on current market research (November 2026), here are recommended server options matching the specifications from Part 1 (16 cores, 64GB RAM, 2 SSDs). Pricing and availability fluctuate; contact vendors for current quotes. The 2026 DRAM shortage has pressured pricing upward — refurbished enterprise hardware often offers the best value-to-spec ratio.
+
+| Product Name | Vendor & Link | Approx. Price | CPU / RAM / Storage | Ratings & Sentiment |
+|---|---|---|---|---|
+| **HPE ProLiant ML350 Gen11 (Tower)** | [HPE Store](https://buy.hpe.com/us/en/compute/tower-servers/proliant-ml300-servers/hpe-proliant-ml350-gen11/p/1014696172) \| [Amazon](https://www.amazon.com/ProLiant-ML350-Bundled-16-Core-Enterprise/dp/B0D98S7LK6) \| [ServerComputeWorks](https://www.servercomputeworks.com/ml350-gen11-p69313-005.asp) | Quote required | 1× Intel Xeon Gold 5416S (16c/32t) / 64GB DDR5 / 2×480GB–1TB SSD slots | ⭐⭐⭐⭐⭐ Highly rated; robust enterprise tower. Modern DDR5. Easy expansion. Best new option if budget allows. |
+| **Lenovo ThinkSystem ST650 (Tower)** | [Lenovo](https://www.lenovo.com/us/en/c/servers-storage/servers/towers/) \| [Newegg](https://www.newegg.com/Lenovo-Server-Workstation-System/BrandSubCat/ID-10418-386) | ~$1,800–$2,000 | 2× Intel Xeon Silver 4309Y (16c total) / 64GB DDR4 / 1TB SSD + expandable | ⭐⭐⭐⭐ SMB-focused; good value. DDR4. Flexible storage config. Readily available. |
+| **Lenovo ThinkSystem ST550 (Tower)** | [Lenovo](https://www.lenovo.com/us/en/c/servers-storage/servers/towers/) \| [Newegg](https://www.newegg.com/Lenovo-Server-Workstation-System/BrandSubCat/ID-10418-386) | ~$1,700–$1,950 | 2× Intel Xeon Silver 4210 (16c total) / 64GB DDR4 / 1TB SSD + storage slots | ⭐⭐⭐⭐ Budget-friendly entry-level tower. 12 bays for future expansion. Solid small-business choice. |
+| **Dell PowerEdge T440 (Tower)** | [Dell](https://www.dell.com/en-us/shop/dell-poweredge-servers/poweredge-t440-tower-server/spd/poweredge-t440/pe_t440_12421_19tm2_vi_vp) \| [TheServerStore](https://www.theserverstore.com/dell-poweredge-t440-16-bay-sff-tower-server.html) | ~$1,900–$2,200 (new) | 2× Intel Xeon Scalable (16c+) / 64GB DDR4 / 16× 2.5" SSD slots (configurable) | ⭐⭐⭐⭐ Mature, reliable. Excellent support ecosystem. 16-bay drive design. Slightly over budget if brand-new, but worth checking sales. |
+| **Dell PowerEdge T360 (Tower, newer)** | [Dell](https://www.dell.com/en-us/shop/dell-poweredge-servers/poweredge-t360-tower-server/) \| [Amazon](https://www.amazon.com/Dell-PowerEdge-T360-Tower-Server/s?k=PowerEdge+T360) | ~$1,600–$2,000 | 1× Intel Xeon E-2400 (up to 12c) / 64GB DDR5 capable / Modern drive design | ⭐⭐⭐⭐ Newest generation, DDR5 ready. 12-core base may fall slightly short of 16-core target, but modern and cost-effective. |
+| **Supermicro X11 Series (Tower)** | [Supermicro Store](https://store.supermicro.com/us_en/systems/product-families/mainstream.html) \| [Broadberry](https://www.broadberry.com/supermicro-servers) | ~$1,500–$2,000 | 1–2× Intel Xeon (16c+, varies by config) / 64GB DDR4 / 2× SSD configurable | ⭐⭐⭐⭐ Flexible configurator. Good for custom builds. Competitive pricing. Smaller vendor but solid reputation. |
+| **AMD EPYC 4005 Tower (Silent PC)** | [SilentPC](https://silentpc.com/servers/epyc-4005-tower) | ~$1,500–$1,900 | 1× AMD EPYC 4005 (16c) / 32GB–64GB DDR5 expandable / 2× SSD configurable | ⭐⭐⭐⭐ Excellent value on core count. Newer EPYC architecture (2024–2026). Budget option. Smaller vendor; check support/warranty. |
+| **HPE ProLiant DL360 Gen10 (Refurbished, Rackmount)** | [ServerMonkey](https://www.servermonkey.com/servers/refurbished-hpe.html) | ~$1,000–$1,500 | 2× Intel Xeon Scalable (16c+) / 64GB DDR4 / 16× 2.5" slots (SSD compatible) | ⭐⭐⭐⭐⭐ Excellent enterprise reliability. Refurbished with 1-year warranty. Rackmount form-factor (requires rack/console). Best value-to-performance. |
+| **HPE ProLiant DL380 Gen10 (Refurbished, Rackmount)** | [ServerMonkey](https://www.servermonkey.com/servers/refurbished-hpe.html) | ~$1,100–$1,600 | 2× Intel Xeon Scalable (16c+) / 64GB DDR4 / 16× 2.5" slots (SSD compatible) | ⭐⭐⭐⭐⭐ Larger chassis than DL360. Same reliability. More power-hungry. Consider cooling/UPS. 1-year ServerMonkey warranty. |
+| **Dell PowerEdge R750 (Refurbished, Rackmount)** | [eBay](https://www.ebay.com/b/Dell-Tower-Computer-64-GB-RAM-Servers/11211/bn_2801326) \| [ServerMonkey](https://www.servermonkey.com) \| [Amazon Renewed](https://www.amazon.com/tower-server) | ~$900–$1,600 | 2× Intel Xeon Scalable (16c+) / 64GB+ DDR4 / 2.5" SSD compatible slots | ⭐⭐⭐⭐ Popular secondary market. Wide availability. Varies in condition/warranty by seller. eBay/Amazon Renewed have buyer protection; ServerMonkey offers 1-year warranty. |
+| **Dell PowerEdge R740 (Refurbished, Rackmount)** | [eBay](https://www.ebay.com) \| [Amazon Renewed](https://www.amazon.com) | ~$800–$1,400 | 2× Intel Xeon Scalable (16c+) / 64GB DDR4 / Drive-agnostic, SSD compatible | ⭐⭐⭐⭐ Older generation (2019–2021) but proven. Cheapest 16-core option. Good for tight budgets. Variable warranty on secondary market. |
+
+### Notes on Table
+
+1. **Tower vs. Rackmount:** Most options listed are towers (suitable for office/closet) except DL360, DL380, R740, R750, which are rackmount (require a 19" rack, cooling, and console infrastructure). If space is tight, stick to towers.
+
+2. **DDR4 vs. DDR5:** Newer models (ML350 Gen11, T360, AMD EPYC 4005) support DDR5. DDR4 options (Lenovo ST-series, older refurbished Dell/HPE) are cheaper and still performant for this workload; DDR5 offers future headroom and slightly lower latency.
+
+3. **SSD Configuration:** Most list configurable 2.5" or 3.5" drive bays. Confirm you can order pre-configured with 2×1TB SSDs, or budget $400–$600 for aftermarket SSD installation if buying bare/minimally equipped.
+
+4. **Warranty & Support:** New servers from HPE, Lenovo, Dell come with standard 1–3 year support. Refurbished units (especially from eBay/Amazon Renewed) vary; ServerMonkey and ServerComputeWorks typically offer 30–90-day returns and 1-year warranties on select stock.
+
+5. **Budget Reality:** Exact sub-$2000 configurations with 2×1TB SSDs (new, enterprise-grade tower) are tight in the current market. Refurbished enterprise rackmount servers offer the best value. If rackmount isn't viable (space/cooling), Lenovo ST-series or AMD EPYC new towers are your best bet.
+
+6. **Retailers & Availability:** Direct vendors (HPE, Dell, Lenovo stores) allow full configuration but often require quotes for best pricing. Resellers (Newegg, ServerMonkey, Broadberry) stock popular SKUs with faster fulfillment and sometimes better street pricing.
+
+### Recommendation by Priority
+
+- **Best Overall Value:** HPE ProLiant DL360 Gen10 (refurbished, ~$1,200–$1,500) if rackmount is acceptable.
+- **Best New Tower:** Lenovo ThinkSystem ST650 or Supermicro X11 (~$1,800–$2,000).
+- **Best Budget New:** AMD EPYC 4005 Tower (~$1,500–$1,900).
+- **Most Reliable New:** HPE ProLiant ML350 Gen11 (contact for quote; likely $2,200–$2,500 fully configured).
+
+---
