@@ -486,3 +486,6 @@ This refined list focuses on **rackmount-only 1U/2U servers** with tighter speci
 6. **DDR4 vs DDR5:** Most 8-core/32GB options use DDR4 (plenty for this workload). DL20 Gen11 and R450 offer DDR5 for future-proofing but at higher cost.
 
 ---
+
+## James' notes
+- [On Amazon, refurb.](https://www.amazon.com/Dell-PowerEdge-R640-3-50Ghz-Essentials/dp/B0CF2TPHRX?openid.assoc_handle=usamazon&openid.claimed_id=https%3A%2F%2Fwww.amazon.com%2Fap%2Fid%2Famzn1.account.AGZ24SIXGZFDWGJP2XQZCZE2P2UA&openid.identity=https%3A%2F%2Fwww.amazon.com%2Fap%2Fid%2Famzn1.account.AGZ24SIXGZFDWGJP2XQZCZE2P2UA&openid.mode=id_res&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.op_endpoint=https%3A%2F%2Fwww.amazon.com%2Fap%2Fsignin&openid.response_nonce=2026-11-20T14%3A41%3A05Z-5766275593791366437&openid.return_to=https%3A%2F%2Fwww.amazon.com%2FDell-PowerEdge-R640-3-50Ghz-Essentials%2Fdp%2FB0CF2TPHRX&openid.signed=assoc_handle%2Cclaimed_id%2Cidentity%2Cmode%2Cns%2Cop_endpoint%2Cresponse_nonce%2Creturn_to%2Cns.pape%2Cpape.auth_policies%2Cpape.auth_time%2Csigned&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&openid.pape.auth_policies=http%3A%2F%2Fschemas.openid.net%2Fpape%2Fpolicies%2F2007%2F06%2Fnone&openid.pape.auth_time=2026-11-20T14%3A41%3A05Z&openid.sig=Zl7Dgy9aPifn5rGvemDZfcGKvOTYzYfgR9RWohsaYm0%3D&serial=)
