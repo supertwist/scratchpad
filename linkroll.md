@@ -1,4 +1,5 @@
 # What I'm looking at, in little particular order...
+- Code: [GW Coders' Slack server.](https://app.slack.com/client/T01755A5HH6/C016FGA68UT)
 - Code: [MAC in a **terminal?**](https://github.com/govijr/terminal-mac)
 - Code: [Ollama model **ranking.**](https://benchlm.ai/best/ollama-models)
 - Code: [Via Clark, **Diceware.**](https://diceware.dmuth.org/)
@@ -184,6 +185,7 @@
 
 ---
 
+- Make: [**Moldboxer** is mold-generating software.](https://www.moldboxer.com/)
 - Make: [FDM-printable 10" **server rack.**](https://makerworld.com/en/models/1294480-lab-rax-10-server-rack-5u#profileId-1325352)
 - Make: [Adam Savage Interviews **Tom Sachs.**](https://www.youtube.com/watch?v=cxLxwbm7FMA)
 - Make: [**Layerling,** a possible replacement for TinkerCAD.](https://layerling.com)
