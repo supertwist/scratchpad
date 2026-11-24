@@ -1,5 +1,5 @@
 # What I'm looking at, in little particular order...
-- Code: [GW Coders' Slack server.](https://app.slack.com/client/T01755A5HH6/C016FGA68UT)
+- Code: [GW Coders' Slack server.](https://gwucoders.slack.com/)
 - Code: [MAC in a **terminal?**](https://github.com/govijr/terminal-mac)
 - Code: [Ollama model **ranking.**](https://benchlm.ai/best/ollama-models)
 - Code: [Via Clark, **Diceware.**](https://diceware.dmuth.org/)
