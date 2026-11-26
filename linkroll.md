@@ -185,6 +185,7 @@
 
 ---
 
+- Make: [Gaudi's **hanging weights...**](https://parametric-architecture.com/la-sagrada-familia-gaudis-chain-model/)
 - Make: [**Moldboxer** is mold-generating software.](https://www.moldboxer.com/)
 - Make: [FDM-printable 10" **server rack.**](https://makerworld.com/en/models/1294480-lab-rax-10-server-rack-5u#profileId-1325352)
 - Make: [Adam Savage Interviews **Tom Sachs.**](https://www.youtube.com/watch?v=cxLxwbm7FMA)
